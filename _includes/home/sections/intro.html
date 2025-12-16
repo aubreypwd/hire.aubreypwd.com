@@ -1,0 +1,21 @@
+{% capture header_description %}<span class="italic">Performance-first</span> web developer with over a decade of experience{% endcapture %}
+
+{% capture header_actions %}
+	<ul class="actions intro-down-arrow">
+		<li><a href="#do" title="What I Do" class="scrolly arrow bounce"><i aria-hidden="true" class="fas fa-arrow-down"></i></a></li>
+	</ul>
+{% endcapture %}
+
+{% capture section_content %}
+	<span class="image fill" data-position="center"><img src="images/webp/aubrey-portwood-placeholder.webp" data-lcp-src="images/webp/aubrey-portwood.webp" alt="Aubrey Portwood" fetchpriority="high" /></span>
+{% endcapture %}
+
+{%
+	include section.html
+		header_heading="I'm Aubrey"
+		header_description=description
+		header_actions=header_actions
+		section_content=section_content
+		id="intro"
+		class="intro"
+%}

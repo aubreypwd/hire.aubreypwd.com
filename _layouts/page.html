@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		{% include head.html %}
+	</head>
+
+	<body class="page">
+
+		{% include header.html %}
+
+		<main class="wrapper" role="main">
+			<section class="section">
+
+				<header>
+					<h2>{{ page.heading }}</h2>
+				</header>
+
+				<div class="content">
+
+					{{ content }}
+
+				</div>
+			</section>
+		</main>
+
+		{%  include footer.html %}
+	</body>
+
+	{% include credit.html %}
+</html>

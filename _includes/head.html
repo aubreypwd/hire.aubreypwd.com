@@ -1,0 +1,60 @@
+{% include ga.html %}
+
+<title>{{ site.title }}{% if page.title %} - {{ page.title}}{% endif %}</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ site.description }}">
+<meta name="keywords" content="{{site.keywords}}{% if page.keywords %},{{ page.keywords }}{% endif %}">
+
+<style>
+	{% include_relative css/adaptations.css %}
+	{% include_relative css/fontawesome/used.css %}
+
+	/* @TODO: Going to need to figure out how to do this: it needs to only be there for lighthouse. */
+	/*input[type=submit].primary, input[type=reset].primary, input[type=button].primary, button.primary, .button.primary{ color: black !important; background-color: white; border: 2px solid black; }*/
+</style>
+
+<meta property="og:title" content="{{ site.title }}{% if page.title %} - {{ page.title}}{% endif %}">
+<meta property="og:description" content="{{ site.description }}{% if page.description %} - {{ page.description }}{% endif %}">
+<meta property="og:image" content="{{ 'images/webp/aubrey-portwood.webp' | relative_url }}">
+<meta property="og:url" content="{{ page.url | relative_url }}">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ 'images/webp/aubrey-portwood.webp' | relative_url }}">
+
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Aubrey Portwood",
+		"jobTitle": "{{ site.job_title }}",
+		"url": "{{ page.url | relative_url }}",
+		"image": "{{ '/images/webp/aubrey-portwood.webp' | relative_url }}",
+		"homeLocation": {
+			"@type": "Place",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Albuquerque",
+				"addressRegion": "NM",
+				"addressCountry": "US"
+			}
+		},
+		"sameAs": [
+			"https://twitter.com/aubreypwd",
+			"https://linkedin.com/in/aubreypwd",
+			"https://github.com/aubreypwd"
+		]
+	}
+</script>
+
+<link rel="shortcut icon" href="{{ 'favicon.ico' | relative_url }}" fetchpriority="low">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ 'images/apple-touch-icon.png' | relative_url }}" fetchpriority="low">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ 'images/favicon-32x32.png' | relative_url }}" fetchpriority="low">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ 'images/favicon-16x16.png' | relative_url }}" fetchpriority="low">
+
+<link rel="manifest" href="{{ 'manifest.json' | relative_url }}" fetchpriority="low">
+
+<meta name="theme-color" content="#ffffff">

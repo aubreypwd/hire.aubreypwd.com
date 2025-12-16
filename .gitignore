@@ -1,0 +1,5 @@
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+*.sublime-workspace
+.DS_Store
