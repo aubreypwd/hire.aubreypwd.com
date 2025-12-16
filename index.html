@@ -265,14 +265,19 @@ layout: home
 
 	<div class="content">
 
-		<!-- @TODO: Hookup to formspree. -->
-		<!-- @TODO: Need to figure out how to show this dynamically with JS now. -->
-		<p class="italic"><span class="bold highlight" style="background-color: #84e184 !important;">Message Sent!</span> &mdash; I will get back to you as soon as possible.</p>
+		<div class="sent-message">
+			<p class="italic"><span class="bold highlight" style="background-color: #84e184 !important;">Message Sent!</span> &mdash; I will get back to you as soon as possible.</p>
+			<hr>
+		</div>
+
 		<p><b>I work independently</b>&mdash;partnering directly with businesses who want solutions that are <b class="highlight">performance-first</b> from <i>the very beginning.</i> &mdash; If <b>this is you</b> let's talk!</p>
-		<hr class="mobile">
+
 		<p class="mobile">Send me a message using the form below, or <a href="#contact-other" class="scrolly bold">use these other methods <i aria-hidden="true" class="fas fa-arrow-down"></i></a>.</p>
 
-		<form action="." method="post">
+		<form action="https://formspree.io/f/myzrqvlj" method="post">
+
+			<input type="hidden" name="_next" value="{{ page.url }}?sent#contact">
+
 			<div class="fields">
 
 				<input type="hidden" name="contact-form" value="submitted">

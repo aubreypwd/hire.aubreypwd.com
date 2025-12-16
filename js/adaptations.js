@@ -70,6 +70,11 @@
 
 		// Set the active navigation element.
 		$body.attr( 'data-hash', window.location.hash.replace( '#', '' ) );
+
+		if ( new URLSearchParams( window.location.search ).has( 'sent' ) ) {
+			$( '#contact .sent-message' ).addClass( 'sent' );
+		}
 	} );
+
 
 } )( jQuery );

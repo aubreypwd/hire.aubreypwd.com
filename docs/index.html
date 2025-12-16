@@ -2114,6 +2114,15 @@ header .highlight {
 
 /* === Content === */
 
+#contact .sent-message {
+
+	display: none;
+
+	&.sent {
+		display: block;
+	}
+}
+
 .content hr {
 	border-bottom: 1px solid #dadada;
 }
@@ -2653,6 +2662,11 @@ body.page {
 		text-transform: inherit;
 		letter-spacing: inherit;
 		line-height: inherit;
+	}
+
+
+	& > footer {
+		padding-top: 5rem;
 	}
 }
 
@@ -4852,14 +4866,19 @@ readers do not read off random characters that represent icons */
 
 	<div class="content">
 
-		<!-- @TODO: Hookup to formspree. -->
-		<!-- @TODO: Need to figure out how to show this dynamically with JS now. -->
-		<p class="italic"><span class="bold highlight" style="background-color: #84e184 !important;">Message Sent!</span> — I will get back to you as soon as possible.</p>
+		<div class="sent-message">
+			<p class="italic"><span class="bold highlight" style="background-color: #84e184 !important;">Message Sent!</span> — I will get back to you as soon as possible.</p>
+			<hr>
+		</div>
+
 		<p><b>I work independently</b>—partnering directly with businesses who want solutions that are <b class="highlight">performance-first</b> from <i>the very beginning.</i> — If <b>this is you</b> let's talk!</p>
-		<hr class="mobile">
+
 		<p class="mobile">Send me a message using the form below, or <a href="#contact-other" class="scrolly bold">use these other methods <i aria-hidden="true" class="fas fa-arrow-down"></i></a>.</p>
 
-		<form action="." method="post">
+		<form action="https://formspree.io/f/myzrqvlj" method="post">
+
+			<input type="hidden" name="_next" value="/?sent#contact">
+
 			<div class="fields">
 
 				<input type="hidden" name="contact-form" value="submitted">

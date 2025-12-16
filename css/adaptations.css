@@ -2087,6 +2087,15 @@ header .highlight {
 
 /* === Content === */
 
+#contact .sent-message {
+
+	display: none;
+
+	&.sent {
+		display: block;
+	}
+}
+
 .content hr {
 	border-bottom: 1px solid #dadada;
 }
@@ -2626,5 +2635,10 @@ body.page {
 		text-transform: inherit;
 		letter-spacing: inherit;
 		line-height: inherit;
+	}
+
+
+	& > footer {
+		padding-top: 5rem;
 	}
 }
