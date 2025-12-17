@@ -6,21 +6,8 @@
 		<link
 			rel="preload"
 			as="image"
-			href="{{ 'images/webp/aubrey-portwood-placeholder.webp' | relative_url }}"
-			fetchpriority="high"
-		>
-
-		<link
-			rel="preload"
-			as="image"
 			href="{{ 'images/webp/aubrey-portwood.webp' | relative_url }}"
 			fetchpriority="high"
-			onload="
-				( () => {
-					var img = document.querySelector( 'img[data-lcp-src]' );
-					img.setAttribute( 'src', img.getAttribute( 'data-lcp-src' ) );
-				} )();
-			"
 		>
 
 		{% include head.html %}
