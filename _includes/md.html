@@ -1,0 +1,5 @@
+{% capture md %}{% include {{ include.md }} %}{% endcapture %}
+
+{{ md | markdownify }}
+
+{% assign md='' %}

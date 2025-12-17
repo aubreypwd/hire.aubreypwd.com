@@ -1952,6 +1952,10 @@ i,
 	font-style: italic;
 }
 
+.upper {
+	text-transform: uppercase;
+}
+
 .underline {
 	text-decoration: underline;
 }
