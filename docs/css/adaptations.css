@@ -2488,10 +2488,6 @@ nav.navigation {
 	/* Mobile Only */
 	@media screen and (max-width: 1152px) {
 
-		#intro > .content {
-			display: none; /* Hide the LCP image on mobile */
-		}
-
 		.desktop {
 			display: none !important;
 			visibility: none;
