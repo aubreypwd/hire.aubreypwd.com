@@ -10,7 +10,7 @@ _&rarr;&nbsp; At this point you will make your **first** of three payments._
 
 ### 2. Setup
 
-You’ll get a single Google Doc that serves as your “home base,” like this one.
+You’ll get a single Google Doc that serves as your “home base."
 
 It will include:
 
