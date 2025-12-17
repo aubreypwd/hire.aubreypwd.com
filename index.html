@@ -18,11 +18,29 @@ layout: home
 
 	<div class="content">
 		<span class="image fill" data-position="center">
-			<img
-				src="{{ 'images/webp/aubrey-portwood.webp' | relative_url }}"
-				alt="Aubrey Portwood"
-				fetchpriority="high"
-			>
+			<picture>
+
+				<!-- < 1024px -->
+				<source
+					media="(max-width: 768px)"
+					srcset="{{ 'images/webp/aubrey-portwood-sm.webp' | relative_url }}"
+				>
+
+				<!-- >= 1024px -->
+				<source
+					media="(min-width: 769px)"
+					srcset="{{ 'images/webp/aubrey-portwood-lg.webp' | relative_url }}"
+				>
+
+				<!-- fallback (also used if <picture> not supported) -->
+				<img
+					src="{{ 'images/webp/aubrey-portwood-lg.webp' | relative_url }}"
+					alt="Aubrey Portwood"
+					loading="eager"
+					fetchpriority="high"
+					decoding="async"
+				>
+			</picture>
 		</span>
 	</div>
 </section>

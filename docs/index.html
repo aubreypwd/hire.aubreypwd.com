@@ -1411,7 +1411,7 @@ input, textarea {
 					}
 
 				.wrapper > .section.intro > .content {
-					height: 100vh;
+					height: 106vh;
 					max-width: none;
 				}
 
@@ -4746,7 +4746,17 @@ readers do not read off random characters that represent icons */
 
 	<div class="content">
 		<span class="image fill" data-position="center">
-			<img src="images/webp/aubrey-portwood.webp" alt="Aubrey Portwood" fetchpriority="high">
+			<picture>
+
+				<!-- < 1024px -->
+				<source media="(max-width: 768px)" srcset="images/webp/aubrey-portwood-sm.webp">
+
+				<!-- >= 1024px -->
+				<source media="(min-width: 769px)" srcset="images/webp/aubrey-portwood-lg.webp">
+
+				<!-- fallback (also used if <picture> not supported) -->
+				<img src="images/webp/aubrey-portwood-lg.webp" alt="Aubrey Portwood" loading="eager" fetchpriority="high" decoding="async">
+			</source></source></picture>
 		</span>
 	</div>
 </section>
