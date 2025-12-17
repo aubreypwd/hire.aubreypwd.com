@@ -1,6 +1,20 @@
+### Sales Call
+
+_Let's not kid ourselves_—we're going to have this call. During this **30 minute** call we'll briefly discuss your project and, if you want, I can send a quick quote for your type of project.
+
+&rarr; _This is usually for people who are shopping around for prices—we can jump right into a deeper call if you want to._
+
+If you'd like to continue we'll schedule a more longer in-depth call to more deeply understand your project. After this longer call I will **send over a proposal**.
+
+#### Proposal
+
+The proposal will include a new price, my understanding of what's best for the project, any packages I think you fit into, or present a custom option, and all the details.
+
+-----
+
 ### 1. Onboarding
 
-You’ll receive an in-depth questionnaire. Your answers give me everything I need to understand your goals, your business, and the look and feel you want.
+Once we've agreed to work together, you’ll receive an in-depth questionnaire. Your answers give me everything I need to even more deeply understand your goals, your business, and the look and feel you want.
 
 We’ll also discuss deliverables (things I need from you), which all have to be delivered by the kick-off date—which we will choose together.
 
@@ -33,23 +47,23 @@ Once I have your questionnaire and initial payment, I dig in:
 
 I’ll add my findings to the Google Doc so you can see the direction things are heading.
 
-#### 3a. Mood Board
+#### Mood Board
 
 I’ll create a mood board (usually with Pinterest) with visuals that set the tone for your site—colors, typography, imagery, design inspiration.
 
 You can review it any time and tell me what does or doesn’t fit your vision.
 
-#### 3b. Stylescape
+#### Stylescape
 
 I’ll create a simple stylescape: a single image showing the visual direction (colors, fonts, photography, layout feel).
 
 You’ll review it and confirm we’re aligned before we move forward.
 
-#### 3c. Site Map
+#### Site Map
 
 I’ll create a clear site map showing the structure of the site and the pages we’re building. You’ll approve this before design begins.
 
-#### 4c. Timeline
+#### Timeline
 
 Based on the work that needs to be done I will develop a timeline on our kickoff call.
 
