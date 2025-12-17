@@ -13,3 +13,4 @@ exclude:
 timezone: America/Denver
 plugins:
   - jekyll-last-modified-at
+  - jekyll_image_encode
