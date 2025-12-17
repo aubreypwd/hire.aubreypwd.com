@@ -2354,14 +2354,12 @@ nav.navigation {
 	z-index: 9;
 	font-family: "Raleway", Helvetica, sans-serif;
 	overflow: scroll;
-	/* border-top: 0.5px solid var(--navigation-bg); */
-
 
 	ul {
 		list-style-type: none;
 		display: flex;
 		justify-content: center;
-		gap: 1.5rem;
+		gap: clamp(0.3rem,1.5vw,1.5rem);
 		list-style: none;
 		padding: 0;
 		margin: 0;
