@@ -5,7 +5,16 @@
 
 		<link rel="preload" as="image" href="images/webp/aubrey-portwood-lg.webp" fetchpriority="high">
 
-		<!-- Google tag (gtag.js) -->
+		
+
+
+		<link rel="preload" as="font" href="css/webfonts/instrumentserif-regular.woff" fetchpriority="high">
+
+			<link rel="preload" as="font" href="css/webfonts/instrumentserif-italic.woff" fetchpriority="high">
+
+			<link rel="preload" as="image" href="css/images/background.svg" fetchpriority="high">
+
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GBN9NTQCR"></script>
 <script>
 	window.dataLayer = window.dataLayer || [];
@@ -2037,19 +2046,12 @@ body .intro-down-arrow {
 .wrapper:before {
 	background-color: var(--dark-primary-bg);
 	background-image: url( 'css/images/background.svg' );
-	background-image: none;
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 /* === Sections & Headers === */
-
-body.fonts-loaded {
-	.wrapper .section > header ul.actions {
-		visibility: visible;
-	}
-}
 
 #intro h2 {
 	font-style: normal;
@@ -2536,7 +2538,6 @@ nav.navigation {
 		.wrapper > .section > header {
 			background-color: var(--dark-primary-bg);
 			background-image: url( 'css/images/background.svg' );
-			background-image: none;
 			background-size: cover;
 			background-position: top left;
 			background-repeat: no-repeat;

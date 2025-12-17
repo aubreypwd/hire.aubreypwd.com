@@ -48,9 +48,6 @@
 
 		$body.addClass( 'js-loaded' );
 
-		// Tell CSS that fonts are loaded.
-		document.fonts.ready.then( () => $body.addClass( 'fonts-loaded' ) );
-
 		if ( '' === window.location.hash ) {
 			return; // No hash.
 		}
