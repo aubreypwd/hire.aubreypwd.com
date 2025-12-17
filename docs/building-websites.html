@@ -1362,7 +1362,8 @@ input, textarea {
 				position: relative;
 			}
 
-				.wrapper > .section > header h2:before {
+				.wrapper > .section > header h2:before,
+				.wrapper > .section > header h1:before {
 					background: #43d9b8;
 					content: '';
 					display: block;
@@ -1371,7 +1372,8 @@ input, textarea {
 					top: 1rem;
 				}
 
-				.wrapper > .section > header h2:after {
+				.wrapper > .section > header h2:after
+				.wrapper > .section > header h1:after, {
 					background: #43d9b8;
 					border-radius: 0.5rem;
 					content: '';
@@ -1457,12 +1459,14 @@ input, textarea {
 			left: calc(50vw - 5rem);
 		}
 
-		.wrapper > .section > header h2:before {
+		.wrapper > .section > header h2:before,
+		.wrapper > .section > header h1:before {
 			right: -5rem;
 			width: 2.5rem;
 		}
 
-		.wrapper > .section > header h2:after {
+		.wrapper > .section > header h2:after,
+		.wrapper > .section > header h1:after {
 			right: -2.5rem;
 		}
 
@@ -1530,12 +1534,14 @@ input, textarea {
 					left: calc(50vw - 4rem);
 				}
 
-				.wrapper > .section > header h2:before {
+				.wrapper > .section > header h2:before,
+				.wrapper > .section > header h1:before {
 					right: -4rem;
 					width: 2rem;
 				}
 
-				.wrapper > .section > header h2:after {
+				.wrapper > .section > header h2:after,
+				.wrapper > .section > header h1:after {
 					right: -2rem;
 				}
 
@@ -1644,11 +1650,13 @@ input, textarea {
 							display: none;
 						}
 
-						.wrapper > .section > header h2:before {
+						.wrapper > .section > header h2:before,
+						.wrapper > .section > header h1:before {
 							display: none;
 						}
 
-						.wrapper > .section > header h2:after {
+						.wrapper > .section > header h2:after,
+						wrapper > .section > header h1:after {
 							display: none;
 						}
 
@@ -1930,11 +1938,11 @@ h1, h2, h3, h4 {
 	margin: 0 0 1.5rem 0;
 }
 
-h2, h3 {
+h2, h3, h1 {
 	font-family: 'Instrument Serif', 'Times New Roman', "serif";
 }
 
-h2 {
+h2, h1 {
 	font-size: 3rem;
 	line-height: 3rem;
 }
@@ -1944,7 +1952,8 @@ h3 {
 	line-height: 2rem;
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
+
 	letter-spacing: normal;
 	font-weight: normal;
 	text-transform: none;
@@ -1996,6 +2005,7 @@ a {
 }
 
 .wrapper .section header > h2 a,
+.wrapper .section header > h1 a,
 .wrapper .section header > h3 a,
 .wrapper .section .content h3 a {
 	text-decoration: none;
@@ -2067,7 +2077,8 @@ body.fonts-loaded {
 	/* Make the lines white */
 
 	.wrapper > .section > header:before,
-	.wrapper > .section > header h2:before {
+	.wrapper > .section > header h2:before,
+	.wrapper > .section > header h1:before {
 		background: var(--lines);
 	}
 
@@ -2083,11 +2094,13 @@ body.fonts-loaded {
 		width: 1px;
 	}
 
-	.wrapper > .section > header h2:before {
+	.wrapper > .section > header h2:before,
+	.wrapper > .section > header h1:before {
 		height: 1px;
 	}
 
-	.wrapper > .section:not(:first-child) > header h2:before {
+	.wrapper > .section:not(:first-child) > header h2:before,
+	.wrapper > .section:not(:first-child) > header h1:before {
 		margin-top: 10px;
 	}
 
@@ -2653,8 +2666,19 @@ body.page {
 		min-height: 15vh;
 	}
 
-	main {
-		padding: 10rem 0 0;
+	h1,
+	h2 {
+		font-size: 2.5rem;
+		line-height: 3rem;
+	}
+
+	h2:not(:first-child) {
+		margin-top: 6rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+		line-height: 2.5rem;
 	}
 
 	.wrapper .section > header h2 + p {
@@ -2665,9 +2689,26 @@ body.page {
 		line-height: inherit;
 	}
 
-
 	& > footer {
 		padding-top: 5rem;
+	}
+
+	@media screen and (min-width: 1152px) {
+
+		main {
+			padding: 10rem 0 0;
+		}
+	}
+
+	@media screen and (max-width: 1152px) {
+		.wrapper > .section:not(#intro) > header {
+
+			display: block;
+
+			&::last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 }
 
@@ -4540,9 +4581,9 @@ readers do not read off random characters that represent icons */
 </style>
 
 <meta property="og:title" content="Aubrey Portwood - Performance-first web developer - Building Websites">
-<meta property="og:description" content="Aubrey Portwood is a web developer that builds with a performance-first mindset from start to finish with over a decade of experience.">
+<meta property="og:description" content="Aubrey Portwood is a web developer that builds with a performance-first mindset from start to finish with over a decade of experience. - Process for building websites with Aubrey Portwood">
 <meta property="og:image" content="images/webp/aubrey-portwood.webp">
-<meta property="og:url" content="build-websites.html">
+<meta property="og:url" content="building-websites.html">
 <meta property="og:type" content="website">
 
 <meta name="twitter:card" content="summary_large_image">
@@ -4554,7 +4595,7 @@ readers do not read off random characters that represent icons */
 		"@type": "Person",
 		"name": "Aubrey Portwood",
 		"jobTitle": "Performance-first web developer",
-		"url": "build-websites.html",
+		"url": "building-websites.html",
 		"image": "images/webp/aubrey-portwood.webp",
 		"homeLocation": {
 			"@type": "Place",
@@ -4587,8 +4628,8 @@ readers do not read off random characters that represent icons */
 	<body class="page">
 
 		<header class="seo-only">
-	<h1>Aubrey Portwood</h1>
-	<p>Performance-first web developer with over a decade of experience.</p>
+	<h1>Building Websites</h1>
+	<p>Process for building websites with Aubrey Portwood</p>
 </header>
 
 
@@ -4598,7 +4639,7 @@ readers do not read off random characters that represent icons */
 			<section id="process" class="distant section">
 
 	<header>
-		<h2><a href="/build-websites.html">Building Websites</a></h2>
+		<h2><a href="/building-websites.html">Building Websites</a></h2>
 
 		<p>
 			This is my typical process, it will <b>vary for each project</b>, but we'll generally follow this process.
@@ -4607,12 +4648,12 @@ readers do not read off random characters that represent icons */
 		<p>
 			<a class="upper" title="Back to codeall.day" href="http://localhost:4000">←  <i class="fa fa-home"></i><b>codeall.day</b></a>
 		</p>
+
 	</header>
 
 	<div class="content">
 
 		
-
 
 <h3 id="1-onboarding">1. Onboarding</h3>
 
@@ -4620,7 +4661,9 @@ readers do not read off random characters that represent icons */
 
 <p>We’ll also discuss deliverables (things I need from you), which all have to be delivered by the kick-off date—which we will choose together.</p>
 
-<p>🏢 At this point you will make your first of three payments.</p>
+<p><em>→  At this point you will make your <strong>first</strong> of three payments.</em></p>
+
+<hr>
 
 <h3 id="2-setup">2. Setup</h3>
 
@@ -4637,6 +4680,8 @@ readers do not read off random characters that represent icons */
 
 <p>Everything stays in one place for you. No extra tools to learn, it’s easy.</p>
 
+<hr>
+
 <h3 id="3-research--exploration">3. Research &amp; Exploration</h3>
 
 <p>Once I have your questionnaire and initial payment, I dig in:</p>
@@ -4649,25 +4694,27 @@ readers do not read off random characters that represent icons */
 
 <p>I’ll add my findings to the Google Doc so you can see the direction things are heading.</p>
 
-<h5 id="3a-mood-board">3a. Mood Board</h5>
+<h4 id="3a-mood-board">3a. Mood Board</h4>
 
 <p>I’ll create a mood board (usually with Pinterest) with visuals that set the tone for your site—colors, typography, imagery, design inspiration.</p>
 
 <p>You can review it any time and tell me what does or doesn’t fit your vision.</p>
 
-<h5 id="3b-stylescape">3b. Stylescape</h5>
+<h4 id="3b-stylescape">3b. Stylescape</h4>
 
 <p>I’ll create a simple stylescape: a single image showing the visual direction (colors, fonts, photography, layout feel).</p>
 
 <p>You’ll review it and confirm we’re aligned before we move forward.</p>
 
-<h5 id="3c-site-map">3c. Site Map</h5>
+<h4 id="3c-site-map">3c. Site Map</h4>
 
 <p>I’ll create a clear site map showing the structure of the site and the pages we’re building. You’ll approve this before design begins.</p>
 
-<h5 id="4c-timeline">4c. Timeline</h5>
+<h4 id="4c-timeline">4c. Timeline</h4>
 
 <p>Based on the work that needs to be done I will develop a timeline on our kickoff call.</p>
+
+<hr>
 
 <h3 id="4-kickoff-call">4. Kickoff Call</h3>
 
@@ -4683,7 +4730,9 @@ readers do not read off random characters that represent icons */
   <li>When Launch will happen</li>
 </ul>
 
-<p>🏢 At this point you will make your second of three payments.</p>
+<p><em>→  At this point you will make your <strong>second</strong> of three payments.</em></p>
+
+<hr>
 
 <h3 id="5-design--development">5. Design &amp; Development</h3>
 
@@ -4701,7 +4750,7 @@ readers do not read off random characters that represent icons */
 
 <p>You get one free round of feedback on the homepage and sitemap at this stage.</p>
 
-<h5 id="5b-finalize-build--review">5b. Finalize, Build, &amp; Review</h5>
+<h4 id="5b-finalize-build--review">5b. Finalize, Build, &amp; Review</h4>
 
 <p>After updating the homepage based on your feedback (and sitemap), I’ll design the rest of the core pages.</p>
 
@@ -4710,6 +4759,8 @@ readers do not read off random characters that represent icons */
 <p>I’ll screen share the updated homepage and the new subpages for review.</p>
 
 <p>You’ll get one final round of feedback on both before we proceed to build the remaining parts of the site.</p>
+
+<hr>
 
 <h3 id="6-testing--launch">6. Testing &amp; Launch</h3>
 
@@ -4721,11 +4772,15 @@ readers do not read off random characters that represent icons */
 
 <p>After the site is fully polished, we’ll choose a launch date and go live on that date (it’s usually just a button I push and it’s live).</p>
 
-<p>🏢 At this point you will make your third and final payment.</p>
+<p><em>→  At this point you will make your <strong>third</strong> and final payment.</em></p>
+
+<hr>
 
 <h3 id="7-post-launch-support">7. Post-Launch Support</h3>
 
 <p>For a week after launch, I’m available for questions and support as you settle into the new site.</p>
+
+<hr>
 
 <h3 id="8-offboarding-call--whats-next">8. Offboarding Call &amp; What’s Next</h3>
 
@@ -4733,11 +4788,13 @@ readers do not read off random characters that represent icons */
 
 <p>We’ll talk about the results, answer any final questions, and discuss any next steps if you want to continue working together.</p>
 
+<hr>
+
 <h3 id="9-maintenance">9. Maintenance</h3>
 
 <p>If we agreed to do so, our maintenance agreement will begin to kick in. Your site will be designed to auto-update all-the-things moving forward, but if anything goes wrong or issues creep up we can address them quickly.</p>
 
-<p>🏢 Note, this is going to be a monthly subscription fee.</p>
+<p><em>→  Note, this is going to be a monthly subscription fee.</em></p>
 
 
 

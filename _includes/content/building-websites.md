@@ -1,11 +1,12 @@
-
 ### 1. Onboarding
 
 You’ll receive an in-depth questionnaire. Your answers give me everything I need to understand your goals, your business, and the look and feel you want.
 
 We’ll also discuss deliverables (things I need from you), which all have to be delivered by the kick-off date—which we will choose together.
 
-🏢 At this point you will make your first of three payments.
+_&rarr;&nbsp; At this point you will make your **first** of three payments._
+
+-----
 
 ### 2. Setup
 
@@ -20,6 +21,8 @@ It will include:
 
 Everything stays in one place for you. No extra tools to learn, it’s easy.
 
+-----
+
 ### 3. Research & Exploration
 
 Once I have your questionnaire and initial payment, I dig in:
@@ -30,25 +33,27 @@ Once I have your questionnaire and initial payment, I dig in:
 
 I’ll add my findings to the Google Doc so you can see the direction things are heading.
 
-##### 3a. Mood Board
+#### 3a. Mood Board
 
 I’ll create a mood board (usually with Pinterest) with visuals that set the tone for your site—colors, typography, imagery, design inspiration.
 
 You can review it any time and tell me what does or doesn’t fit your vision.
 
-##### 3b. Stylescape
+#### 3b. Stylescape
 
 I’ll create a simple stylescape: a single image showing the visual direction (colors, fonts, photography, layout feel).
 
 You’ll review it and confirm we’re aligned before we move forward.
 
-##### 3c. Site Map
+#### 3c. Site Map
 
 I’ll create a clear site map showing the structure of the site and the pages we’re building. You’ll approve this before design begins.
 
-##### 4c. Timeline
+#### 4c. Timeline
 
 Based on the work that needs to be done I will develop a timeline on our kickoff call.
+
+-----
 
 ### 4. Kickoff Call
 
@@ -62,7 +67,9 @@ During this step we will create a timeline:
 - When Testing and Pre-launch will begin and end
 - When Launch will happen
 
-🏢 At this point you will make your second of three payments.
+_&rarr;&nbsp; At this point you will make your **second** of three payments._
+
+-----
 
 ### 5. Design & Development
 
@@ -78,7 +85,7 @@ You’ll see:
 
 You get one free round of feedback on the homepage and sitemap at this stage.
 
-##### 5b. Finalize, Build, & Review
+#### 5b. Finalize, Build, & Review
 
 After updating the homepage based on your feedback (and sitemap), I’ll design the rest of the core pages.
 
@@ -87,6 +94,8 @@ After updating the homepage based on your feedback (and sitemap), I’ll design 
 I’ll screen share the updated homepage and the new subpages for review.
 
 You’ll get one final round of feedback on both before we proceed to build the remaining parts of the site.
+
+-----
 
 ### 6. Testing & Launch
 
@@ -98,11 +107,15 @@ Together, we test everything: layout, content, links, forms, and performance. *A
 
 After the site is fully polished, we’ll choose a launch date and go live on that date (it’s usually just a button I push and it’s live).
 
-🏢 At this point you will make your third and final payment.
+_&rarr;&nbsp; At this point you will make your **third** and final payment._
+
+-----
 
 ### 7. Post-Launch Support
 
 For a week after launch, I’m available for questions and support as you settle into the new site.
+
+-----
 
 ### 8. Offboarding Call & What’s Next
 
@@ -110,8 +123,10 @@ After the support week, we’ll have an offboarding call to review how everythin
 
 We’ll talk about the results, answer any final questions, and discuss any next steps if you want to continue working together.
 
+-----
+
 ### 9. Maintenance
 
 If we agreed to do so, our maintenance agreement will begin to kick in. Your site will be designed to auto-update all-the-things moving forward, but if anything goes wrong or issues creep up we can address them quickly.
 
-🏢 Note, this is going to be a monthly subscription fee.
+_&rarr;&nbsp; Note, this is going to be a monthly subscription fee._
