@@ -51,15 +51,6 @@
 		// Tell CSS that fonts are loaded.
 		document.fonts.ready.then( () => $body.addClass( 'fonts-loaded' ) );
 
-		// Switch in the LCP image with a higher quality one.
-		setTimeout(
-			function() {
-				const $lcpImage = $( 'img[data-lcp-src]' );
-					$lcpImage.attr( 'src', $lcpImage.attr( 'data-lcp-src' ) );
-			},
-			500
-		)
-
 		if ( '' === window.location.hash ) {
 			return; // No hash.
 		}

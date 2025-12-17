@@ -3,7 +3,12 @@
 
 	<head>
 
-		<link rel="preload" as="image" href="images/webp/aubrey-portwood.webp" fetchpriority="high">
+		<link rel="preload" as="image" href="images/webp/aubrey-portwood.webp" fetchpriority="high" onload="
+				( () =&gt; {
+					var img = document.querySelector('img[data-lcp-src]');
+					img.setAttribute( 'src', img.getAttribute( 'data-lcp-src' ) );
+				} )();
+			">
 
 		<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GBN9NTQCR"></script>
