@@ -70,7 +70,7 @@
 	} );
 
 	// Tooltips.
-	$( '.tooltip-icon' ).on( 'click', function() {
+	$( '.tooltip-text' ).on( 'click', function() {
 		$( '.modal', this ).toggleClass( 'visible' );
 	} );
 
