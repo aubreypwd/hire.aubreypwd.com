@@ -5,5 +5,5 @@ This document outlines what you can expect when working with me. It covers my pr
 #### In this document
 
 * [Process](#process)
-* [Buiding Static Websites](#static-websites)
+* [Building Static Websites](#static-websites)
 
