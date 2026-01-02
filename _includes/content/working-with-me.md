@@ -1,9 +1,13 @@
-This document outlines what you can expect when working with me. It covers my process, communication, timelines, and deliverables so potential clients have a clear picture from the start. **Everything is flexible**, but this is here to set helpful expectations.
 
----
-
+{% if page.articles and page.articles.size > 1 %}
 #### In this document
-
-* [Process](#process)
-* [Building Static Websites](#static-websites)
-
+<ul>
+	{% for item in page.articles %}
+		<li>
+			<a href="#{{ item[0] }}" title="Click to scroll down to section.">{{ item[1].heading }}</a>
+		</li>
+	{% endfor %}
+</ul>
+{% else %}
+---
+{% endif %}
