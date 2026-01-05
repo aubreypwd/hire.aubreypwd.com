@@ -121,3 +121,9 @@ After the support week, we'll have an offboarding call to review how everything 
 If we agree to ongoing maintenance, your maintenance plan will begin after launch. Your site will be set up to auto-update where possible, and if anything goes wrong or issues come up, we can address them quickly.
 
 _&nbsp;💰&nbsp;Note: maintenance is a monthly subscription fee._
+
+---
+
+#### Communication
+
+Most communication happens over Zoom, Google Meet, and normal text-messaging.
