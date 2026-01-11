@@ -74,53 +74,86 @@
 		$( '.modal', this ).toggleClass( 'visible' );
 	} );
 
-	// If you're here you're not a bot.
-	setTimeout(
-		() => {
-			$( window ).on( 'scroll', () => {
+	// Replace the current information with real information but fuck bots.
+	$( document ).ready( () => {
 
-				if ( window.realContactInfo ?? false ) {
-					return;
+		if ( ! $( '#contact-email' ).length ) {
+			return;
+		}
+
+		if ( ! $( '#contact-phone' ).length ) {
+			return;
+		}
+
+		import( 'https://openfpcdn.io/botd/v2' )
+			.then( ( Botd ) => Botd.load() )
+			.then( ( botd ) => botd.detect() )
+			.then( ( result ) => {
+
+				if ( result.bot ) {
+					console.log( "Fuck you bot, you ain't getting shit from me!" ); return;
 				}
 
-				if ( true === window.realContactInfoSwitched ?? false ) {
-					return;
-				}
+				console.log( "Well Botd at least thinks you're human..." );
 
-				const el = document.getElementById( 'contact' );
+				// Futher prove you're a human and I'll actually change it out...
+				setTimeout(
+					() => {
+						$( window ).on( 'touchstart scroll', () => {
 
-				if ( ! el ) {
-					return;
-				}
+							if ( window.realContactInfo ?? false ) {
+								return; // Already switched out the info.
+							}
 
-				const rect = el.getBoundingClientRect();
+							const el = document.getElementById( 'contact' );
 
-				if ( rect.top > window.innerHeight + 300 || rect.bottom < -300 ) {
-					return;
-				}
+							if ( ! el ) {
+								return; // Can't switch anything.
+							}
 
-				window.realContactInfo = true;
+							const rect = el.getBoundingClientRect();
 
-				const fuckYouBotsE =
-					String.fromCharCode(97)+String.fromCharCode(117)+String.fromCharCode(98)+String.fromCharCode(114)+
-					String.fromCharCode(101)+String.fromCharCode(121)+String.fromCharCode(112)+String.fromCharCode(119)+
-					String.fromCharCode(100)+String.fromCharCode(64)+String.fromCharCode(105)+String.fromCharCode(99)+
-					String.fromCharCode(108)+String.fromCharCode(111)+String.fromCharCode(117)+String.fromCharCode(100)+
-					String.fromCharCode(46)+String.fromCharCode(99)+String.fromCharCode(111)+String.fromCharCode(109);
+							if ( rect.top > window.innerHeight + 300 || rect.bottom < -300 ) {
+								return;
+							}
 
-				$( '#contact-email' ).attr( 'href', 'mailto:' + fuckYouBotsE ).text( fuckYouBotsE );
+							window.realContactInfo = true;
 
-				const fuckYouBotsP =
-					String.fromCharCode(56)+String.fromCharCode(48)+String.fromCharCode(56)+String.fromCharCode(50)+
-					String.fromCharCode(54)+String.fromCharCode(57)+String.fromCharCode(51)+String.fromCharCode(48)+
-					String.fromCharCode(57)+String.fromCharCode(52);
+							console.log( "Welcome human, I've added my real email and phone number so you can contact me directly!" );
 
-				$( '#contact-phone' )
-					.attr( 'href', 'sms:+1' + fuckYouBotsP )
-					.text( '+1 (' + fuckYouBotsP.slice(0,3) + ')-' + fuckYouBotsP.slice(3,6) + '-' + fuckYouBotsP.slice(6) );
-			} );
-		},
-		400 + Math.floor( Math.random() * 1000 )
-	);
+							const fuckYouBotsEmail =
+								String.fromCharCode(97)+String.fromCharCode(117)+String.fromCharCode(98)+String.fromCharCode(114)+
+								String.fromCharCode(101)+String.fromCharCode(121)+String.fromCharCode(112)+String.fromCharCode(119)+
+								String.fromCharCode(100)+String.fromCharCode(64)+String.fromCharCode(105)+String.fromCharCode(99)+
+								String.fromCharCode(108)+String.fromCharCode(111)+String.fromCharCode(117)+String.fromCharCode(100)+
+								String.fromCharCode(46)+String.fromCharCode(99)+String.fromCharCode(111)+String.fromCharCode(109);
 
-	} )( jQuery );
+							$( '#contact-email' )
+								.attr( 'href', 'mailto:' + fuckYouBotsEmail )
+								.text( fuckYouBotsEmail.replace( '@', '＠' ).replaceAll( '.', String.fromCharCode(8228) ) );
+
+							const fuckYouBotsPhone =
+								String.fromCharCode(56)+String.fromCharCode(48)+String.fromCharCode(56)+String.fromCharCode(50)+
+								String.fromCharCode(54)+String.fromCharCode(57)+String.fromCharCode(51)+String.fromCharCode(48)+
+								String.fromCharCode(57)+String.fromCharCode(52);
+
+							$( '#contact-phone' )
+								.attr( 'href', 'sms:+1' + fuckYouBotsPhone )
+								.text(
+									`+1${String.fromCharCode(8210)}` +
+									fuckYouBotsPhone.slice(0,3) +
+									String.fromCharCode(8210) +
+									fuckYouBotsPhone.slice(3,6) +
+									String.fromCharCode(8210) +
+									fuckYouBotsPhone.slice(6)
+								);
+						} );
+					},
+					200 + Math.floor( Math.random() * 800 )
+				);
+
+			} )
+			.catch( ( e ) => console.log( e ) );
+	} );
+
+} )( jQuery );
