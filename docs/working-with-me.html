@@ -1113,7 +1113,7 @@ input, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			ul.actions:not(.fixed) {
+			ul.actions:(not)(.fixed) {
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
@@ -2450,6 +2450,10 @@ nav.navigation {
 	/* Desktop Only */
 
 	@media screen and (min-width: 1152px) {
+
+		.wrapper .section#intro > header h2 + p {
+			font-size: 1rem;
+		}
 
 		ul.feature-icons {
 

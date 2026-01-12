@@ -1113,7 +1113,7 @@ input, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			ul.actions:not(.fixed) {
+			ul.actions:(not)(.fixed) {
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
@@ -2450,6 +2450,10 @@ nav.navigation {
 	/* Desktop Only */
 
 	@media screen and (min-width: 1152px) {
+
+		.wrapper .section#intro > header h2 + p {
+			font-size: 1rem;
+		}
 
 		ul.feature-icons {
 
@@ -13479,7 +13483,7 @@ readers do not read off random characters that represent icons */
 
 		<h2>I'm Aubrey</h2>
 
-		<p>The friend with serious web experience that's available to help</p>
+		<p>I want to be that friend with serious web experience that's available to help</p>
 
 		<ul class="actions intro-down-arrow">
 			<li><a href="#do" title="What I Do" class="scrolly arrow bounce"><i aria-hidden="true" class="fas fa-arrow-down"></i></a></li>
