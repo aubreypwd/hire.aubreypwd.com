@@ -1,6 +1,6 @@
 {% include ga.html %}
 
-<title>{{ site.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
+<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,9 +8,12 @@
 <link rel="canonical" href="{{ site.absolute_url }}{{ page.url }}">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- SEO -->
 <meta name="description" content="{{ site.description }}">
 <meta name="keywords" content="{{site.keywords}}{% if page.keywords %},{{ page.keywords }}{% endif %}">
 
+<!-- Inline styles -->
 <style>
 	{% include_relative css/adaptations.css %}
 	{% include_relative css/fontawesome/used.css %}
@@ -19,23 +22,24 @@
 	/*input[type=submit].primary, input[type=reset].primary, input[type=button].primary, button.primary, .button.primary{ color: black !important; background-color: white; border: 2px solid black; }*/
 </style>
 
+<!-- Social Media Meta -->
 <meta property="og:title" content="{{ site.title }}{% if page.title %} - {{ page.title}}{% endif %}">
 <meta property="og:description" content="{{ site.description }}{% if page.description %} - {{ page.description }}{% endif %}">
-<meta property="og:image" content="{{ 'images/webp/aubrey-portwood.webp' | relative_url }}">
-<meta property="og:url" content="{{ page.url | relative_url }}">
+<meta property="og:image" content="{{ site.absolute_url }}/{{ 'images/webp/aubrey-portwood.webp' | relative_url }}">
+<meta property="og:url" content="{{ site.absolute_url }}/{{ page.url | relative_url }}">
 <meta property="og:type" content="website">
-
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ 'images/webp/aubrey-portwood.webp' | relative_url }}">
+<meta name="twitter:image" content="{{ site.absolute_url }}/{{ 'images/webp/aubrey-portwood.webp' | relative_url }}">
 
+<!-- Person Schema Information -->
 <script type="application/ld+json">
 	{
 		"@context": "https://schema.org",
 		"@type": "Person",
 		"name": "Aubrey Portwood",
 		"jobTitle": "{{ site.job_title }}",
-		"url": "{{ page.url | relative_url }}",
-		"image": "{{ '/images/webp/aubrey-portwood.webp' | relative_url }}",
+		"url": "{{ site.absolute_url }}/{{ page.url | relative_url }}",
+		"image": "{{ site.absolute_url }}/{{ '/images/webp/aubrey-portwood.webp' | relative_url }}",
 		"homeLocation": {
 			"@type": "Place",
 			"address": {
