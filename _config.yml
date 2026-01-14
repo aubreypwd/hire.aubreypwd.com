@@ -1,12 +1,12 @@
-title: "Aubrey Portwood - I want to be your web development guy."
-description: "For over a decade, I built websites for agencies and companies and often had to say no when friends asked for help. Now I work directly with people who want honest guidance, clear explanations, and work that actually makes sense for their mission. No upsells, no pressure, just the kind of help you'd expect from someone who's on your side."
+title: "Aubrey Portwood - Freelancer/Contractor, I want to be your web development guy."
+description: "For over a decade, I built websites and shipped high-stakes features for agencies and companies. Now I work independently as a freelancer and contractor, bringing that same experience directly to people and businesses who need a development guy in their corner. Someone who cuts through the hype, explains things clearly, and helps you build practical solutions that actually fit your mission and goals. No BS, no pressure, just solid work and honest guidance from someone who's on your side."
 baseurl: ""
 absolute_url: "https://hire.aubreypwd.com"
 url: "https://hire.aubreypwd.com"
 default_domain: hire.aubreypwd.com
 destination: docs
 job_title: I want to be your web development guy.
-keywords: custom web development, wordpress expert, wordpress performance, seo expert albuquerque, senior wordpress developer, web developer new mexico, performance web developer, fast website, core web vitals, custom wordpress plugins, albuquerque web developer, wordpress speed optimization, technical seo, php developer, new mexico websites
+keywords: custom web development, wordpress expert, wordpress performance, seo expert albuquerque, senior wordpress developer, web developer new mexico, performance web developer, fast website, core web vitals, custom wordpress plugins, albuquerque web developer, wordpress speed optimization, technical seo, php developer, new mexico websites, freelance web development, wordpress contractor, wordpress freelancer, websites
 exclude:
   - .sublime-workspace
   - .vscode/
