@@ -1,3 +1,7 @@
+Hi, I'm <a href="/" class="bold">Aubrey</a>, a local freelance and contract web developer.
+
+---
+
 ## The Problem With Traditional WordPress in Albuquerque
 
 WordPress still powers many local business websites. It is flexible and familiar, but it comes with structural limits:

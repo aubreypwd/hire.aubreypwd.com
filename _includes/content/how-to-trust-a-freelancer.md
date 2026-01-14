@@ -1,3 +1,7 @@
+Hi, I'm <a href="/" class="bold">Aubrey</a>, a freelance and contract web developer.
+
+---
+
 To help you feel confident in our partnership, I have broken down common technical concepts into plain English and outlined the specific subjects that build trust.
 
 ---
