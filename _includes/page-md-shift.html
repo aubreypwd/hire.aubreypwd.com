@@ -1,0 +1,15 @@
+{% assign md = page.content %}
+{% assign md = md | replace: "###### ", "__H6__ " %}
+{% assign md = md | replace: "##### ",  "__H5__ " %}
+{% assign md = md | replace: "#### ",   "__H4__ " %}
+{% assign md = md | replace: "### ",    "__H3__ " %}
+{% assign md = md | replace: "## ",     "__H2__ " %}
+{% assign md = md | replace: "# ",      "__H1__ " %}
+{% assign md = md | replace: "__H1__ ", "### " %}
+{% assign md = md | replace: "__H2__ ", "#### " %}
+{% assign md = md | replace: "__H3__ ", "##### " %}
+{% assign md = md | replace: "__H4__ ", "###### " %}
+{% assign md = md | replace: "__H5__ ", "###### " %}
+{% assign md = md | replace: "__H6__ ", "###### " %}
+
+{{ md | markdownify }}

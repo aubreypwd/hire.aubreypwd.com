@@ -15,3 +15,6 @@ timezone: America/Denver
 plugins:
   - jekyll-last-modified-at
   - jekyll-redirect-from
+  - jekyll-toc
+toc:
+  max_level: 2

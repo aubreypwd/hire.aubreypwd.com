@@ -36,3 +36,4 @@ gem 'nokogiri'
 gem "jekyll-last-modified-at"
 gem "jekyll_image_encode"
 gem "jekyll-redirect-from"
+gem "jekyll-toc"

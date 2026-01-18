@@ -1,0 +1,15 @@
+{% assign lines = page.content | split: "
+" %}
+
+{% if page.toc %}
+	<h3 class="light">On this page:</h3>
+	<ul>
+		{% for line in lines %}
+			{% assign s = line | slice: 0, 2 %}
+			{% if s == "# " %}
+				<li><a href="#{{ line | remove_first: '# ' | slugify }}">{{ line | remove_first: '# ' }}</a></li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+	<hr>
+{% endif %}

@@ -10,7 +10,21 @@
 		{% include header.html nav=false %}
 
 		<main class="wrapper" role="main">
-			{{ content }}
+			<section id="{{ page.id }}" class="distant section">
+
+				<header>
+					<h2><a href="#{{ page.id }}">{{ page.title }}</a></h2>
+
+					{% if page.heading_content %}
+						{{ page.heading_content | markdownify }}
+					{% endif %}
+				</header>
+
+				<div class="content">
+					{% include page-toc.html contet=page.content %}
+					{% include page-md-shift.html %}
+				</div>
+			</section>
 		</main>
 
 		{% include footer.html %}
