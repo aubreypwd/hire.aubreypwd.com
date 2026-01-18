@@ -10,10 +10,10 @@ heading_content: |
   My goal is to make our time together as productive as possible. By reviewing this ahead of time, you'll have a clear picture of what to mostly expect, and we can dive right into the important stuff when we connect!
 id: working-with-me
 sitemap: true
+toc: false
 redirect_from:
   - building-websites.html
   - build-websites.html
-toc: true
 ---
 
 # My Process
@@ -38,7 +38,7 @@ During this meeting, we'll **discuss your project in depth** and I'll ask any fo
 
 ## Initial proposal
 
-After our second meeting, I'll create a Google Doc for you that serves as your project's _home base_ and **I will create an initial proposal** there, which will include:
+After our second meeting, I'll create a Google Doc for you that serves as your project's _home base* and **I will create an initial proposal** there, which will include:
 
 * My understanding of the project and the direction it's going
 * The tech and tools I think we'll need to complete the project
@@ -59,7 +59,7 @@ We'll sign the statement of work, and I'll invoice you for the first of three pa
 
 ---
 
-_ 💰 At this point you will make your **first** of three payments (your retainer)._
+💰 At this point you will make your **first** of three payments (your retainer)._
 
 ---
 
@@ -93,7 +93,7 @@ _You'll need to get all final deliverables over to me **before we continue to th
 
 ---
 
-_ 💰 At this point you will make your **second** of three payments._
+💰 At this point you will make your **second** of three payments._
 
 ---
 
@@ -115,7 +115,7 @@ You'll get **one round of feedback** on these remaining core pages, and again, I
 
 ---
 
-_ 💰 At this point you will make your **third** and final payment._
+💰 At this point you will make your **third** and final payment._
 
 ---
 
