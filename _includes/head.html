@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<link rel="canonical" href="{{ site.absolute_url }}{{ page.url }}">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,11 +25,11 @@
 <!-- Social Media Meta -->
 <meta property="og:title" content="{{ site.title }}{% if page.title %} - {{ page.title}}{% endif %}">
 <meta property="og:description" content="{{ site.description }}{% if page.description %} - {{ page.description }}{% endif %}">
-<meta property="og:image" content="{{ site.absolute_url }}/{{ 'images/webp/aubrey-portwood.webp' | relative_url }}">
-<meta property="og:url" content="{{ site.absolute_url }}/{{ page.url | relative_url }}">
+<meta property="og:image" content="{{ 'images/webp/aubrey-portwood.webp' | absolute_url }}">
+<meta property="og:url" content="{{ page.url | absolute_url }}">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ site.absolute_url }}/{{ 'images/webp/aubrey-portwood.webp' | relative_url }}">
+<meta name="twitter:image" content="{{ 'images/webp/aubrey-portwood.webp' | absolute_url }}">
 
 <!-- Person Schema Information -->
 <script type="application/ld+json">
@@ -38,8 +38,8 @@
 		"@type": "Person",
 		"name": "Aubrey Portwood",
 		"jobTitle": "{{ site.job_title }}",
-		"url": "{{ site.absolute_url }}/{{ page.url | relative_url }}",
-		"image": "{{ site.absolute_url }}/{{ '/images/webp/aubrey-portwood.webp' | relative_url }}",
+		"url": "{{ page.url | absolute_url }}",
+		"image": "{{ '/images/webp/aubrey-portwood.webp' | absolute_url }}",
 		"homeLocation": {
 			"@type": "Place",
 			"address": {
@@ -57,12 +57,12 @@
 	}
 </script>
 
-<link rel="shortcut icon" href="{{ site.absolute_url }}/{{ 'favicon.ico' | relative_url }}" fetchpriority="low">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ site.absolute_url }}/{{ 'apple-touch-icon.png' | relative_url }}" fetchpriority="low">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ site.absolute_url }}/{{ 'favicon-32x32.png' | relative_url }}" fetchpriority="low">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ site.absolute_url }}/{{ 'favicon-16x16.png' | relative_url }}" fetchpriority="low">
-<link rel="manifest" href="{{ site.absolute_url }}/{{ 'manifest.json' | relative_url }}" fetchpriority="low">
+<link rel="shortcut icon" href="{{ 'favicon.ico' | absolute_url }}" fetchpriority="low">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | absolute_url }}" fetchpriority="low">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png' | absolute_url }}" fetchpriority="low">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png' | absolute_url }}" fetchpriority="low">
+<link rel="manifest" href="{{ 'manifest.json' | absolute_url }}" fetchpriority="low">
 
 <meta name="theme-color" content="#eeeeee">
 
-<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.absolute_url }}/{{ 'sitemap.xml' | relative_url }}" fetchpriority="low">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ 'sitemap.xml' | absolute_url }}" fetchpriority="low">
