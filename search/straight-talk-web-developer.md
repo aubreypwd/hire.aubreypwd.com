@@ -1,14 +1,20 @@
-Hi, I'm <a href="/" class="bold">Aubrey</a>, a freelance and contract web developer.
+---
+layout: page
+title: "Straight Talk Web Developer | No Upsells, Clear Communication, Honest Advice"
+description: "Looking for a straight talk web developer? I give honest guidance, clear explanations, and practical solutions. No fluff, no pressure, no upsells. Fixed pricing, clear communication."
+keywords: straight talk web developer, honest web developer, trustworthy freelance web developer, no bs web developer, transparent pricing web developer, clear communication web developer, web developer who tells you what you need, freelance web developer for small business, web developer who will not upsell you
+sitemap: true
+heading_content: |
+  You know that feeling when you're trying to figure out what you actually need for your website, but every developer you talk to seems to push you toward the most expensive option? I'm here to cut through that noise.
+
+  I'm a **straight talk web developer**—which means I'll tell you when you don't need me, when DIY is enough, and when an agency might be a better fit. No upsells, no pressure, just honest guidance and clear explanations.
+---
+
+Hi, I'm <a href="{{ site.url }}/" class="bold">Aubrey</a>, a freelance and contract web developer.
 
 ---
 
-You know that feeling when you're trying to figure out what you actually need for your website, but every developer you talk to seems to push you toward the most expensive option? I'm here to cut through that noise.
-
-I'm a **straight talk web developer**—which means I'll tell you when you don't need me, when DIY is enough, and when an agency might be a better fit. No upsells, no pressure, just honest guidance and clear explanations.
-
----
-
-#### Quick Answer
+## Quick Answer
 
 **If you need:**
 - **A simple fix or improvement** → I can help with that (fixed price)
@@ -23,7 +29,7 @@ I'm a **straight talk web developer**—which means I'll tell you when you don't
 
 ---
 
-#### How to Know If You Need a Developer vs DIY vs Agency
+## How to Know If You Need a Developer vs DIY vs Agency
 
 Here's a simple framework:
 
@@ -49,7 +55,7 @@ Here's a simple framework:
 
 ---
 
-#### What I'll Tell You (Even If It Costs Me)
+## What I'll Tell You (Even If It Costs Me)
 
 This is the **straight talk** part—the things other developers might not say because they want your business:
 
@@ -76,7 +82,7 @@ If your project requires a team, specialized services I don't offer, or resource
 
 ---
 
-#### What I Would Do First
+## What I Would Do First
 
 If you're evaluating your needs, here's a simple checklist:
 
@@ -88,7 +94,7 @@ If you're evaluating your needs, here's a simple checklist:
 
 ---
 
-#### What I Offer
+## What I Offer
 
 **Fix & Improve:**
 Performance optimization, bug fixes, security updates, SEO improvements, and technical cleanup. Fixed pricing based on scope.
@@ -101,7 +107,7 @@ Ongoing support, updates, monitoring, and maintenance. Fixed monthly pricing so 
 
 ---
 
-#### Pricing Approach
+## Pricing Approach
 
 I use **fixed pricing** by default. Here's what affects cost:
 
@@ -126,7 +132,7 @@ I'll always tell you upfront what's included in the fixed price and what would b
 
 ---
 
-#### FAQ
+## FAQ
 
 **Do you really tell people when they don't need you?**
 Yes. If DIY tools or an agency would be a better fit, I'll tell you. I'd rather you get the right solution than take on work that isn't a good match.
@@ -152,5 +158,4 @@ If you want a straight answer about what you actually need, send me these 3 deta
 
 ---
 
-**Ready to work together?** — <a href="/#contact" class="strong">Contact me</a> and let's get started!
-
+**Ready to work together?** — <a href="{{ site.url }}/#contact" class="strong">Contact me</a> and let's get started!

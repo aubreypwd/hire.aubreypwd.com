@@ -1,12 +1,18 @@
-Hi, I'm <a href="/" class="bold">Aubrey</a>, a freelance and contract web developer.
+---
+layout: page
+title: "How to Hire a Freelance Web Developer You Can Trust: Deliverables, Milestones, and Red Flags"
+description: "Hiring a freelance web developer? Here's what to look for: clear communication, strategic thinking, transparent pricing, and reliable processes. Learn the red flags and green flags."
+keywords: how to hire a freelance web developer, hire freelance web developer, freelance web developer for hire, trustworthy web developer, reliable freelance developer, web developer red flags, web developer deliverables, web developer milestones, clear communication web developer, long-term development partner
+sitemap: true
+heading_content: |
+  Hiring a freelance web developer can feel risky. How do you know if someone is trustworthy? What should you look for? Here's a clear framework to help you find a developer you can actually trust—someone who will give you honest guidance, clear communication, and reliable work.
+---
+
+Hi, I'm <a href="{{ site.url }}/" class="bold">Aubrey</a>, a freelance and contract web developer.
 
 ---
 
-Hiring a freelance web developer can feel risky. How do you know if someone is trustworthy? What should you look for? Here's a clear framework to help you find a developer you can actually trust—someone who will give you honest guidance, clear communication, and reliable work.
-
----
-
-#### Quick Answer
+## Quick Answer
 
 **If a developer:**
 - **Asks strategic questions about your goals** → Good sign
@@ -22,7 +28,7 @@ Hiring a freelance web developer can feel risky. How do you know if someone is t
 
 ---
 
-#### What to Look For in a Trustworthy Developer
+## What to Look For in a Trustworthy Developer
 
 Here's what matters:
 
@@ -52,7 +58,7 @@ Here's what matters:
 
 ---
 
-#### Straight Talk
+## Straight Talk
 
 Here's what you need to know:
 
@@ -97,7 +103,7 @@ Here's what you need to know:
 
 ---
 
-#### What I Would Do First
+## What I Would Do First
 
 If you're evaluating developers:
 
@@ -110,7 +116,7 @@ If you're evaluating developers:
 
 ---
 
-#### Essential Deliverables and Milestones
+## Essential Deliverables and Milestones
 
 For web projects, you should expect:
 
@@ -140,7 +146,7 @@ For web projects, you should expect:
 
 ---
 
-#### How to Evaluate Communication Style
+## How to Evaluate Communication Style
 
 **Good communication looks like:**
 - Explains things in plain English
@@ -158,7 +164,7 @@ For web projects, you should expect:
 
 ---
 
-#### Questions to Ask During Initial Conversations
+## Questions to Ask During Initial Conversations
 
 **About their process:**
 - "How do your projects typically work?"
@@ -182,7 +188,7 @@ For web projects, you should expect:
 
 ---
 
-#### Building Long-Term Partnership vs One-Off Project
+## Building Long-Term Partnership vs One-Off Project
 
 **One-off project:**
 - Clear scope and deliverables
@@ -203,7 +209,7 @@ For web projects, you should expect:
 
 ---
 
-#### FAQ
+## FAQ
 
 **How do I know if a developer is trustworthy?**
 Look for clear communication, strategic thinking, transparent pricing, and a clear process. Ask questions and see how they respond. Trustworthy developers will be honest, even if it means telling you something you don't want to hear.
@@ -229,5 +235,4 @@ If you want a straight answer about whether a developer is a good fit, send me t
 
 ---
 
-**Ready to work together?** — <a href="/#contact" class="strong">Contact me</a> and let's get started!
-
+**Ready to work together?** — <a href="{{ site.url }}/#contact" class="strong">Contact me</a> and let's get started!

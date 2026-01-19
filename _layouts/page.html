@@ -10,10 +10,10 @@
 		{% include header.html nav=false %}
 
 		<main class="wrapper" role="main">
-			<section id="{{ page.id }}" class="distant section">
+			<section class="section">
 
 				<header>
-					<h2><a href="#{{ page.id }}">{{ page.title }}</a></h2>
+					<h2>{{ page.title }}</h2>
 
 					{% if page.heading_content %}
 						{{ page.heading_content | markdownify }}
@@ -22,7 +22,12 @@
 
 				<div class="content">
 					{% include page-toc.html contet=page.content %}
-					{% include page-md-shift.html %}
+
+					{% if false == page.shift %}
+						{{ content }}
+					{% else %}
+						{% include page-md-shift.html %}
+					{% endif %}
 				</div>
 			</section>
 		</main>

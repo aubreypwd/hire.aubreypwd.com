@@ -1,14 +1,20 @@
-Hi, I'm <a href="/" class="bold">Aubrey</a>, a freelance and contract web developer.
+---
+layout: page
+title: "Do You Actually Need a Website Rebuild? Here's How I Tell in 10 Minutes"
+description: "Wondering if you need a website rebuild? Here's a simple framework to decide: 5 questions that help you determine if a rebuild is necessary or if fixes are enough. Honest advice, no upsells."
+keywords: website rebuild vs redesign, do I need a website rebuild, when to rebuild a website, website rebuild or redesign, fix website or rebuild, website redesign cost, honest website advice, straight talk website rebuild
+sitemap: true
+heading_content: |
+  The word "rebuild" gets thrown around a lot, and it usually comes with a big price tag. But here's the thing: most websites don't actually need a full rebuild. They need fixes, improvements, or updates.
+
+  If you're wondering whether you need a rebuild, you're probably feeling some anxiety about the decision—and the cost. Let me give you a clear framework to figure this out.
+---
+
+Hi, I'm <a href="{{ site.url }}/" class="bold">Aubrey</a>, a freelance and contract web developer.
 
 ---
 
-The word "rebuild" gets thrown around a lot, and it usually comes with a big price tag. But here's the thing: most websites don't actually need a full rebuild. They need fixes, improvements, or updates.
-
-If you're wondering whether you need a rebuild, you're probably feeling some anxiety about the decision—and the cost. Let me give you a clear framework to figure this out.
-
----
-
-#### Quick Answer
+## Quick Answer
 
 **If your site has:**
 - **Security vulnerabilities that can't be patched** → Rebuild
@@ -23,7 +29,7 @@ If you're wondering whether you need a rebuild, you're probably feeling some anx
 
 ---
 
-#### 5 Questions to Determine If Rebuild Is Needed
+## 5 Questions to Determine If Rebuild Is Needed
 
 Here's a simple framework. Answer these honestly:
 
@@ -49,7 +55,7 @@ Here's a simple framework. Answer these honestly:
 
 ---
 
-#### Straight Talk
+## Straight Talk
 
 Here's what other developers might not tell you:
 
@@ -70,7 +76,7 @@ Here's what other developers might not tell you:
 
 ---
 
-#### What I Would Do First
+## What I Would Do First
 
 If you're evaluating whether you need a rebuild, here's my checklist:
 
@@ -83,7 +89,7 @@ If you're evaluating whether you need a rebuild, here's my checklist:
 
 ---
 
-#### Cost Comparison: Fix vs Rebuild
+## Cost Comparison: Fix vs Rebuild
 
 **Fixing usually costs:**
 - A fraction of a rebuild
@@ -107,7 +113,7 @@ If you're evaluating whether you need a rebuild, here's my checklist:
 
 ---
 
-#### Red Flags vs Green Flags
+## Red Flags vs Green Flags
 
 **Red flags that indicate rebuild is needed:**
 - Security vulnerabilities that can't be patched
@@ -123,7 +129,7 @@ If you're evaluating whether you need a rebuild, here's my checklist:
 
 ---
 
-#### FAQ
+## FAQ
 
 **What's the difference between a rebuild and a redesign?**
 A rebuild means starting over with new code and architecture. A redesign means new design and content on the same foundation. Most sites need redesign, not rebuild.
@@ -135,7 +141,7 @@ Ask yourself: can the problems be fixed with updates, patches, and improvements?
 Ask them to explain why fixes won't work. If they can't give you a clear technical reason, get a second opinion. Rebuilds are expensive—make sure you actually need one.
 
 **How much does a rebuild usually cost?**
-It depends on scope, but rebuilds typically cost significantly more than fixes. Get quotes for both options so you can compare.
+It depends on scope, but rebuilds typically cost significantly more than fixes. Get quotes for both so you can compare.
 
 **Can I rebuild just part of my site?**
 Sometimes. If only one section or feature needs rebuilding, you might be able to rebuild just that part rather than the entire site.
@@ -149,5 +155,4 @@ If you want a straight answer about whether you need a rebuild or if fixes would
 
 ---
 
-**Ready to work together?** — <a href="/#contact" class="strong">Contact me</a> and let's get started!
-
+**Ready to work together?** — <a href="{{ site.url }}/#contact" class="strong">Contact me</a> and let's get started!

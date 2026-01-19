@@ -1,14 +1,20 @@
-Hi, I'm <a href="/" class="bold">Aubrey</a>, a freelance and contract web developer.
+---
+layout: page
+title: "The No-Upsell Checklist: What to Fix Before Paying for a Redesign"
+description: "Before paying for a website redesign, try these fixes first. Performance improvements, content updates, SEO fixes, and security updates that might solve your problems for less money."
+keywords: no upsell web developer, website redesign checklist, what to fix before redesign, website improvements before redesign, honest website advice, no bs web developer, website fixes before redesign, avoid unnecessary website redesign, straight talk website redesign
+sitemap: true
+heading_content: |
+  Everyone wants to sell you a redesign. But here's the thing: most websites don't need a full redesign. They need fixes, improvements, or updates.
+
+  If someone is pushing you toward a redesign, take a step back. Here's a checklist of things to try first—because the simplest solution is usually the right one.
+---
+
+Hi, I'm <a href="{{ site.url }}/" class="bold">Aubrey</a>, a freelance and contract web developer.
 
 ---
 
-Everyone wants to sell you a redesign. But here's the thing: most websites don't need a full redesign. They need fixes, improvements, or updates.
-
-If someone is pushing you toward a redesign, take a step back. Here's a checklist of things to try first—because the simplest solution is usually the right one.
-
----
-
-#### Quick Answer
+## Quick Answer
 
 **If your site has:**
 - **Slow performance** → Try performance fixes first
@@ -24,7 +30,7 @@ If someone is pushing you toward a redesign, take a step back. Here's a checklis
 
 ---
 
-#### Checklist of Fixes to Try Before Redesign
+## Checklist of Fixes to Try Before Redesign
 
 Here are the main categories of fixes to try:
 
@@ -58,7 +64,7 @@ Here are the main categories of fixes to try:
 
 ---
 
-#### Straight Talk
+## Straight Talk
 
 Here's what you need to know:
 
@@ -87,7 +93,7 @@ Here's what you need to know:
 
 ---
 
-#### What I Would Do First
+## What I Would Do First
 
 If you're considering a redesign, here's my checklist:
 
@@ -100,7 +106,7 @@ If you're considering a redesign, here's my checklist:
 
 ---
 
-#### Fix Categories
+## Fix Categories
 
 **Performance (speed, Core Web Vitals):**
 - Optimize images (compress, use modern formats)
@@ -132,7 +138,7 @@ If you're considering a redesign, here's my checklist:
 
 ---
 
-#### When Fixes Are Enough vs When Redesign Is Needed
+## When Fixes Are Enough vs When Redesign Is Needed
 
 **Fixes are enough when:**
 - Your problems are performance, content, or SEO-related
@@ -154,7 +160,7 @@ If you're considering a redesign, here's my checklist:
 
 ---
 
-#### Cost Comparison: Fixing vs Redesign
+## Cost Comparison: Fixing vs Redesign
 
 **Fixing usually:**
 - Costs a fraction of redesigning
@@ -182,7 +188,7 @@ If you're considering a redesign, here's my checklist:
 
 ---
 
-#### FAQ
+## FAQ
 
 **How do I know if fixes are enough?**
 Try the fixes first. If they solve your problems, you probably don't need a redesign. If they don't, then consider a redesign.
@@ -208,5 +214,4 @@ If you want a straight answer about whether fixes are enough or if you need a re
 
 ---
 
-**Ready to work together?** — <a href="/#contact" class="strong">Contact me</a> and let's get started!
-
+**Ready to work together?** — <a href="{{ site.url }}/#contact" class="strong">Contact me</a> and let's get started!
