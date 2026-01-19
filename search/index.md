@@ -4,6 +4,8 @@ title: Articles
 description: Articles
 sitemap: true
 shift: false
+heading_content: |
+  **&larr;<i class="fa fa-home"></i>[Home](/)**
 ---
 
 <ul>
