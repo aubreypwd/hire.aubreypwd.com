@@ -10,7 +10,7 @@ heading_content: |
   If you're wondering whether you need a rebuild, you're probably feeling some anxiety about the decision—and the cost. Let me give you a clear framework to figure this out.
 ---
 
-Hi, I'm <a href="{{ site.url }}/" class="bold">Aubrey</a>, a freelance and contract web developer.
+Hi, I'm <a href="/" class="bold">Aubrey</a>, a freelance and contract web developer.
 
 ---
 

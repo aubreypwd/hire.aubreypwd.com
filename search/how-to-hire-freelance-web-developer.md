@@ -8,7 +8,7 @@ heading_content: |
   Hiring a freelance web developer can feel risky. How do you know if someone is trustworthy? What should you look for? Here's a clear framework to help you find a developer you can actually trust—someone who will give you honest guidance, clear communication, and reliable work.
 ---
 
-Hi, I'm <a href="{{ site.url }}/" class="bold">Aubrey</a>, a freelance and contract web developer.
+Hi, I'm <a href="/" class="bold">Aubrey</a>, a freelance and contract web developer.
 
 ---
 

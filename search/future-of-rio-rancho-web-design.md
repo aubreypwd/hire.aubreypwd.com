@@ -16,7 +16,7 @@ heading_content: |
   This guide explains what is changing, why it matters locally, and how high-performance architecture now outperforms traditional WordPress sites in New Mexico.
 ---
 
-Hi, I'm <a href="{{ site.url }}/" class="bold">Aubrey</a>, a local freelance and contract web developer.
+Hi, I'm <a href="/" class="bold">Aubrey</a>, a local freelance and contract web developer.
 
 ---
 

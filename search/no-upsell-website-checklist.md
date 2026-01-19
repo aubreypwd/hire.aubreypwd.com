@@ -10,7 +10,7 @@ heading_content: |
   If someone is pushing you toward a redesign, take a step back. Here's a checklist of things to try first—because the simplest solution is usually the right one.
 ---
 
-Hi, I'm <a href="{{ site.url }}/" class="bold">Aubrey</a>, a freelance and contract web developer.
+Hi, I'm <a href="/" class="bold">Aubrey</a>, a freelance and contract web developer.
 
 ---
 

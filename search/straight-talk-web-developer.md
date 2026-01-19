@@ -10,7 +10,7 @@ heading_content: |
   I'm a **straight talk web developer**—which means I'll tell you when you don't need me, when DIY is enough, and when an agency might be a better fit. No upsells, no pressure, just honest guidance and clear explanations.
 ---
 
-Hi, I'm <a href="{{ site.url }}/" class="bold">Aubrey</a>, a freelance and contract web developer.
+Hi, I'm <a href="/" class="bold">Aubrey</a>, a freelance and contract web developer.
 
 ---
 

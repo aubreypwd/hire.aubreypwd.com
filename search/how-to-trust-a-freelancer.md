@@ -10,7 +10,7 @@ heading_content: |
   Hiring a freelancer can feel like a gamble, but building trust doesn't have to be a mystery. According to the sources, trust is built on **relationships, clear communication, and strategic thinking** rather than just a list of technical skills.
 ---
 
-Hi, I'm <a href="{{ site.url }}/" class="bold">Aubrey</a>, a freelance and contract web developer.
+Hi, I'm <a href="/" class="bold">Aubrey</a>, a freelance and contract web developer.
 
 ---
 
