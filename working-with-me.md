@@ -5,12 +5,11 @@ description: Process for working with me
 heading_content: |
   I'm **excited** about the possibility of working together on your project! 🤩
 
-  You probably have questions about **what it's like to work with me** and how the process works. I've put together this page that walks through my usual process step by step—from our first call through launch and beyond.
+  This page outlines my **usual** process so you know what to expect—from our first conversation through delivery.
 
-  My goal is to make our time together as productive as possible. By reviewing this ahead of time, you'll have a clear picture of what to mostly expect, and we can dive right into the important stuff when we connect!
+  Depending on the work we do together, the details can shift, but these steps are my starting point for keeping things organized and transparent.
 id: working-with-me
 sitemap: true
-toc: false
 redirect_from:
   - building-websites.html
   - build-websites.html
@@ -18,133 +17,88 @@ redirect_from:
 
 # My Process
 
-This is the usual the process I follow for most projects.
+My process for most projects are built around a **four**-part process:
 
-## Initial call
+* **Discovery**
+* **Research**
+* **Development**
+* **Delivery**
 
-We'll start with a quick 30-minute call to get to know each other. I'll learn about what you want to do, who you are, and we'll chat about your project. This is mostly a meet-and-greet to see if we're a good fit.
+---
 
-## Questionnaire
+# Discovery
 
-After that first call, I'll send you a questionnaire-it's a form with about 60 questions that will take about 30 minutes to complete in one sitting.
+## Initial meeting
 
-Yes, it's lengthy-but that's intentional. It asks deep questions about your project, your goals, and your vision. Many clients find the process itself valuable, and you'll walk away with a copy of your own you can reference at any time.
+We start with a short 30-minute call so we can learn who we are, what you are building, and make sure we are a good fit. This call is mostly a chance to chat, set expectations, and decide if we should keep moving forward together.
 
-## Second meeting
+## Questionnaire, and more in-depth call
 
-After I've **reviewed your questionnaire answers**, we'll schedule a second meeting. By this point, I'll already have a solid understanding of your project, so our conversation can be much more productive-we can dive deeper into the important stuff rather than spending hours covering the basics.
+After our first call, I send over a fairly detailed questionnaire that takes about 30 minutes to complete. It covers goals, challenges, constraints, and the vision you have for the effort. Clients often gain clarity simply by working through it, and you'll get a copy you can reference later.
 
-During this meeting, we'll **discuss your project in depth** and I'll ask any follow-up questions I have.
+Once I've had a chance to absorb your answers, we hop on another call. By this point I already understand the basics, so our time can focus on the nuances that matter most before we lay out the work.
 
-## Initial proposal
+## Proposal
 
-After our second meeting, I'll create a Google Doc for you that serves as your project's _home base* and **I will create an initial proposal** there, which will include:
+After that meeting I write up an initial proposal in a shared document. It includes:
 
-* My understanding of the project and the direction it's going
-* The tech and tools I think we'll need to complete the project
-* What it will take to take the project to completion
-* A general timeline and cost to complete the project
+* My understanding of the opportunity and direction
+* The tools, methods, and resources I expect we'll use
+* What it will take to reach a successful outcome
+* A rough timeline and associated investment
 
-### Proposal adjustments (if necessary)
+You review the proposal on your own first, then we plan a follow-up call to talk it through. During that call we can dig into anything that needs clarification and make sure the direction feels right before we confirm next steps.
 
-We'll review the proposal together during a follow-up call after you've reviewed it at your convenience.
-
-I'll adjust the proposal as needed based on your feedback, and I'll send over the adjusted version. Once you're ready, we'll just get your approval and move forward.
+After the call, I revise the proposal based on your feedback and send you the updated version. Once you feel good about everything, I confirm the scope, schedule, and cost so we can start the formal engagement.
 
 ## Contract & first payment
 
-Once you accept the proposal, I'll **prepare a statement of work** based on it (a contract that outlines everything we agreed to). I'll develop and solidify an official timeline.
+Once the proposal is accepted, I prepare a statement of work that spells out deliverables, milestones, and responsibilities. We both digitally sign it so the process stays quick, and I invoice you for the first payment (the retainer) so I can begin the work.
 
-We'll sign the statement of work, and I'll invoice you for the first of three payments (your retainer).
+<span class="highlight">💰 At this point you make the **first** of three payments.</span>
 
----
+# Research
 
-💰 At this point you will make your **first** of three payments (your retainer)._
+With the contract signed and the retainer tucked away, I dig into the context: the problem, your audience, the competitive landscape, and any data or assets you've already shared. I look for patterns, pain points, and quick wins before we begin executing so nothing important gets overlooked.
 
----
+## (If we're building a website)
 
-## Research & design direction
+During this phase I still explore competitors and peers to uncover what's working in your market. I capture visual inspiration with moodboards or stylescapes and sketch out a sitemap so we have a shared understanding of the structure before pages are built. I also summarize the additional materials I need from you (copy, imagery, access, etc.) and keep the shared document up to date. You'll need to send any final assets over before we move on.
 
-Once I receive your first payment and the contract is signed, I start digging in:
-
-I'll **research your competitors and peers** and identify patterns in your market.
-
-### Moodboard & stylescape
-
-If we're doing any new design work, I'll create a moodboard-a collection of images, colors, and design inspiration that sets the tone for your site. I might share this with you, or I might use it just for my own reference.
-
-Then I'll **create a stylescape**-a single image that shows the visual direction for your site. Think of it as a preview of the colors, fonts, photography style, and overall look and feel we're going for.
-
-### Sitemap
-
-I'll **create a clear sitemap showing the structure of your site** (yes, even for one-page sites) and all the pages we're building. Think of it like a table of contents for your website.
-
-## Sitemap & stylescape approval
-
-I'll send the sitemap and stylescape over to you for review. You'll have **24 hours** to send any questions or revisions you have.
-
-You get **one revision** of both the sitemap and the stylescape.
-
-### Additional deliverables
-
-I'll identify any additional materials I need from you to complete the rest of the project (like photos, text, logos, etc.) and update your Google Doc.
-
-_You'll need to get all final deliverables over to me **before we continue to the next phase**._
 
 ---
+<span class="highlight">💰 At this point you make the **second** of three payments.</span>
 
-💰 At this point you will make your **second** of three payments._
+# Development
 
----
+This is the primary phase: I start executing on the agreed work, whether that means designing interfaces, building features, writing content, configuring integrations, or another set of deliverables. The goal is to keep moving forward with regular reviews so we stay aligned on the way the solution is shaping up.
 
-## Homepage development
+## (If we're building a website)
 
-**I'll start by developing your homepage.** When it's ready, I'll share it with you over a screen share so you can see it and I can walk you through it.
-
-You'll get **one round of feedback** on the homepage, and I'll need that feedback within **24 hours**.
-
-## Other pages development
-
-After updating the homepage based on your feedback, **I'll develop the rest of your core pages** (not all pages-just the main ones we need to get right).
-
-I'll screen share the updated homepage and the new pages for review.
-
-You'll get **one round of feedback** on these remaining core pages, and again, I'll need that feedback within **24 hours**.
-
-## Complete the rest of the website
-
----
-
-💰 At this point you will make your **third** and final payment._
-
----
-
-After your feedback on the other pages, **I'll finish developing the entire website.** Once it's all done, you'll get to see it all live and you'll get **one final revision** for everything before we launch. This is for minor tweaks-not major changes.
+I typically begin with the homepage, share it over a screen share, and collect one round of focused feedback within 24 hours. After polishing the core page we move through the remaining critical pages, sharing updates, and again asking for one round of consolidated feedback on that batch. Once the main pages are solidified I finish the rest of the site, provide a final revision round, and get everything ready for launch.
 
 ## Testing
 
-Together, we'll test everything: layout, content, links, forms, and how everything works. I'll do deeper testing on my end, and we'll test together to make sure everything looks great and works correctly.
+Before launch, I verify that the deliverables behave as expected—checking functionality, copy, flow, and experience. If it makes sense, we test together so you can be confident everything behaves the way it should, and any bugs or gaps we uncover get addressed quickly. This stage is about polishing and stabilizing the work rather than introducing major revisions.
 
-At this point we won't be changing anything drastically-just making sure everything works correctly and looks great.
+## Training (if needed)
 
-## Fix testing issues
+If your deliverable requires operational know-how—like updating a website or managing a dashboard—I'll walk you through the key parts during a live screen share so you can own the day-to-day after launch.
 
-If we find any issues during testing, I'll fix them. These are fixes only-no further revisions or changes, just making sure everything works as it should.
+<span class="highlight">💰 At this point you make the **third** and final payment.</span>
 
-## Training
+# Delivery
 
-I'll schedule a screen sharing session with you to show you how to do things on your new website-how to update content, make changes, and anything else you need to know.
-
-## Launch
-
-When everything is ready, I'll tell you the domain name (the web address) where your website is, and you can open it in your browser. Your website is now live!
+When everything is ready, I'll confirm how and when to roll out the work so your team or audience can start using it. For websites this means switching your domain over to your new website, for other work it may mean deploying assets or handing over documentation, etc.
 
 ## Post-launch support
 
-For one week after launch, I'm available for questions and support as you settle into your new site. I'll help fix any issues, answer questions, and make very minor tweaks to make sure everything is running smoothly.
+I remain available for one week after launch to help you settle in, answer questions, and fix any minor issues that pop up.
 
 ## Offboarding & maintenance
 
-After the support week, we'll have an offboarding call to review how everything went. We'll talk through the launch, answer any final questions, and decide if you'd like ongoing maintenance support.
+After that support window, we meet for a quick offboarding chat to recap the project, agree on lessons learned, and discuss whether you'd like ongoing maintenance or services. If we do move forward with ongoing support, we'll set up the cadence and keep everything up to date.
 
-If we agree to ongoing maintenance, your maintenance plan will begin after launch. Your site will be set up to auto-update where possible, and if anything goes wrong or issues come up, we can address them quickly.
+---
+
+Ready to work together? — <a href="{{ site.url }}/#contact" class="strong">let's get started!</a>
