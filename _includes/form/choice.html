@@ -1,0 +1,13 @@
+<div class="field {{ include.class }}">
+	{% include form/label.html %}
+
+	<select {% include form/attrs.html %}>
+		{% assign choice_list = include.choices | split: ',' %}
+
+		{% for choice in choice_list %}
+			<option value="{{ choice }}">{{ choice }}</option>
+		{% endfor %}
+	</select>
+
+	{% include form/description.html description=include.description %}
+</div>

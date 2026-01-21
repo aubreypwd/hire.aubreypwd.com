@@ -1,0 +1,6 @@
+name="{{ include.label }}{% if include.checkbox %}[]{% endif %}"
+id="{{ include.label }}{% if include.checkbox %}[]{% endif %}"
+autocomplete="{{ include.autocomplete | default: 'off' }}"
+{% if include.placeholder %}placeholder="{{ include.placeholder }}"{% endif %}
+{% if include.placeholder %}aria-placeholder="{{ include.placeholder }}"{% endif %}
+{% if include.required %}required{% endif %}

@@ -1,0 +1,26 @@
+---
+layout: form
+title: Website project questionnaire
+description:
+heading_content: |
+  This questionnaire was sent to you by **[Aubrey Portwood](https://hire.aubreypwd.com)**
+
+  Answering these questions during a normal meeting would make any meeting go on for hours. By answering these now, you're going to make our next meeting much more productive.
+
+  It is lengthly, about 60 questions—it will take about 30 minutes—be prepared to sit down and do it all in one sitting. You'll get a copy of your answers to you and you can use it however you'd like.
+
+  Just answer every question to the best of your ability—there are no wrong answers—every answer is helpful!
+id: website-questionnaire
+sitemap: false
+access_key: 18ec33e5-254b-4f41-baba-528eb5b56724
+---
+
+{% include form/text.html class="half" name="name" label="Name" required=true %}
+{% include form/text.html class="half" name="email" label="Email" required=true placeholder="email@example.com" %}
+{% include form/textarea.html label="Why does your business or mission exist?" required=true %}
+{% include form/textarea.html label="What are your personal or business values?" required=true %}
+{% include form/textarea.html label="What drives you?" description="Examples: Income, financial independence, customer impact, etc." required=true %}
+
+{% include form/choice.html label="Choose" choices="A,B,C" required=true %}
+
+{% include form/check.html label="Check" choices="One,Two,Three" required=true %}

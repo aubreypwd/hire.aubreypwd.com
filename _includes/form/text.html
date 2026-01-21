@@ -1,0 +1,7 @@
+<div class="field {{ include.class }}">
+	{% include form/label.html %}
+
+	<input type="text" {% include form/attrs.html %}>
+
+	{% include form/description.html description=include.description %}
+</div>

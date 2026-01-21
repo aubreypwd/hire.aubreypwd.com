@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		{% include head.html %}
+	</head>
+
+	<body class="page">
+
+		{% include header.html nav=false %}
+
+		<main class="wrapper" role="main">
+			<section class="section">
+
+				<header>
+					<h2>{{ page.title }}</h2>
+
+					{% if page.heading_content %}
+						{{ page.heading_content | markdownify }}
+					{% endif %}
+				</header>
+
+				<div class="content">
+
+					<div class="sent-message hidden">
+						<p class="italic"><span class="bold highlight" style="background-color: #84e184 !important;">Message Sent!</span> &mdash; {{ page.sent_message | default: 'I will get back to you as soon as possible.' }}</p>
+
+						<hr>
+
+						<script>
+							if  ( new URLSearchParams( window.location.search ).has( 'sent' ) ) {
+								document.querySelectorAll( '.sent-message' ).forEach( el => {
+									el.classList.remove( 'hidden' );
+								} );
+							}
+						</script>
+					</div>
+
+					<form action="https://api.web3forms.com/submit" method="POST">
+
+						<input type="hidden" name="access_key" value="{{ page.access_key }}">
+						<input type="hidden" name="redirect" value="{{ page.url }}/?sent">
+						<input type="hidden" name="subject" value="{{ page.subject | default: 'Form submission from ' | append: page.url }}">
+
+						<div class="fields">
+							{{ content }}
+						</div>
+
+						<ul class="actions">
+							<li><button type="submit" class="button primary">{{ page.submit | default: 'Submit' }}</button></li>
+						</ul>
+					</form>
+
+				</div>
+			</section>
+		</main>
+
+		{% include footer.html %}
+	</body>
+
+	{% include credit.html %}
+</html>
