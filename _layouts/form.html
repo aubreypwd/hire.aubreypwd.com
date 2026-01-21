@@ -70,6 +70,10 @@
 
 						<hr>
 
+						{% if page.submit_instruction %}
+							{{ page.submit_instruction | markdownify }}
+						{% endif %}
+
 						<ul class="actions">
 							<li><button type="submit" class="button primary">{{ page.submit | default: 'Submit' }}</button></li>
 						</ul>

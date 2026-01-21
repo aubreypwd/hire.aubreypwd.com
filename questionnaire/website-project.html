@@ -6,19 +6,19 @@ heading_content_md: form/questionnaire.md
 sitemap: false
 access_key: 18ec33e5-254b-4f41-baba-528eb5b56724
 sent_message: The following information was successfully sent.
+submit_instruction: Thank you for taking the time to fill out this questionnaire, when you're ready just click **Submit.**
 ---
 
-<!-- Common sections -->
-
-{% include form/common/who.html %}
-{% include form/common/about-you-and-your-brand.html %}
-{% include form/common/project.html %}
-{% include form/common/your-technical-background.html %}
-{% include form/common/competition-and-positioning.html %}
-
-<!-- Your website -->
+{% include form/common/all.html %}
 
 {% include form/heading.html content="Your website" %}
+
+<!--
+
+This form is a questionnaire that is geared more towards
+building websites.
+
+-->
 
 <!-- Inspiration and direction -->
 {% include form/textarea.html label="List at least three websites you like and why you like them." placeholder="Or, brands you really love the look and feel of." required=true %}
@@ -45,8 +45,4 @@ sent_message: The following information was successfully sent.
 {% include form/textarea.html label="Are you planning to sell products or use eCommerce?" placeholder="Describe the process you have in mind. How do you envision people buying and receiving products?" required=true %}
 {% include form/check.html label="Your website will need:" placeholder="If you even think you might need it, check it. We'll work out the details later." choices="Online Payments,Physical products that are shipped,Downloadable products,Contact Forms,Newsletters,Forums,Membership Capabilities,Quizzes and other similar lead magnets,Analytics (site traffic tracking),Booking/reservation tools,Forms (other than contact),Galleries,Popups,Sales campaigns (e.g. Black Friday),Email campaigns,Private or internal content" required=true %}
 
-{% include form/hr.html %}
-
-{% include form/common/comments.html %}
-
-{% include form/paragraph.html content="Thank you for taking the time to fill out this questionnaire, when you're ready just click **Submit.**" %}
+{% include form/common/finish.html %}
