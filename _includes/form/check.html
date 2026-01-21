@@ -11,7 +11,7 @@
 			name="{{ include.label }}"
 			value="{{ choice }}">
 
-		<label for="{{ include.label | append: choice | slugify }}">{{ choice }}</label>
+		<label for="{{ include.label | append: choice | slugify }}" style="display: block;">{{ choice }}</label>
 	{% endfor %}
 
 	{% include form/description.html description=include.description %}

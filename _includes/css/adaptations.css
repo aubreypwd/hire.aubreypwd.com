@@ -800,6 +800,10 @@ input, textarea {
 
 	form {
 		margin: 0 0 2rem 0;
+
+		& .required {
+			color: #f44e4e;
+		}
 	}
 
 		form > :last-child {
