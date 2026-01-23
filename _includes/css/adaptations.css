@@ -3233,3 +3233,7 @@ body.page {
 		opacity: 1;
 	}
 }
+
+[id] {
+	scroll-margin-top: 100px;
+}

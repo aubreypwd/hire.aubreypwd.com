@@ -1,70 +1,41 @@
 ( function( $ ) {
 
-	window.addEventListener( 'pagereveal', function( event ) {
-		if ( ! event.viewTransition ) {
-			return;
-		}
+	// Scrolly.
+	$( 'a[href*="#"]' ).scrolly( { offset: 100 } );
 
-		// "traverse" is back/forward button navigation.
-		if ( event.activation && event.activation.navigationType === 'traverse' ) {
-			event.viewTransition.types.add( 'backwards' );
-		} else {
-			event.viewTransition.types.add( 'forwards' );
+	// Push scroll position into history state on scrolly link click.
+	$( document ).on( 'click', 'a[href^="#"]', function() {
+
+		const href = $( this ).attr( 'href' );
+
+		// Bail if no valid target.
+		if ( href.length > 1 && $( href ).length ) {
+
+			history.pushState(
+				{ scrollY: $( href ).offset().top - 100 },
+				'',
+				href
+			);
+
+			$( 'body' ).attr( 'data-hash', window.location.hash.replace( '#', '' ) );
 		}
 	} );
 
-	// Set the inital data hash.
-	$( 'body' ).attr( 'data-hash', window.location.hash.replace( '#', '' ) );
+	// Restore scroll position on Back/Forward navigation.
+	window.addEventListener( 'popstate', function( event ) {
 
-	$( document ).ready( function() {
+		// This was a previous location we stored for this page...
+		if ( event.state && typeof event.state.scrollY === 'number' ) {
 
-		const lenis  = new Lenis( { autoRaf: true } );
-		const OFFSET = -100; // Offset from the location it's meant to scroll to.
+			// Animate to the location.
+			$( 'html' ).animate(
+				{ scrollTop: event.state.scrollY - 100 },
+				600,
+				'swing'
+			);
 
-		// Scroll
-		function scroll( hash, push ) {
-
-			const id = ( hash || '' ).replace( /^#/, '' );
-			const el = id ? document.getElementById( id ) : null;
-
-			if ( ! el ) {
-				return;
-			}
-
-			if ( push ) {
-
-				// Keep track of navigation state.
-				history.pushState( null, '', '#' + id );
-			}
-
-			// Scroll to the section.
-			lenis.scrollTo( el, { offset: OFFSET, duration: 1.1 } );
-
-			// Update the data hash (used for styling).
-			$( 'body' ).attr( 'data-hash', id );
+			$( 'body' ).attr( 'data-hash', window.location.hash.replace( '#', '' ) );
 		}
-
-		// Find links that link to sections.
-		$( document ).on( 'click', 'a[href^="#"]', function( e ) {
-
-			const hash = this.getAttribute( 'href' );
-
-			if ( ! hash || '#' === hash ) {
-				return; // These should continue to do nohthing.
-			}
-
-			if ( ! document.getElementById( hash.slice( 1 ) ) ) {
-				return; // Nothing to scroll to.
-			}
-
-			e.preventDefault();
-
-			scroll( hash, true );
-		} );
-
-		window.addEventListener( 'popstate', () => scroll( window.location.hash, false ) );
-
-		scroll( window.location.hash, false );
 	} );
 
 	// Scroll to the element if there is a hash.
@@ -77,15 +48,6 @@
 		if ( '' === window.location.hash ) {
 			return; // No hash.
 		}
-
-		// Animate towards the hash.
-		$( 'html' ).animate(
-			{
-				scrollTop: $( window.location.hash ).offset().top - 100
-			},
-			600,
-			'swing'
-		);
 
 		// Set the active navigation element.
 		$body.attr( 'data-hash', window.location.hash.replace( '#', '' ) );
