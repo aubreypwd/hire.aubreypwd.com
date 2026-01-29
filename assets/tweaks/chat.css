@@ -3,7 +3,8 @@
   flex-direction: column;
   padding: 0 10px;
 	max-height: 100%;
-	overflow: scroll;
+	min-height: 100%;
+	overflow: scroll !important;
   scrollbar-width: none;
   -ms-overflow-style: none;
 
@@ -32,6 +33,16 @@
   padding: 8px 15px;
   margin-top: 5px;
   margin-bottom: 5px;
+
+	animation-duration: 0.2s !important;
+
+	img {
+		border-radius: 30px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 100%;
+		border: 1px solid white;
+	}
 }
 
 .yours {

@@ -4,19 +4,22 @@
 	{% assign count = logos.size %}
 
 	{% if count == 1 %}{% assign col = 12 %}
-		{% elsif count == 2 %}{% assign col = 6 %}
-		{% elsif count == 3 %}{% assign col = 4 %}
-		{% elsif count == 4 %}{% assign col = 3 %}
-		{% elsif count == 5 %}{% assign col = 2 %}
-	{% else %}
-		{% assign col = 2 %}
+	{% elsif count == 2 %}{% assign col = 6 %}
+	{% elsif count == 3 %}{% assign col = 4 %}
+	{% elsif count == 4 %}{% assign col = 3 %}
+	{% else %}{% assign col = 2 %}
 	{% endif %}
 
-	<div class="mt-90 logo-train">
-		<div class="row g-3 flex-nowrap justify-content-between">
+	<div class="mt-60 logo-train">
+		<div class="row g-3 flex-wrap flex-lg-nowrap justify-content-between">
 			{% for logo in logos %}
-				<div class="col-{{ col }}">
-					<img src="{{ logo.src }}" alt="{{ logo.alt | default: '' }}" class="img-fluid">
+				<div class="col-6 col-lg-{{ col }}">
+					{% if logo.href %}<a href="{{ logo.href }}">{% endif %}
+						<img src="{{ logo.src }}"
+							alt="{{ logo.alt | default: '' }}"
+							class="img-fluid"
+							title="{{ logo.alt }}"}>
+					{% if logo.href %}</a>{% endif %}
 				</div>
 			{% endfor %}
 		</div>

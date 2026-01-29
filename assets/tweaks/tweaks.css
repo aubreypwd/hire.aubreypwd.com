@@ -8,23 +8,20 @@
 
 body {
 	min-height: 100vh;
-}
-
-.hidden {
-	display: none;
+	padding-bottom: 4rem;
 }
 
 .logo-menu-wrapper  {
 	padding-bottom: 2.8125rem;
 }
 
-.resume-info {
-	min-height: 90vh;
-	max-height: 90vh;
-	gap: 1rem;
+.resume-sidebar {
+	/* animation-name: bounceInLeft; */
 
-	.user-img {
-		min-height: 295px;
+	min-height: 90vh;
+
+	@media (max-width: 1290px) {
+		display: none !important; /* Yes, hide the sidebar on mobile */
 	}
 }
 
@@ -41,6 +38,7 @@ h2 i {
 
 .intro-box h2 > strong > em,
 .intro-box h2 > em > strong {
+
 	font-family: "Story Script", sans-serif;
 	font-style: normal;
 	font-size: 4.7rem;
@@ -52,4 +50,27 @@ h2 i {
 
 .hidden {
 	display: none !important;
+}
+
+.logo-train {
+
+	img {
+		filter:
+			grayscale(100%)
+			sepia(40%)
+			saturate(0)
+			brightness(200%)
+			contrast(0.92)
+		;
+
+		opacity: 0.3;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+}
+
+.intro-box {
+	gap: 1.5rem;
 }
