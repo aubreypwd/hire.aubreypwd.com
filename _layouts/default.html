@@ -66,15 +66,14 @@
 	{% include ga.html %}
 </head>
 
-<body class="bg-color4 bg-blend-luminosity gray-layer opc9 bg-att-fixed scheme2 light"
-	style="background-image: url(assets/images/pattern-bg.png);">
-	<main>
+<body class="bg-color4 bg-blend-luminosity gray-layer opc9 bg-att-fixed scheme2 light" style="background-image: url(assets/images/pattern-bg.png);">
+	<main class="pt-60 pb-30">
 		{% include page_loader.html %}
 		{% include header.html %}
 		{% include side_panel.html %}
 
 		<section>
-			<div class="w-100 pt-60 pb-130 position-relative">
+			<div class="w-100 position-relative my-auto">
 				<div class="container">
 					<div class="resume-wrapper d-flex justify-content-between position-relative w-100">
 						{% include sidebar.html content=page.sidebar %}

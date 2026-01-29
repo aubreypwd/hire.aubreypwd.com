@@ -5,3 +5,18 @@ body {
 .hidden {
 	display: none;
 }
+
+.logo-menu-wrapper  {
+	padding-bottom: 2.8125rem;
+}
+
+.resume-info {
+	min-height: 87vh;
+}
+
+h2 b,
+h2 strong,
+h2 em,
+h2 i {
+	color: var(--scheme2);
+}
