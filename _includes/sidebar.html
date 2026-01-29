@@ -19,9 +19,9 @@
 				{% assign messages = include.messages | default: page.sidebar.messages | default: site.sidebar.messages %}
 				{% if messages %}
 					<div class="overflow-auto chat" id="chat">
-						<div class="mine messages">
+						<div class="mine messages" id="messages">
 							{% for msg in messages %}
-								{% assign delay = forloop.index0 | times: 5 %}
+								{% assign delay = forloop.index0 | times: 3 %}
 								{% assign animate =
 									page.sidebar.animate_messages
 									| default: include.animate_messages
@@ -43,13 +43,12 @@
 								messages.forEach((el, index) => {
 									el.addEventListener("animationend", () => {
 
-										chat.scrollTo({
-											top: el.offsetTop
-												- chat.scrollHeight
-												- el.getBoundingClientRect().height
-												- 20,
-											behavior: "smooth"
-										});
+										console.log( el.parentElement, el, el.offsetTop );
+
+										el.scrollIntoView( {
+											behavior: 'smooth',
+											block: 'nearest',
+										} );
 									}, { once: true });
 								});
 							});
