@@ -31,10 +31,7 @@
 				<!-- Social links -->
 				{% if include.social or page.sidebar.social %}
 					<div class="user-social-wrap d-flex align-items-center justify-content-between position-relative w-100">
-						<span>Follow Me:</span>
-
-						<div class="social-links d-flex align-items-center gap-1">
-
+						<div class="social-links d-flex align-items-center gap-1 w-100 justify-content-between">
 							{% assign socials = include.social | default: page.sidebar.social %}
 							{% if socials %}
 								{% for item in socials %}
