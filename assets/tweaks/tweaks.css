@@ -74,3 +74,27 @@ h2 i {
 .intro-box {
 	gap: 1.5rem;
 }
+
+.mobile {
+	display: none;
+
+	@media (max-width: 1290px) {
+		display: unset;
+	}
+}
+
+.desktop {
+	display: none;
+
+	@media (min-width: 1290px) {
+		display: unset;
+	}
+}
+
+p a {
+	text-decoration: underline;
+}
+
+.help {
+	cursor: help;
+}
