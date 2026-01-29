@@ -16,4 +16,12 @@ plugins:
   - jekyll-redirect-from
   - jekyll-toc
 toc:
-  max_level: 2
+  max_level: 2http://127.0.0.1:4000/assets/images/resources/comp-img4.png
+email: aubreypwd@icloud.com
+sidebar:
+  animate_messages: false
+  messages:
+    - "You know that **web guy** you wish had time to help...but they just **couldn't** because they were working a 9-5?"
+    - "For over a decade, that was me! But now I'm working as a **freelancer.**"
+    - "And, I want to help you! Just [text me](sms:+13142827391)"
+    - "Or [email me](mailto:hello@aubreypwd.com)"

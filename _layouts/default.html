@@ -21,7 +21,10 @@
 	<link rel="stylesheet" href="assets/tweaks/tweaks.css" fetchpriority="high">
 	<link rel="stylesheet" href="assets/tweaks/chat.css" fetchpriority="high">
 
-	<link rel="stylesheet" href="assets/css/animate.min.css" media="screen and (prefers-reduced-motion: no-preference)">
+	{% if page.animate or page.animate == nil %}
+		<link rel="stylesheet" href="assets/css/animate.min.css" media="screen and (prefers-reduced-motion: no-preference)">
+	{% endif %}
+
 	<link rel="stylesheet" href="assets/css/fontawesome.min.css" media="print" onload="this.media='all'">
 	<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" media="print" onload="this.media='all'">
 	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
@@ -68,7 +71,7 @@
 </head>
 
 <body class="bg-color4 bg-blend-luminosity gray-layer opc9 bg-att-fixed scheme2 light" style="background-image: url(assets/images/pattern-bg.png);">
-	<main class="pt-60 pb-30">
+	<main class="pt-30 pb-lg-60">
 		{% include page_loader.html %}
 		{% include header.html %}
 		{% include side_panel.html %}
@@ -97,7 +100,7 @@
 	<script src="assets/js/wow.min.js"></script>
 	<script src="assets/js/ResizeSensor.min.js"></script>
 	<script src="assets/js/theia-sticky-sidebar.min.js"></script>
-	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/scripts.js" defer></script>
 </body>
 
 </html>
