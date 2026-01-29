@@ -17,6 +17,7 @@
 
 				<!-- iMessages -->
 				{% assign messages = include.messages | default: page.sidebar.messages | default: site.sidebar.messages %}
+
 				{% if messages %}
 					<div class="overflow-auto chat" id="chat">
 						<div class="mine messages" id="messages">
@@ -26,7 +27,7 @@
 							| default: site.sidebar.animate_messages
 						%}
 
-							<div class="message last">
+							<div class="message last media">
 								<img src="https://hire.aubreypwd.com/images/webp/aubrey-portwood-lg.webp" alt="Aubrey Portwood">
 							</div>
 

@@ -98,3 +98,12 @@ p a {
 .help {
 	cursor: help;
 }
+
+.social-links > a {
+	border-width: 2px;
+	border-color: #ffffff69;
+
+	&:hover {
+		border-color: white;
+	}
+}
