@@ -1,7 +1,7 @@
 <div class="intro-box d-flex flex-column align-items-start position-relative w-100">
 
-	<h2 class="mb-0 fw-normal sz-55 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
-		{{ include.content.title | default: page.intro_box.title }}
+	<h2 class="mb-0 fw-normal sz-55 wow fadeInUp main-heading" data-wow-duration=".5s" data-wow-delay=".2s">
+		{{ include.content.title | default: page.intro_box.title | markdownify | remove: '<p>' | remove: '</p>' }}
 	</h2>
 
 	{% if include.content.description or page.intro_box.description %}

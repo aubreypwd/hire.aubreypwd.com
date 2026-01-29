@@ -14,9 +14,9 @@ Note: I can only have up to (4) items before things get tricky.
 
 			{% for box in facts %}
 				<div class="col-md-6 col-sm-6 col-lg-{{ col }}">
-					<div class="fun-fact-box d-flex flex-column align-items-start position-relative w-100 wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0s">
+					<div class="fun-fact-box d-flex flex-column align-items-start position-relative w-100">
 						<span>{{ box.label }}</span>
-						<h3 class="mb-0 fw-normal sz-30">{{ box.value }}</h3>
+						<h3 class="mb-0 fw-normal sz-30 wow flipInY fadeIn" data-wow-duration="0.6s" data-wow-delay="0.5s">{{ box.value }}</h3>
 					</div>
 				</div>
 			{% endfor %}

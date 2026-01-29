@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
 
 :root {
 	--scheme2: #198cff;
@@ -21,7 +19,7 @@ body {
 }
 
 .resume-info {
-	min-height: 87vh;
+	/* min-height: 87vh; */
 }
 
 h2 b,
@@ -33,4 +31,15 @@ h2 i {
 
 .simple-link {
 	text-decoration: none;
+}
+
+.intro-box h2 > strong > em,
+.intro-box h2 > em > strong {
+	font-family: "Story Script", sans-serif;
+	font-style: normal;
+	font-size: 4.7rem;
+
+	@media (max-width: 770px) {
+		font-size: 3.4rem;
+	}
 }
