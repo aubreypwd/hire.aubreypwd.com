@@ -180,7 +180,7 @@ h6 {
 }
 
 .layout-page .main-heading {
-	max-width: 90%;
+	max-width: 85%;
 
 	@media (max-width: 768px) {
 		max-width: 100%;
@@ -209,7 +209,10 @@ h6 {
 .serv-box {
 	padding: 3rem;
 
-	h1,h2,h3,p:first-child {
+	> h1,
+	> h2,
+	> h3,
+	> p:first-child {
 		font-size: 1.5rem;
 	}
 
@@ -220,10 +223,26 @@ h6 {
 
 .call-action-box {
 	.sec-title {
-
-		p:first-child {
+		> p:first-child {
 			font-size: 1.5rem;
 			line-height: 2rem;
 		}
+	}
+}
+
+p, ul li, ol li {
+	line-height: 2.2rem;
+}
+
+.accent {
+	color: var(--accent);
+}
+
+.port-detail-info-box > h2 {
+	padding: 1.788125rem 2.5rem;
+	color: var(--accent);
+
+	b, strong, em, i {
+		color: var(--accent);
 	}
 }
