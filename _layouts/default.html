@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+	<title>{% if page.title %}{{ page.title | markdownify | strip_html }} - {% endif %}{{ site.title }}</title>
 
 	<link rel="canonical" href="{{ page.url | absolute_url }}">
 
@@ -82,8 +82,8 @@
 					<div class="resume-wrapper d-flex justify-content-between position-relative w-100">
 						{% include sidebar.html content=page.sidebar %}
 
-						<div class="resume-content d-flex flex-column pt-30">
-							<div class="theiaStickySidebar">
+						<div class="resume-content d-flex flex-column pt-60">
+							<div class="theiaStickySidebar flex-column">
 								{{ content }}
 							</div>
 						</div><!-- Resume Content -->

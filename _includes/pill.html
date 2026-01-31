@@ -1,1 +1,3 @@
-<span class="sec-sub rounded-pill text-center">{{ include.content }}</span>
+{% if include.href %}<a href="{{ include.href }}">{% endif %}
+<span class="sec-sub rounded-pill text-center{% if include.block %} d-inline-block{% endif %}">{{ include.content }}</span>
+{% if include.href %}</a>{% endif %}

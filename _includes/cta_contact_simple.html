@@ -1,0 +1,16 @@
+<div class="call-action-box round15 mt-0 d-flex align-items-center justify-content-between gap-3 position-relative w-100">
+
+	<div class="sec-title d-flex flex-column align-items-start flex-grow-1 flex-spacing gap-sm">
+
+		{{ include.title | markdownify }}
+
+		{% if include.content %}
+			{{ include.content | markdownify }}
+		{% endif %}
+
+	</div>
+
+	<div class="btn-box position-relative flex-shrink-0">
+		{% include contact_button.html title="Let's get started!" href="/contact.html" %}
+	</div>
+</div>

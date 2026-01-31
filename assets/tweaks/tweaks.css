@@ -3,7 +3,16 @@
 
 :root {
 	--scheme2: #198cff;
-  --Bricolage-Grotesque: "Lexend", sans-serif, "Bricolage Grotesque", sans-serif;
+	--accent: #aca8a8;
+	--Bricolage-Grotesque: "Lexend", sans-serif, "Bricolage Grotesque", sans-serif;
+	--Marker: "Story Script", sans-serif;
+
+	/* These are the same but are here for reference */
+	--bs-breakpoint-sm: 576px;
+	--bs-breakpoint-md: 768px;
+	--bs-breakpoint-lg: 992px;
+	--bs-breakpoint-xl: 1200px;
+	--bs-breakpoint-xxl: 1400px;
 }
 
 body {
@@ -16,19 +25,15 @@ body {
 }
 
 .resume-sidebar {
-	/* animation-name: bounceInLeft; */
-
 	min-height: 90vh;
+	max-height: 90vh;
 
-	@media (max-width: 1290px) {
+	@media (max-width: 1200px) {
 		display: none !important; /* Yes, hide the sidebar on mobile */
 	}
 }
 
-h2 b,
-h2 strong,
-h2 em,
-h2 i {
+:is(h1, h2, h3, h4, h5, h6) :is(b, strong, em, i) {
 	color: var(--scheme2);
 }
 
@@ -36,15 +41,29 @@ h2 i {
 	text-decoration: none;
 }
 
-.intro-box h2 > strong > em,
-.intro-box h2 > em > strong {
-
-	font-family: "Story Script", sans-serif;
+:is(h1,h2,h3,h4,h5,h6) :is(strong,em,i,b) > :is(strong,em,i,b) {
+	color: var(--scheme2);
+	font-family: var(--Marker);
 	font-style: normal;
-	font-size: 4.7rem;
+	font-size: 4.7rem !important;
 
-	@media (max-width: 770px) {
-		font-size: 3.4rem;
+	@media (max-width: 768px) {
+		font-size: 3.4rem !important;
+	}
+}
+
+.layout-page :is(h1,h2,h3,h4,h5,h6) :is(strong,em,i,b) > :is(strong,em,i,b) {
+	line-height: 2rem;
+	display: inline;
+	margin-left: 0;
+	text-transform: none;
+
+	font-size: 4rem;
+	line-height: 3rem;
+
+	@media(max-width: 768px) {
+		font-size: 2.5rem;
+		line-height: 2rem;
 	}
 }
 
@@ -73,12 +92,13 @@ h2 i {
 
 .intro-box {
 	gap: 1.5rem;
+	margin-top: 0;
 }
 
 .mobile {
 	display: none;
 
-	@media (max-width: 1290px) {
+	@media (max-width: 1200px) {
 		display: unset;
 	}
 }
@@ -86,7 +106,7 @@ h2 i {
 .desktop {
 	display: none;
 
-	@media (min-width: 1290px) {
+	@media (min-width: 1200px) {
 		display: unset;
 	}
 }
@@ -105,5 +125,105 @@ p a {
 
 	&:hover {
 		border-color: white;
+	}
+}
+
+.user-social-wrap:before {
+	background-color: var(--accent) !important;
+}
+
+.flex-spacing {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+
+	& > * {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+	&.gap-lg {
+		gap: 4rem !important;
+	}
+
+	&.gap-md {
+		gap: 3rem;
+	}
+
+	&.gap-sm {
+		gap: 2rem;
+	}
+}
+
+.call-action-box {
+	padding: 2.03125rem 2.5rem;
+}
+
+.scheme2 .sec-sub, .scheme2 .serv-box:hover, .scheme2 .serv-box > a, .scheme2 .comp-box:hover, .scheme2 .edu-box:hover, .scheme2 .exp-box:hover, .scheme2 .port-info > a, .scheme2 .gen-controls > div.gen-btn:hover, .scheme2 .gen-controls > div.gen-btn:focus, .scheme2 .plan-box:hover, .scheme2 .plan-box.active, .scheme2 .theme-btn2, .scheme2 .field-box:not(.attachment-field) > input:hover, .scheme2 .field-box:not(.attachment-field) > input:focus, .scheme2 .field-box:not(.attachment-field) > textarea:hover, .scheme2 .field-box:not(.attachment-field) > textarea:focus, .scheme2 .load-more-btn:hover, .scheme2 .load-more-btn:focus, .scheme2 .res-menu-btn {
+	border-color: var(--accent);
+}
+
+.rounded-pill {
+	color: var(--accent) !important;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--color7);
+}
+
+h4,
+h5,
+h6 {
+	color: var(--accent);
+}
+
+.layout-page .main-heading {
+	max-width: 90%;
+
+	@media (max-width: 768px) {
+		max-width: 100%;
+		text-align: center;
+	}
+}
+
+.cont-links, nav ul li a:before {
+	@media (max-width: 1030px) {
+		display: block !important;
+	}
+}
+
+.cont-links > a {
+	padding: 0.5rem 1.3rem;
+	text-transform: uppercase;
+	font-size: 0.95rem;
+	font-weight: bold;
+
+	&:nth-child(1) {
+		padding: 0.5rem 1.3rem;
+		background-color: var(--accent) !important;
+	}
+}
+
+.serv-box {
+	padding: 3rem;
+
+	h1,h2,h3,p:first-child {
+		font-size: 1.5rem;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.call-action-box {
+	.sec-title {
+
+		p:first-child {
+			font-size: 1.5rem;
+			line-height: 2rem;
+		}
 	}
 }

@@ -1,0 +1,70 @@
+---
+layout: page
+title: How in the **_world_** can I claim websites I build are _fast_, unhackable, and require **no-maintenence?**
+# sub_title: It's not really all that hard. Let me explain...
+
+sidebar:
+  animate_messages: true
+  messages:
+    - "The reason sites I build are _fast_, is because I build them...a little differently."
+    - "But, **unhackable**, common, no site is UNHACKABLE! Right?"
+    - "Well, _...actually..._ you can't hack the kinds of sites I build..."
+    - "...and I hate watching people screw around with **Wix**, **Squarespace**, or **WordPress**! Your website has everything you need to get it updated: 👉 ME"
+    - "If you want to know how..."
+    - "...just keep reading."
+    - "And when you're _convinced_, [click here.](/contact.html)"
+---
+
+<!-- Fast -->
+{% capture content %}
+I build websites that are fast by default because they are generated ahead of time. There is no database query, no server-side rendering, and no runtime templating when a visitor hits the page. The browser just downloads plain HTML, CSS, and JavaScript.
+
+Using tools like Jekyll and Hugo means the heavy work happens at build time, not request time. Pages are pre-rendered, assets are optimized once, and the output is as lean as it can be.
+
+On top of that, I pair static builds with modern hosting and CDNs so content is served from locations close to the user. The result is sites that feel instant, even on slower connections.
+{% endcapture %}
+{% include claim.html
+	level=2
+	animate=true
+	animate_delay="2s"
+	pill="Crazy Claim #1"
+	title="Why they're _**fast**_"
+	content=content %}
+
+{% include cta_contact_simple.html title="Ready to build a _fast_ website?" %}
+
+<!-- Unhackable -->
+{% capture content %}
+Static sites are hard to hack because there is almost nothing to attack. No login forms, no admin panels, no live database, and no server-side code running on every request.
+
+With JAMstack setups, the surface area for exploits is dramatically smaller. Content changes require a rebuild and deploy, which means attackers cannot inject code or manipulate data in real time.
+
+When dynamic behavior is needed, it is handled through isolated third-party services or APIs with strict permissions. This keeps the core site secure and predictable.
+{% endcapture %}
+{% include claim.html
+	level=2
+	animate=true
+	animate_delay="2s"
+	pill="Crazy Claim #2"
+	title="Why they're _**unhackable**_"
+	content=content %}
+
+{% include cta_contact_simple.html title="Ready to run a website without worrying about hacks?" %}
+
+<!-- No maintenence -->
+{% capture content %}
+Static websites require very little ongoing maintenance because there are fewer moving parts. There are no servers to patch, no databases to tune, and no frameworks constantly breaking at runtime.
+
+Once the site is built, it can run for years with minimal attention. Updates happen by editing content and rebuilding, not by babysitting infrastructure.
+
+This approach reduces long-term cost, risk, and stress. The site stays stable, reliable, and easy to evolve without accumulating technical debt.
+{% endcapture %}
+{% include claim.html
+	level=2
+	animate=true
+	animate_delay="2s"
+	pill="Crazy Claim #3"
+	title="Why they require _**no maintenence**_"
+	content=content %}
+
+{% include cta_contact_simple.html title="Ready to just let someone else do the heavy lifting?" %}

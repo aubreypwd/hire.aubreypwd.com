@@ -1,4 +1,4 @@
-{% if include.sidebar or page.sidebar or page.sidebar == nil %}
+{% if page.sidebar or page.sidebar == nil %}
 	<div class="resume-sidebar d-flex flex-column position-sticky wow pt-40"
 		data-wow-duration="0.8s"
 		data-wow-delay="0.5s">
@@ -17,15 +17,13 @@
 
 				<!-- iMessages -->
 				{% assign messages = include.messages | default: page.sidebar.messages | default: site.sidebar.messages %}
-
 				{% if messages %}
-					<div class="overflow-auto chat" id="chat">
+					<div class="overflow-scroll chat" id="chat">
 						<div class="mine messages" id="messages">
 
-						{% assign animate = page.sidebar.animate_messages
-							| default: include.animate_messages
-							| default: site.sidebar.animate_messages
-						%}
+							{% assign animate = page.sidebar.animate_messages
+								| default: include.animate_messages
+								| default: site.sidebar.animate_messages %}
 
 							<div class="message last media">
 								<img src="https://hire.aubreypwd.com/images/webp/aubrey-portwood-lg.webp" alt="Aubrey Portwood">
@@ -33,12 +31,12 @@
 
 							{% for msg in messages %}
 
-								{% assign message_speed = include.message_speed | default: page.sidebar.message_speed | default: site.sidebar.message_speed | default: 4 %}
-								{% assign delay = forloop.index0 | plus: 0.5 | times: message_speed %}
+								{% assign message_speed = default: include.message_speed | default: page.sidebar.message_speed | default: site.sidebar.message_speed | default: 3.5 %}
+								{% assign delay = forloop.index0 | times: message_speed %}
 
-								<div class="message last{% if animate != false %} animated fadeIn zoomInRight{% endif %}"
+								<div class="message last{% if animate %} animated fadeIn zoomInRight{% endif %}"
 									style="animation-delay: {{ delay }}s;">
-										{{ msg | markdownify | remove: '<p>' | remove: '</p>' }}
+										{{ msg.message | default: msg | markdownify | remove: '<p>' | remove: '</p>' }}
 								</div>
 							{% endfor %}
 						</div>
@@ -59,10 +57,10 @@
 				{% endif %}
 
 				<!-- Social links -->
-				{% if include.social or page.sidebar.social %}
+				{% if include.social or page.sidebar.social or site.sidebar.social %}
 					<div class="user-social-wrap d-flex align-items-center justify-content-between position-relative w-100">
 						<div class="social-links d-flex align-items-center gap-1 w-100 justify-content-between">
-							{% assign socials = include.social | default: page.sidebar.social %}
+							{% assign socials = include.social | default: page.sidebar.social | default: site.sidebar.social %}
 							{% if socials %}
 								{% for item in socials %}
 									<a href="{{ item.url }}" title="{{ item.name }}" target="_blank" rel="noopener">

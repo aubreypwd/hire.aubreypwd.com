@@ -1,0 +1,16 @@
+<div class="serv-detail-cap flex-spacing gap-sm position-relative w-100 {% if include.animate | default: false %}animated slideInUp{% endif %}"
+	data-wow-delay="{{ include.animation_delay | default: '0' }}">
+
+	{% if include.pill %}
+		<div>{% include pill.html content=include.pill block=false %}</div>
+	{% endif %}
+
+	<h{{ include.level | default: 2 }} class="fw-normal sz-36 mb-30">
+		{{ include.title | markdownify | remove: '<p>' | remove: '</p>' }}
+	</h{{ include.level | default: 2 }}>
+
+	<div class="claim-content flex-spacing gap-sm">
+		{{ include.content | markdownify }}
+	</div>
+</div><!-- Service Detail Cap -->
+

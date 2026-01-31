@@ -1,0 +1,78 @@
+<div class="serv-boxes position-relative w-100">
+	<div class="row mrg40">
+
+		{% if include.service1_title %}
+			<div class="col-lg-4 col-md-4 col-sm-12 wow fadeIn" data-wow-duration=".8s" data-wow-delay=".2s">
+				<div class="serv-box round15 d-flex flex-column position-relative w-100">
+
+					<h{{ include.level | default: 3 }} class="mb-0 fw-normal sz-30 lh-sm">
+						{% if include.service1_href %}<a href="{{ include.service1_href }}">{% endif %}
+							{{ include.service1_title | strip_html }}
+						{% if include.service1_href %}</a>{% endif %}
+					</h{{ include.level | default: 3 }}>
+
+					<div class="mb-0">{{ include.service1_content | markdownify }}</div>
+
+				{% if include.service1_plug %}
+					<span>
+						{% if include.service1_href %}<a href="{{ include.service1_href }}">{% endif %}
+							{{ include.service1_plug | strip_html }}
+						{% if include.service1_href %}</a>{% endif %}
+					</span>
+				{% endif %}
+
+				</div>
+			</div>
+		{% endif %}
+
+		{% if include.service2_title %}
+			<div class="col-lg-4 col-md-4 col-sm-12 wow fadeIn" data-wow-duration=".8s" data-wow-delay=".2s">
+				<div class="serv-box round15 d-flex flex-column position-relative w-100">
+
+					<h{{ include.level | default: 3 }} class="mb-0 fw-normal sz-30 lh-sm">
+						{% if include.service2_href %}<a href="{{ include.service2_href }}">{% endif %}
+							{{ include.service2_title | strip_html }}
+						{% if include.service2_href %}</a>{% endif %}
+					</h{{ include.level | default: 3 }}>
+
+					<div class="mb-0">{{ include.service2_content | markdownify }}</div>
+
+				{% if include.service2_plug %}
+					<span>
+						{% if include.service2_href %}<a href="{{ include.service2_href }}">{% endif %}
+							{{ include.service2_plug | strip_html }}
+						{% if include.service2_href %}</a>{% endif %}
+					</span>
+				{% endif %}
+
+				</div>
+			</div>
+		{% endif %}
+
+		{% if include.service3_title %}
+			<div class="col-lg-4 col-md-4 col-sm-12 wow fadeIn" data-wow-duration=".8s" data-wow-delay=".2s">
+				<div class="serv-box round15 d-flex flex-column position-relative w-100">
+
+					<h{{ include.level | default: 3 }} class="mb-0 fw-normal sz-30 lh-sm">
+						{% if include.service3_href %}<a href="{{ include.service3_href }}">{% endif %}
+							{{ include.service3_title | strip_html }}
+						{% if include.service3_href %}</a>{% endif %}
+					</h{{ include.level | default: 3 }}>
+
+					<div class="mb-0">{{ include.service3_content | markdownify }}</div>
+
+				{% if include.service3_plug %}
+					<span>
+						{% if include.service3_href %}<a href="{{ include.service3_href }}">{% endif %}
+							{{ include.service3_plug | strip_html }}
+						{% if include.service3_href %}</a>{% endif %}
+					</span>
+				{% endif %}
+
+				</div>
+			</div>
+		{% endif %}
+
+
+	</div>
+</div>

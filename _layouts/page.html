@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="flex-spacing gap-lg">
+
+	<h1 class="mb-0 fw-normal sz-55 wow fadeInUp main-heading"
+		data-wow-duration=".5s" data-wow-delay=".2s"
+		style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.2s; animation-name: fadeInUp;">
+		{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}
+	</h1>
+
+	{% if page.sub_title %}
+		<div class="port-detail-info-boxes round15 position-relative w-100 text-center">
+			<div class="row mrg">
+				<div class="col-12">
+					<div class="port-detail-info-box d-flex flex-column overflow-hidden position-relative w-100">
+						<h4 class="mb-0 fw-normal sz-24">{{ page.sub_title | markdownify | remove: '<p>' | remove: '</p>' }}</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+
+	{{ content }}
+</div><!-- page -->
