@@ -194,15 +194,35 @@ h6 {
 	}
 }
 
-.cont-links > a {
+.scheme2 .cont-links > a {
 	padding: 0.5rem 1.3rem;
 	text-transform: uppercase;
 	font-size: 0.95rem;
 	font-weight: bold;
 
-	&:nth-child(1) {
+	&.accent {
 		padding: 0.5rem 1.3rem;
 		background-color: var(--accent) !important;
+	}
+
+	&.secondary {
+		background-color: transparent !important;
+		font-family: Lato, sans-serif;
+		text-transform: none;
+		padding-left: calc(1.5rem/2);
+		padding-right: calc(1.5rem/2);
+		color: var(--accent);
+		font-style: italic;
+		/* font-weight: normal; */
+
+		&:hover {
+			color: #7b7b7b;
+			text-decoration: underline;
+		}
+	}
+
+	&.home {
+		margin-left: 1rem;
 	}
 }
 

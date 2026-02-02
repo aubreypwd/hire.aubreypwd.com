@@ -1,8 +1,12 @@
 {% if page.header or page.header == nil %}
-	<header class="px-5 position-fixed d-flex justify-content-end gap-3">
-		<div class="cont-links d-flex">
-			<a href="/" title=""><i class="far fa-home"></i>Home</a>
-			<a href="/contact.html" title=""><i class="far fa-envelope"></i>Let's talk!</a>
-		</div><!-- Contact Links -->
+	<header class="px-5 position-absolute d-flex justify-content-end gap-3">
+		<nav class="cont-links primary-nav d-flex gap-1">
+			<a class="secondary" href="#" title="">Experience</a>
+			<a class="secondary" href="#" title="">Costs</a>
+			<a class="secondary" href="#" title="">Process</a>
+
+			<a class="accent home" href="/" title="Home"><i class="far fa-home"></i>Home</a>
+			<a href="/contact.html" title="Contact"><i class="far fa-envelope"></i>Let's talk!</a>
+		</nav><!-- Contact Links -->
 	</header><!-- Header -->
 {% endif %}
