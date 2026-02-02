@@ -194,14 +194,12 @@ h6 {
 	}
 }
 
-.scheme2 .cont-links > a {
-	padding: 0.5rem 1.3rem;
+.cont-links > a {
 	text-transform: uppercase;
-	font-size: 0.95rem;
+	font-size: 1rem;
 	font-weight: bold;
 
 	&.accent {
-		padding: 0.5rem 1.3rem;
 		background-color: var(--accent) !important;
 	}
 
@@ -213,11 +211,9 @@ h6 {
 		padding-right: calc(1.5rem/2);
 		color: var(--accent);
 		font-style: italic;
-		/* font-weight: normal; */
 
 		&:hover {
 			color: #7b7b7b;
-			text-decoration: underline;
 		}
 	}
 
@@ -265,4 +261,14 @@ p, ul li, ol li {
 	b, strong, em, i {
 		color: var(--accent);
 	}
+}
+
+.cont-links > a:hover:not(.secondary),
+.cont-links > a:focus:not(.secondary),
+.res-menu-btn:hover,
+.res-menu-btn:focus,
+.res-menu-close,
+.social-links > a::before,
+.theme-btn:before, .theme-btn:after {
+	background-color: #7b7b7b !important;
 }
