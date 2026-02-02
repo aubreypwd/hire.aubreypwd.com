@@ -4,9 +4,6 @@
 	padding: 0 10px;
 	min-height: 550px;
 	max-height: 550px;
-	overflow: scroll !important;
-	scrollbar-width: none;
-	-ms-overflow-style: none;
 
 	&::-webkit-scrollbar {
 		display: none;
@@ -26,6 +23,9 @@
 	flex-direction: column;
 	height: 100%;
 	position: relative;
+	overflow: scroll !important;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }
 
 .message {
@@ -34,6 +34,7 @@
 	padding: 8px 15px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	left: -6px; /* Fixes issue where I have to overflow .messages */
 
 	animation-duration: 0.2s !important;
 

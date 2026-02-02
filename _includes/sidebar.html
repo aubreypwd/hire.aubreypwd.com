@@ -43,11 +43,21 @@
 
 						<script>
 
-						// Animate in each message.
-						document.addEventListener( 'DOMContentLoaded', () =>
-							document.querySelectorAll( '.message' ).forEach( ( el, index ) =>
-								el.addEventListener( 'animationend', () =>
-									el.scrollIntoView( { behavior: 'smooth', block: 'nearest', } ), { once: true }
+						document.addEventListener('DOMContentLoaded', () =>
+							document.querySelectorAll('.message').forEach(el =>
+								el.addEventListener(
+									'animationend',
+									() => {
+										const parent = el.parentElement;
+
+										parent.scrollTo( {
+											el.offsetTop
+												+ el.offsetHeight
+												- parent.clientHeight,
+											behavior: 'smooth'
+										} );
+									},
+									{ once: true }
 								)
 							)
 						);
