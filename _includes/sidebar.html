@@ -43,23 +43,28 @@
 
 						<script>
 
-						document.addEventListener('DOMContentLoaded', () =>
-							document.querySelectorAll('.message').forEach(el =>
+						document.addEventListener( 'DOMContentLoaded', () =>
+							document.querySelectorAll( '.message' ).forEach( ( el ) => {
+
+								if ( typeof el !== 'object' ) {
+									return;
+								}
+
 								el.addEventListener(
 									'animationend',
 									() => {
-										const parent = el.parentElement;
 
-										parent.scrollTo( {
-											el.offsetTop
+										el.parentElement.scrollTo( {
+											top:
+												el.offsetTop
 												+ el.offsetHeight
-												- parent.clientHeight,
+												- el.parentElement.clientHeight,
 											behavior: 'smooth'
 										} );
 									},
 									{ once: true }
-								)
-							)
+								);
+							} )
 						);
 
 						</script>
