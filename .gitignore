@@ -1,10 +1,6 @@
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
-*.sublime-workspace
 .DS_Store
-docs/CONTENT_STYLE_GUIDE.md
-.cursor/plans
+.cursor/
 _site
-.vscode*
-.sublime*
