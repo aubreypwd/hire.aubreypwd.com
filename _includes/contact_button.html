@@ -2,6 +2,6 @@
 	href="{{ include.href }}"
 	title="{{ include.title }}"
 >
-	<i class="far fa-{{ include.fa | default: 'envelope' }}"></i>
-		{{ include.title }}
+	{{ include.title }}
+	<i class="{{ include.fa | default: 'fad fa-traffic-light' }}"></i>
 </a>

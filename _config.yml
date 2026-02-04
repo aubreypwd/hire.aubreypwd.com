@@ -13,6 +13,7 @@ exclude:
   - .cursor*
   - exclude/
   - resources/
+  - TODO.md
 
 timezone: America/Denver
 
