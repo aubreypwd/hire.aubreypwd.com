@@ -1,0 +1,14 @@
+<div class="tags-box-wrap round15 d-flex align-items-center justify-content-between position-relative w-100">
+		<div class="
+			tags-box
+			d-flex
+			align-items-center
+			position-relative
+			flex-spacing
+			gap-sm
+			{% if include.large %}large{% endif %}
+			{% if include.accent %} accent{% endif %}
+		">
+			{{ include.content | markdownify }}
+		</div><!-- Tags Box -->
+</div>

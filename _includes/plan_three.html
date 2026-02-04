@@ -1,0 +1,53 @@
+<div class="plan-boxes position-relative w-100">
+	<div class="row mrg40 align-items-stretch">
+		{% for plan in include.plans %}
+			<div class="col-md-6 col-sm-6 col-lg-4 d-flex wow fadeIn"
+					 data-wow-duration=".8s"
+					 data-wow-delay=".{{ forloop.index }}s">
+
+				<div class="plan-box round15 position-relative w-100 d-flex flex-column">
+
+					<div class="plan-head d-flex flex-column align-items-start position-relative w-100">
+						<h4 class="mb-0 fw-normal sz-26">
+							<div>
+
+								{% assign parts = plan.title | split: " " %}
+								<div>{{ parts[0] }}</div>
+								<div>{{ parts | slice: 1, parts.size | join: " " }}</div>
+
+							</div>
+						</h4>
+						<span class="sz-30 fw-medium">
+							{{ plan.cost }}
+							{% if plan.per %}
+								<i class="fst-normal sz-18">/ {{ plan.per }}</i>
+							{% endif %}
+						</span>
+					</div>
+
+					{{ plan.desc | markdownify }}
+
+					<div class="plan-body d-flex flex-column position-relative w-100 flex-grow-1">
+
+						<ul>
+							{% for feature in plan.features %}
+								<li class="{% if feature.included == false %}text-decoration-line-through opacity-50 greyscale{% endif %}">
+									{{ feature.title | markdownify | remove: '<p>' | remove: '</p>' }}
+								</li>
+							{% endfor %}
+						</ul>
+
+						<a
+							class="theme-btn2 round10 d-flex align-items-center justify-content-center position-relative overflow-hidden mt-auto"
+							href="{{ plan.button_href }}"
+							title="{{ plan.button_text | markdownify | strip_html }}"
+						>
+							{{ plan.button_text | strip_html }}
+						</a>
+
+					</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>

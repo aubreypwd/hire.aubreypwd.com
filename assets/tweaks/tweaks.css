@@ -3,7 +3,7 @@
 
 :root {
 	--scheme2: #198cff;
-	--accent: #aca8a8;
+	--accent: #939393;
 	--Bricolage-Grotesque: "Lexend", sans-serif, "Bricolage Grotesque", sans-serif;
 	--Marker: "Story Script", sans-serif;
 
@@ -133,6 +133,7 @@ p a {
 }
 
 .flex-spacing {
+
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column;
@@ -143,15 +144,15 @@ p a {
 	}
 
 	&.gap-lg {
-		gap: 4rem !important;
+		gap: 3rem !important;
 	}
 
 	&.gap-md {
-		gap: 3rem;
+		gap: 2.5rem;
 	}
 
 	&.gap-sm {
-		gap: 2rem;
+		gap: 1.5rem;
 	}
 }
 
@@ -271,4 +272,68 @@ p, ul li, ol li {
 .social-links > a::before,
 .theme-btn:before, .theme-btn:after {
 	background-color: #7b7b7b !important;
+}
+
+.light .resume-info,
+.light .fun-fact-boxes,
+.light .serv-box,
+.light .comp-boxes,
+.light .edu-box,
+.light .exp-box,
+.light .testi-box,
+.light .plan-box,
+.light .call-action-box,
+.light .contact-wrap,
+.light .port-detail-info-boxes,
+.light .port-detail-info-box > strong,
+.light .tags-box-wrap {
+
+	/* This makes sure the shadow has spacing */
+	margin-bottom: 1rem !important;
+}
+
+.tags-box {
+
+	& > * {
+		display: inline-block;
+	}
+
+	&.accent {
+		color: var(--accent);
+	}
+
+	&.large > p {
+		font-size: 1.5rem;
+	}
+}
+
+h3, h4, h5, h6 {
+	color: var(--accent);
+}
+
+.page-title {
+	padding: 2rem 2.5rem;
+}
+
+.light .port-img > a:before, .light .page-title, .light .load-more-btn, .light .social-links2 > a, .light .port-detail-info-box > strong, .light .tagcloud > a {
+	background-color: #fff7f787;
+}
+
+.greyscale {
+	filter: grayscale(100%);
+}
+
+.plan-box {
+
+	min-height: 100%;
+
+	ul > li {
+		font-size: 1.1rem;
+		line-height: 1.2rem;
+	}
+
+	.plan-body ul li::marker {
+		font-size: 1.1rem;
+		line-height: 1.1rem;
+	}
 }

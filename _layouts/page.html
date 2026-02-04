@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="flex-spacing gap-lg">
+<div class="flex-spacing gap-lg animated fadeIn">
 
 	<h1 class="mb-0 fw-normal sz-55 wow fadeInUp main-heading"
 		data-wow-duration=".5s" data-wow-delay=".2s"
@@ -11,16 +11,14 @@ layout: default
 	</h1>
 
 	{% if page.sub_title %}
-		<div class="port-detail-info-boxes round15 position-relative w-100">
-			<div class="row mrg wow fadeIn">
-				<div class="col-12">
-					<div class="port-detail-info-box d-flex flex-column overflow-hidden position-relative w-100">
-						<h2 class="mb-0 fw-normal sz-24">{{ page.sub_title | markdownify | remove: '<p>' | remove: '</p>' }}</h2>
-					</div>
-				</div>
-			</div>
-		</div>
+		{% include tags_box.html content=page.sub_title large=true %}
 	{% endif %}
 
-	{{ content }}
+	<div class="flex-spacing gap-md">
+		{% if page.markdownify_content %}
+			{{ content | markdownify }}
+		{% else %}
+			{{ content }}
+		{% endif %}
+	</div>
 </div><!-- page -->
