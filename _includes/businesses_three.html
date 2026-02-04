@@ -2,31 +2,24 @@
 	<div class="row mrg40 align-items-stretch">
 		{% for plan in include.plans %}
 			<div class="col-md-6 col-sm-6 col-lg-4 d-flex wow fadeIn"
-					 data-wow-duration=".8s"
-					 data-wow-delay=".{{ forloop.index }}s">
+					data-wow-duration=".8s"
+					data-wow-delay=".{{ forloop.index }}s">
 
-				<div class="plan-box round15 position-relative w-100 d-flex flex-column">
+				<div class="plan-box businesses round15 position-relative w-100 d-flex flex-column">
 
 					<div class="plan-head d-flex flex-column align-items-start position-relative w-100">
 						<h4 class="mb-0 fw-normal sz-26">
 							<div>
 								<span class="rotate">
-
-									{{ plan.title }},
-
-									{% for title in plan.other_titles %}
-										{{ title }}{% unless forloop.last %}, {% endunless %}
+									{% for business in plan.businesses %}
+										{{ business.title }}{% unless forloop.last %}, {% endunless %}
 									{% endfor %}
 								</span>
 							</div>
-
-
 						</h4>
-						<span class="sz-30 fw-medium">
+
+						<span class="sz-40 fw-medium">
 							{{ plan.cost }}
-							{% if plan.per %}
-								<i class="fst-normal sz-18">/ {{ plan.per }}</i>
-							{% endif %}
 						</span>
 					</div>
 
@@ -34,7 +27,7 @@
 
 					<div class="plan-body d-flex flex-column position-relative w-100 flex-grow-1">
 
-						<ul>
+						<ul class="features">
 							{% for feature in plan.features %}
 								<li class="{% if feature.included == false %}text-decoration-line-through opacity-50 greyscale{% endif %}">
 									{{ feature.title | markdownify | remove: '<p>' | remove: '</p>' }}

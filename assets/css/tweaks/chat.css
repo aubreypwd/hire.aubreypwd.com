@@ -39,7 +39,13 @@
 	animation-duration: 0.2s !important;
 
 	&.media {
-		padding: 15px;
+		padding: 0;
+		background: none !important;
+
+		&::before,
+		&::after {
+			display: none;
+		}
 	}
 
 	img {
