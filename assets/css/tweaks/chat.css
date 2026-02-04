@@ -23,7 +23,8 @@
 	flex-direction: column;
 	height: 100%;
 	position: relative;
-	overflow: scroll !important;
+	overflow-y: scroll !important;
+	overflow-x: hidden !important;
 	scrollbar-width: none;
 	-ms-overflow-style: none;
 }

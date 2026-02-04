@@ -18,7 +18,7 @@
 				<!-- iMessages -->
 				{% assign messages = include.messages | default: page.sidebar.messages | default: site.sidebar.messages %}
 				{% if messages %}
-					<div class="overflow-scroll chat" id="chat">
+					<div class="overflow-scroll chat position-relative" id="chat">
 						<div class="mine messages" id="messages">
 
 							{% assign animate = page.sidebar.animate_messages
@@ -30,7 +30,7 @@
 							</div>
 
 							<div class="message last {% if animate %}animated fadeIn zoomInRight{% endif %}">
-								⬆️&nbsp;&nbsp;That's me... <strong>Aubrey</strong>
+								⬆️&nbsp;&nbsp;That's me... <strong>My name's Aubrey</strong>
 							</div>
 
 							{% for msg in messages %}
