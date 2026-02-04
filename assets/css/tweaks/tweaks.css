@@ -285,7 +285,6 @@ p, ul li, ol li {
 .light .call-action-box,
 .light .contact-wrap,
 .light .port-detail-info-boxes,
-.light .port-detail-info-box > strong,
 .light .tags-box-wrap {
 
 	/* This makes sure the shadow has spacing */
@@ -336,4 +335,17 @@ h3, h4, h5, h6 {
 		font-size: 1.1rem;
 		line-height: 1.1rem;
 	}
+
+	.plan-head {
+		> *:first-child {
+			min-height: 5rem;
+		}
+	}
 }
+
+.port-detail-info-boxes {
+	.heading {
+		padding: 1.788125rem 2.5rem;
+	}
+}
+

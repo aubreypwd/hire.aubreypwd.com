@@ -1,0 +1,2 @@
+- [ ] Bring over the bot detection
+- [ ] Audit for Core Web Vitals/etc

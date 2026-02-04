@@ -10,12 +10,17 @@
 					<div class="plan-head d-flex flex-column align-items-start position-relative w-100">
 						<h4 class="mb-0 fw-normal sz-26">
 							<div>
+								<span class="rotate">
 
-								{% assign parts = plan.title | split: " " %}
-								<div>{{ parts[0] }}</div>
-								<div>{{ parts | slice: 1, parts.size | join: " " }}</div>
+									{{ plan.title }},
 
+									{% for title in plan.other_titles %}
+										{{ title }}{% unless forloop.last %}, {% endunless %}
+									{% endfor %}
+								</span>
 							</div>
+
+
 						</h4>
 						<span class="sz-30 fw-medium">
 							{{ plan.cost }}
