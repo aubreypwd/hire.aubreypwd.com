@@ -1,7 +1,7 @@
 {
 	"files.associations": {
-		"*.html": "liquid",
+		"*.html": "jekyll",
 		"*.css": "liquid-css",
-		"*.md": "liquid",
+		"*.md": "jekyll",
 	}
 }
