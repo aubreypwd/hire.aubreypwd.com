@@ -29,10 +29,14 @@
 								<img src="https://hire.aubreypwd.com/images/webp/aubrey-portwood-lg.webp" alt="Aubrey Portwood">
 							</div>
 
+							<div class="message last {% if animate %}animated fadeIn zoomInRight{% endif %}">
+								⬆️&nbsp;&nbsp;That's me... <strong>Aubrey</strong>
+							</div>
+
 							{% for msg in messages %}
 
 								{% assign message_speed = default: include.message_speed | default: page.sidebar.message_speed | default: site.sidebar.message_speed | default: 3.5 %}
-								{% assign delay = forloop.index0 | times: message_speed %}
+								{% assign delay = forloop.index0 | times: message_speed | plus: 1 %}
 
 								<div class="message last{% if animate %} animated fadeIn zoomInRight{% endif %}"
 									style="animation-delay: {{ delay }}s;">
