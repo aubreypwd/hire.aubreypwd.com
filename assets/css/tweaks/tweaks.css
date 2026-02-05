@@ -374,7 +374,7 @@ h3, h4, h5, h6 {
 		white-space: wrap;
 	}
 
-	img[alt="16+ years"] {
+	img[alt="About 16 years"] {
 		border-radius: 50px;
 	}
 }
@@ -388,4 +388,20 @@ hr {
 		text-align: left;
 		font-size: 0.95rem;
 	}
+}
+
+#inline-widget-aubreypwd > iframe {
+	width: 100% !important;
+	margin: 0 !important;
+}
+
+.page-contact-html {
+
+	h1:first-child {
+		display: none;
+	}
+}
+
+header {
+	z-index: 666;
 }

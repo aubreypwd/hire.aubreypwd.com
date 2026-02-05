@@ -1,7 +1,5 @@
-<a class="theme-btn position-relative overflow-hidden round10"
-	href="{{ include.href }}"
-	title="{{ include.title }}"
->
-	{{ include.title }}
-	<i class="{{ include.fa | default: 'fad fa-traffic-light' }}"></i>
-</a>
+{% capture content %}
+	{{ include.title }} <i class="{{ include.fa | default: 'fad fa-traffic-light' }}"></i>
+{% endcapture %}
+
+{% include koalendar_link.html href="/contact.html" class="theme-btn position-relative overflow-hidden round10" content=content %}

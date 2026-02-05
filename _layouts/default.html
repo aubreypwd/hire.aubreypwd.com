@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="{{ site.description }}{% if page.description | markdownify | strip_html %} {{ page.description }}{% endif %}">
+	<meta name="description" content="{{ site.description }}{% if page.description %} {{ page.description | markdownify | strip_html }}{% endif %}">
 	<meta name="keywords" content="{{ site.keywords }}{% if page.keywords %},{{ page.keywords }}{% endif %}">
 	<meta name="theme-color" content="#6344c6">
 
@@ -72,7 +72,7 @@
 	{% include ga.html %}
 </head>
 
-<body class="layout-{{ page.layout | slugify }} bg-color4 bg-blend-luminosity gray-layer opc9 bg-att-fixed scheme2 light" style="background-image: url(assets/images/pattern-bg.png);">
+<body class="layout-{{ page.layout | slugify }} page-{{ page.slug | default: page.url | slugify }} bg-color4 bg-blend-luminosity gray-layer opc9 bg-att-fixed scheme2 light" style="background-image: url(assets/images/pattern-bg.png);">
 	<main class="pt-30 pb-lg-60">
 		{% include page_loader.html %}
 		{% include header.html %}
@@ -106,6 +106,11 @@
 
 	<script src="assets/js/tweaks/jquery.simple-text-rotator.min.js" defer></script>
 	<script src="assets/js/tweaks/textrotator.js" defer></script>
+
+	<!-- Koalendar Link Widget Start -->
+	<script>window.Koalendar=window.Koalendar||function(){(Koalendar.props=Koalendar.props||[]).push(arguments)};</script>
+	<script async src="https://koalendar.com/assets/widget.js"></script>
+	<script>Koalendar('init');</script>
 </body>
 
 </html>
