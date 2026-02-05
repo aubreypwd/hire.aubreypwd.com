@@ -1,5 +1,5 @@
 - [ ] Bring over the bot detection
-- [ ] Audit for Core Web Vitals/etc
+- [x] Audit for Core Web Vitals/etc
 - [ ] Review each page for SEO semantics: There are some mixed headings already
 - [x] Get all `/contact.html` links to maybe trigger call booking service
 - [ ] Bullets in `/pricing.html` is broken in Safari
