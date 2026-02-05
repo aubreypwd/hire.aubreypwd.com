@@ -11,7 +11,8 @@ sidebar:
     - "They're not telling you **you can save money,** because they want to hike up their prices."
     - "That's just not me."
 
-plans1:
+plans:
+
   - cost: $300
     businesses:
       - title: "Landing Page"
@@ -39,6 +40,7 @@ plans1:
     button_href: /contact.html
 
   - cost: $425
+    scroll_into_view: true
     businesses:
       - title: "Plumber"
       - title: "Local Coach"
@@ -88,7 +90,6 @@ plans1:
     button_text: "Let's Build It"
     button_href: /contact.html
 
-plans2:
   - cost: $1.5k
     businesses:
       - title: "Cafe"
@@ -166,7 +167,6 @@ plans2:
     button_text: "Let's Build It"
     button_href: /contact.html
 
-plans3:
   - cost: $3k
     businesses:
       - title: "Tennis Club"
@@ -239,7 +239,6 @@ plans3:
     button_text: "Let's Build It"
     button_href: /contact.html
 
-plans4:
   - cost: $6k
     businesses:
       - title: "Course Creator"
@@ -315,10 +314,7 @@ plans4:
 
 {% include page_title.html content="Because all websites I build can be **hosted for free** and require practically **zero maintenence** the costs are **much lower** than usual." %}
 
-{% include businesses_three.html plans=page.plans1 %}
-{% include businesses_three.html plans=page.plans2 %}
-{% include businesses_three.html plans=page.plans3 %}
-{% include businesses_three.html plans=page.plans4 %}
+{% include businesses.html plans=page.plans %}
 
 ---
 

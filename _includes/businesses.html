@@ -1,9 +1,9 @@
-<div class="plan-boxes position-relative w-100">
-	<div class="row mrg40 align-items-stretch">
+<div class="plan-boxes position-relative w-100 overflow-y-hidden businesses-boxes snap-scroll mw-100">
+	<div class="row mrg40 align-items-stretch flex-nowrap gap-2 gap-md-3">
 		{% for plan in include.plans %}
-			<div class="col-md-6 col-sm-6 col-lg-4 d-flex wow fadeIn"
-					data-wow-duration=".8s"
-					data-wow-delay=".{{ forloop.index }}s">
+			<div class="snap-item col-md-6 col-sm-6 col-lg-4 d-flex flex-shrink-0 wow fadeIn"
+				data-wow-duration=".8s"
+				data-wow-delay=".{{ forloop.index }}s">
 
 				<div class="plan-box businesses round15 position-relative w-100 d-flex flex-column">
 

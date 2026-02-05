@@ -1,15 +1,15 @@
 <div class="edu-boxes d-flex flex-column position-relative w-100">
 	<div class="edu-box round15 d-flex flex-column align-items-start position-relative w-100">
-			<div class="d-flex justify-content-between w-100">
+			<div class="d-flex flex-column flex-md-row gap-4 justify-content-between w-100">
 				{% if include.level %}
 					<h{{ include.level | default: 4 }} class="mb-0 fw-normal sz-24 position-relative heading">
 						<span class="at important d-block">{{ include.at }}</span>
-						<span class="title d-block mt-20">{{ include.title | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+						<span class="title d-block mt-20 fw-bold">{{ include.title | markdownify | remove: '<p>' | remove: '</p>' }}</span>
 					</h{{ include.level | default: 4 }}>
 				{% else %}
 					<div class="mb-0 fw-normal sz-24 position-relative heading">
 						<span class="at important d-block">{{ include.at }}</span>
-						<span class="title d-block mt-20">{{ include.title | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+						<span class="title d-block mt-20 fw-bold">{{ include.title | markdownify | remove: '<p>' | remove: '</p>' }}</span>
 					</div>
 				{% endif %}
 
@@ -21,7 +21,7 @@
 			{{ include.content | markdownify }}
 
 			{% if include.who %}
-				<div class="accent">{{ include.who | markdownify | replace: '<p>', '<p><small>' | replace: '</p>', '</small></p>' | replace: ', ', ',&nbsp;&nbsp;' }}</div>
+				<div class="accent who">{{ include.who | markdownify | replace: '<p>', '<p><small>' | replace: '</p>', '</small></p>' }}</div>
 			{% endif %}
 
 			{% if include.from or include.to %}
