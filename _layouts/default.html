@@ -15,31 +15,58 @@
 	<meta name="keywords" content="{{ site.keywords }}{% if page.keywords %},{{ page.keywords }}{% endif %}">
 	<meta name="theme-color" content="#6344c6">
 
-	<link rel="icon" href="assets/images/favicon.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="{{ '/assets/images/favicon.png' | absolute_url }}" sizes="32x32" type="image/png">
 
-	<!-- Inlined Styles -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css" fetchpriority="high">
-	<link rel="stylesheet" href="assets/css/style.css" fetchpriority="high">
-	<link rel="stylesheet" href="assets/css/responsive.css" fetchpriority="high">
+	<link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | absolute_url }}" fetchpriority="high">
+	<link rel="stylesheet" href="{{ '/assets/css/style.css' | absolute_url }}" fetchpriority="high">
+	<link rel="stylesheet" href="{{ '/assets/css/responsive.css' | absolute_url }}" fetchpriority="high">
 
-	<link rel="stylesheet" href="assets/css/tweaks/fonts/lato.css" fetchpriority="low">
-	<link rel="stylesheet" href="assets/css/tweaks/fonts/lexend.css" fetchpriority="low">
-	<link rel="stylesheet" href="assets/css/tweaks/fonts/storyscript.css" fetchpriority="low">
+	<link rel="stylesheet" href="{{ '/assets/css/tweaks/fonts/lato.css' | absolute_url }}" fetchpriority="low">
+	<link rel="stylesheet" href="{{ '/assets/css/tweaks/fonts/lexend.css' | absolute_url }}" fetchpriority="low">
+	<link rel="stylesheet" href="{{ '/assets/css/tweaks/fonts/storyscript.css' | absolute_url }}" fetchpriority="low">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lexend/v26/wlpwgwvFAVdoq2_v9KQU82RHaBBX.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lexend/v26/wlpwgwvFAVdoq2_v9aQU82RHaBBX.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lexend/v26/wlpwgwvFAVdoq2_v-6QU82RHaA.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u-w4BMUTPHjxsIPx-mPCLC79U11vU.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u-w4BMUTPHjxsIPx-oPCLC79U1.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI9w2_FQftx9897sxZ.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI9w2_Gwftx9897g.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI3wi_FQftx9897sxZ.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u_w4BMUTPHjxsI3wi_Gwftx9897g.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u8w4BMUTPHh30AUi-qNiXg7eU0.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u8w4BMUTPHh30AXC-qNiXg7Q.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh7USSwaPGQ3q5d0N7w.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh7USSwiPGQ3q5d0.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6uyw4BMUTPHjx4wXiWtFCc.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh50XSwaPGQ3q5d0N7w.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/lato/v25/S6u9w4BMUTPHh50XSwiPGQ3q5d0.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/storyscript/v3/mem5YaSw02SQ0OlzDuR8IskOXehpKKSTj5PW.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/storyscript/v3/mem5YaSw02SQ0OlzDuR8IskOXOhpKKSTj5PW.woff2" crossorigin  fetchpriority="high">
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/storyscript/v3/mem5YaSw02SQ0OlzDuR8IskOUuhpKKSTjw.woff2" crossorigin  fetchpriority="high">
 
-	<link rel="stylesheet" href="assets/css/tweaks/tweaks.css" fetchpriority="high">
-	<link rel="stylesheet" href="assets/css/tweaks/chat.css" fetchpriority="low">
+	<link rel="stylesheet" href="{{ '/assets/css/tweaks/tweaks.css' | absolute_url }}" fetchpriority="high">
+	<link rel="stylesheet" href="{{ '/assets/css/tweaks/chat.css' | absolute_url }}" fetchpriority="low">
 
 	{% if page.slug == 'pricing' %}
-		<link rel="stylesheet" href="assets/css/tweaks/simpletextrotator.css" fetchpriority="low">
+		<link rel="stylesheet" href="{{ '/assets/css/tweaks/simpletextrotator.css' | absolute_url }}" fetchpriority="low">
 	{% endif %}
 
 	{% if page.animate or page.animate == nil %}
-		<link rel="stylesheet" href="assets/css/animate.min.css" fetchpriority="low" media="print" onload="this.media='screen and (prefers-reduced-motion: no-preference)'">
+		<link rel="stylesheet" href="{{ '/assets/css/animate.min.css' | absolute_url }}" fetchpriority="high">
+		<link rel="preload" as="style" href="{{ '/assets/css/animate.min.css' | absolute_url }}" fetchpriority="high">
+		<link rel="preload" as="script" href="{{ '/assets/js/wow.min.js' | absolute_url }}" fetchpriority="high">
 	{% endif %}
 
-	<link rel="stylesheet" href="assets/css/fontawesome.min.css" fetchpriority="low" media="print" onload="this.media='all'">
-	<!--<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" media="print" onload="this.media='all'">-->
-	<!--<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">-->
+	<link rel="stylesheet" href="{{ '/assets/css/fontawesome.min.css' | absolute_url }}" fetchpriority="low" media="print" onload="this.media='all'">
+	<!--<link rel="stylesheet" href="{{ '/assets/css/jquery.fancybox.min.css' | absolute_url }}" media="print" onload="this.media='all'">-->
+	<!--<link rel="stylesheet" href="{{ '/assets/css/swiper-bundle.min.css' | absolute_url }}" media="print" onload="this.media='all'">-->
 
 	<!-- Social Media Meta -->
 	<meta property="og:title" content="{{ site.title }}{% if page.title %} - {{ page.title | strip_html }}{% endif %}">
@@ -76,7 +103,7 @@
 		}
 	</script>
 
-	<link rel="manifest" href="{{ 'manifest.json' | absolute_url }}" fetchpriority="low">
+	<link rel="manifest" href="{{ 'manifest.json' | absolute_url }}" fetchpriority="low" crossorigin>
 	<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ 'sitemap.xml' | absolute_url }}" fetchpriority="low">
 </head>
 
@@ -103,22 +130,22 @@
 		</section>
 	</main><!-- Main Wrapper -->
 
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/bootstrap.min.js" defer></script>
-	<script src="assets/js/jquery.fancybox.min.js" defer></script>
-	<!--<script src="assets/js/swiper-bundle.min.js" defer></script>-->
-	<script src="assets/js/wow.min.js" defer></script>
-	<script src="assets/js/ResizeSensor.min.js"></script>
-	<script src="assets/js/theia-sticky-sidebar.min.js" defer></script>
-	<script src="assets/js/scripts.js" defer></script>
+	<script src="{{ 'assets/js/jquery.min.js' | absolute_url }}"></script>
+	<!--<script src="{{ 'assets/js/bootstrap.min.js' | absolute_url }}" defer></script>-->
+	<!--<script src="{{ 'assets/js/jquery.fancybox.min.js' | absolute_url }}" defer></script>-->
+	<!--<script src="{{ 'assets/js/swiper-bundle.min.js' | absolute_url }}" defer></script>-->
+	<script src="{{ 'assets/js/wow.min.js' | absolute_url }}" defer></script>
+	<!--<script src="{{ 'assets/js/ResizeSensor.min.j' | absolute_url }}"></script>-->
+	<script src="{{ 'assets/js/theia-sticky-sidebar.min.js' | absolute_url }}" defer></script>
+	<script src="{{ 'assets/js/scripts.js' | absolute_url }}" defer></script>
 
-	<script src="assets/js/tweaks/jquery.simple-text-rotator.min.js" defer></script>
-	<script src="assets/js/tweaks/textrotator.js" defer></script>
+	<script src="{{ 'assets/js/tweaks/jquery.simple-text-rotator.min.js' | absolute_url }}" defer></script>
+	<script src="{{ 'assets/js/tweaks/textrotator.js' | absolute_url }}" defer></script>
 
 	<!-- Koalendar Link Widget Start -->
 	<script>window.Koalendar=window.Koalendar||function(){(Koalendar.props=Koalendar.props||[]).push(arguments)};</script>
 	<script async src="https://koalendar.com/assets/widget.js"></script>
-	<script>Koalendar('init');</script>
+	<script defer>Koalendar('init');</script>
 
 	{% include ga.html %}
 </body>
