@@ -12,6 +12,7 @@ sidebar:
     - "And don't waste your time updating a complicated **Wix** website&mdash;**let me handle it!**"
 ---
 
+{% capture markup %}
 {% include
 	experience.html
 	title="Senior Developer"
@@ -22,6 +23,8 @@ sidebar:
 	level=2
 	who="**Products:** AffiliateWP, WP Simple Pay, Thrive Themes, Easy Digital Downloads"
 %}
+{% endcapture %}
+{% include id.html id="am" content=markup class="flex-spacing" %}
 
 As a **Senior Developer** at **[Awesome Motive](https://awesomemotive.com)** over a three-year period, I helped modernize the **[AffiliateWP](https://affiliatewp.com)** team by introducing **smarter development practices**, **demanding code quality standards**, and delivering **new, high-impact features**—one of which was the company's *first practical use of AI inside WordPress*.
 
@@ -45,6 +48,7 @@ The result was a stronger, more modern AffiliateWP—with **better processes**, 
 
 The AffiliateWP team reached a **new level of efficiency**—shipping features at a **steady, reliable cadence** and delivering updates to customers **faster than ever before**. The plugin also expanded its reach through **new integrations with third-party platforms**, reinforcing its position as a dependable, forward-looking affiliate marketing solution.
 
+{% capture markup %}
 {% include
 	experience.html
 	title="Senior Engineer"
@@ -56,6 +60,8 @@ The AffiliateWP team reached a **new level of efficiency**—shipping features a
 	level=2
 	who="**Companies:** Microsoft, Monster.com, Starbucks, Skype, Discovery, Newscorp"
 %}
+{% endcapture %}
+{% include id.html id="webdev" content=markup class="flex-spacing" %}
 
 During my seven years at **[WebDevStudios](https://webdevstudios.com)**, I worked as a **Senior WordPress Engineer** on large-scale, enterprise-level WordPress projects for clients such as [Microsoft](#microsoft) and [Monster.com](#monster).
 
@@ -74,7 +80,7 @@ I worked across both **frontend and backend** teams, led **optimization efforts*
 
 ### Noteable projects:
 
-![Microsoft](assets/images/experience/microsoft.webp)
+{% include id.html id="microsoft" content="![Microsoft](assets/images/experience/microsoft.webp)" %}
 
 While at WebDev, I helped maintain and develop **enterprise WordPress solutions** for **Microsoft Office 365** and **Microsoft DEV Blogs**.
 
@@ -89,7 +95,7 @@ My work focused on improving the **reliability, flexibility, and performance** o
 
 I also developed **new features**, **resolved difficult issues**, and consulted with Microsoft **leadership** to maintain and improve these platforms.
 
-![Monster Hiring](assets/images/experience/monster.webp)
+{% include id.html id="monster" content="![Monster Hiring](assets/images/experience/monster.webp)" %}
 
 I helped lead **Core Web Vitals** and performance-engineering efforts for the **Monster.com** employer-facing site: **[hiring.Monster.com](hiring.monster.com)**
 
@@ -104,6 +110,7 @@ These optimizations delivered **measurable gains** in load times, responsiveness
 
 #### Other projects I contributed to at WebDevStudios:
 
+- **HEB Central Market**
 - **Newscorp**
 - **Starbucks**
 - **Uber**

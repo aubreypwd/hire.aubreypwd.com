@@ -497,3 +497,17 @@ header {
 		}
 	}
 }
+
+.invisible {
+	height: 0;
+	min-height: 0;
+	max-height: 0;
+	overflow: hidden;
+}
+
+.page-claims-html header a.claims, .page-claims-html header a.claims:hover,
+.page-experience-html header a.experience, .page-experience-html header a.experience:hover,
+.page-process-html header a.process, .page-process-html header a.process:hover,
+.page-pricing-html header a.pricing, .page-pricing-html header a.pricing:hover {
+	color: var(--scheme2);
+}
