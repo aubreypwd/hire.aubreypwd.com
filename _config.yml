@@ -50,3 +50,5 @@ sidebar:
     - name: "I'm also on Mastodon"
       url: "https://mastodon.social/@aubreypwd"
       fa: "mastodon"
+
+ga: false

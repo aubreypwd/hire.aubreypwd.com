@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap'); */
 
 :root {
 	--scheme2: #198cff;
 	--accent: #939393;
-	--accent-lighter: #c2c2c233;
+	--accent-lighter: #c2c2c2;
 	--Bricolage-Grotesque: "Lexend", sans-serif, "Bricolage Grotesque", sans-serif;
 	--Marker: "Story Script", sans-serif;
 
@@ -47,8 +47,8 @@ body {
 	font-size: 4.7rem !important;
 	font-weight: bold;
 
-	@media (max-width: 768px) {
-		font-size: 3.4rem !important;
+	@media (max-width: 992px) {
+		font-size: 3.7rem !important;
 	}
 }
 
@@ -343,10 +343,6 @@ h3, h4, h5, h6 {
 		}
 	}
 
-	.important {
-		text-shadow: 4rem 1.5rem 0px var(--accent-lighter);
-	}
-
 	> * {
 		white-space: wrap;
 	}
@@ -453,9 +449,8 @@ header {
 
 .businesses-boxes {
 	padding: 2rem 1rem 3rem;
-	box-shadow: inset 1px 1px 39px var(--accent-lighter);
-	border: 1px solid var(--accent-lighter);
-	background-color: var(--accent-lighter);
+	border: 1px solid var(--accent);
+	box-shadow: inset 1px 1px 39px var(--accent);
 	border-radius: 2rem;
 }
 
@@ -477,6 +472,7 @@ header {
 }
 
 .snap-scroll .snap-item {
+
 	scroll-snap-align: start;
 	scroll-snap-stop: always;
 
@@ -510,4 +506,8 @@ header {
 .page-process-html header a.process, .page-process-html header a.process:hover,
 .page-pricing-html header a.pricing, .page-pricing-html header a.pricing:hover {
 	color: var(--scheme2);
+}
+
+.underlined {
+	text-decoration: underline;
 }

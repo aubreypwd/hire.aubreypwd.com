@@ -1,18 +1,18 @@
 <div class="intro-box d-flex flex-column align-items-start position-relative w-100">
 
-	<h2 class="mb-0 fw-normal sz-55 wow fadeInUp main-heading" data-wow-duration=".5s" data-wow-delay=".2s">
+	<h2 class="mb-0 fw-normal sz-55 wow fadeInUp main-heading" data-wow-duration=".5s">
 		{{ include.content.title | default: page.intro_box.title | markdownify | remove: '<p>' | remove: '</p>' }}
 	</h2>
 
 	{% if include.content.description or page.intro_box.description %}
-		<div class="mb-0 wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".4s">
+		<div class="mb-0 wow fadeInUp" data-wow-duration=".5s">
 			{{ include.content.description | default: page.intro_box.description | markdownify }}
 		</div>
 	{% endif %}
 
 	{% if include.content.cta1_title or include.content.cta2_title or page.intro_box.cta1_title or page.intro_box.cta2_title %}
 		<div class="intro-btns d-flex align-items-center w-100 wow fadeInUp"
-			data-wow-duration=".5s" data-wow-delay=".6s">
+			data-wow-duration=".5s">
 
 			{% if (include.content.cta1_title or page.intro_box.cta1_title) and (include.content.cta1_href or page.intro_box.cta1_href) %}
 				{% assign cta1_title = include.content.cta1_title | default: page.intro_box.cta1_title %}

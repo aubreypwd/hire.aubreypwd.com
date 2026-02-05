@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+	<link rel="preload" as="image" href="/assets/images/pattern-bg.png" fetchpriority="high">
+
 	<title>{% if page.title %}{{ page.title | markdownify | strip_html }} - {% endif %}{{ site.title | markdownify | strip_html }}</title>
 
 	<link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -15,21 +17,29 @@
 
 	<link rel="icon" href="assets/images/favicon.png" sizes="32x32" type="image/png">
 
+	<!-- Inlined Styles -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" fetchpriority="high">
 	<link rel="stylesheet" href="assets/css/style.css" fetchpriority="high">
 	<link rel="stylesheet" href="assets/css/responsive.css" fetchpriority="high">
 
-	<link rel="stylesheet" href="assets/css/tweaks/tweaks.css" fetchpriority="high">
-	<link rel="stylesheet" href="assets/css/tweaks/chat.css" fetchpriority="high">
-	<link rel="stylesheet" href="assets/css/tweaks/simpletextrotator.css" fetchpriority="high">
+	<link rel="stylesheet" href="assets/css/tweaks/fonts/lato.css" fetchpriority="low">
+	<link rel="stylesheet" href="assets/css/tweaks/fonts/lexend.css" fetchpriority="low">
+	<link rel="stylesheet" href="assets/css/tweaks/fonts/storyscript.css" fetchpriority="low">
 
-	{% if page.animate or page.animate == nil %}
-		<link rel="stylesheet" href="assets/css/animate.min.css" media="screen and (prefers-reduced-motion: no-preference)">
+	<link rel="stylesheet" href="assets/css/tweaks/tweaks.css" fetchpriority="high">
+	<link rel="stylesheet" href="assets/css/tweaks/chat.css" fetchpriority="low">
+
+	{% if page.slug == 'pricing' %}
+		<link rel="stylesheet" href="assets/css/tweaks/simpletextrotator.css" fetchpriority="low">
 	{% endif %}
 
-	<link rel="stylesheet" href="assets/css/fontawesome.min.css" media="print" onload="this.media='all'">
-	<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" media="print" onload="this.media='all'">
-	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
+	{% if page.animate or page.animate == nil %}
+		<link rel="stylesheet" href="assets/css/animate.min.css" fetchpriority="low" media="print" onload="this.media='screen and (prefers-reduced-motion: no-preference)'">
+	{% endif %}
+
+	<link rel="stylesheet" href="assets/css/fontawesome.min.css" fetchpriority="low" media="print" onload="this.media='all'">
+	<!--<link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" media="print" onload="this.media='all'">-->
+	<!--<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">-->
 
 	<!-- Social Media Meta -->
 	<meta property="og:title" content="{{ site.title }}{% if page.title %} - {{ page.title | strip_html }}{% endif %}">
@@ -68,8 +78,6 @@
 
 	<link rel="manifest" href="{{ 'manifest.json' | absolute_url }}" fetchpriority="low">
 	<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ 'sitemap.xml' | absolute_url }}" fetchpriority="low">
-
-	{% include ga.html %}
 </head>
 
 <body class="layout-{{ page.layout | slugify }} page-{{ page.slug | default: page.url | slugify }} bg-color4 bg-blend-luminosity gray-layer opc9 scheme2 light" style="background-image: url(assets/images/pattern-bg.png);">
@@ -96,12 +104,12 @@
 	</main><!-- Main Wrapper -->
 
 	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.fancybox.min.js"></script>
-	<script src="assets/js/swiper-bundle.min.js"></script>
-	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/bootstrap.min.js" defer></script>
+	<script src="assets/js/jquery.fancybox.min.js" defer></script>
+	<!--<script src="assets/js/swiper-bundle.min.js" defer></script>-->
+	<script src="assets/js/wow.min.js" defer></script>
 	<script src="assets/js/ResizeSensor.min.js"></script>
-	<script src="assets/js/theia-sticky-sidebar.min.js"></script>
+	<script src="assets/js/theia-sticky-sidebar.min.js" defer></script>
 	<script src="assets/js/scripts.js" defer></script>
 
 	<script src="assets/js/tweaks/jquery.simple-text-rotator.min.js" defer></script>
@@ -111,6 +119,8 @@
 	<script>window.Koalendar=window.Koalendar||function(){(Koalendar.props=Koalendar.props||[]).push(arguments)};</script>
 	<script async src="https://koalendar.com/assets/widget.js"></script>
 	<script>Koalendar('init');</script>
+
+	{% include ga.html %}
 </body>
 
 </html>
