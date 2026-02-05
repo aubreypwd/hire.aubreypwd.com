@@ -4,6 +4,7 @@
 :root {
 	--scheme2: #198cff;
 	--accent: #939393;
+	--accent-lighter: #c2c2c233;
 	--Bricolage-Grotesque: "Lexend", sans-serif, "Bricolage Grotesque", sans-serif;
 	--Marker: "Story Script", sans-serif;
 
@@ -33,23 +34,26 @@ body {
 	}
 }
 
-:is(h1, h2, h3, h4, h5, h6) :is(b, strong, em, i) {
+:is(h1, h2, h3, h4, h5, h6) :is(b, strong, em, i),
+.important {
 	color: var(--scheme2);
 }
 
-.simple-link {
-	text-decoration: none;
-}
-
-:is(h1,h2,h3,h4,h5,h6) :is(strong,em,i,b) > :is(strong,em,i,b) {
+:is(h1,h2,h3,h4,h5,h6) :is(strong,em,i,b) > :is(strong,em,i,b),
+.important {
 	color: var(--scheme2);
 	font-family: var(--Marker);
 	font-style: normal;
 	font-size: 4.7rem !important;
+	font-weight: bold;
 
 	@media (max-width: 768px) {
 		font-size: 3.4rem !important;
 	}
+}
+
+.simple-link {
+	text-decoration: none;
 }
 
 .layout-page :is(h1,h2,h3,h4,h5,h6) :is(strong,em,i,b) > :is(strong,em,i,b) {
@@ -352,5 +356,36 @@ h3, h4, h5, h6 {
 .port-detail-info-boxes {
 	.heading {
 		padding: 1.788125rem 2.5rem;
+	}
+}
+
+.edu-box,
+.exp-box {
+
+	.important {
+		text-shadow: 4rem 1.5rem 0px var(--accent-lighter);
+	}
+
+	> p:last-child {
+		margin-bottom: 0;
+	}
+
+	> p {
+		white-space: wrap;
+	}
+
+	img[alt="16+ years"] {
+		border-radius: 50px;
+	}
+}
+
+hr {
+	border-top-color: var(--accent);
+}
+
+.column-list-box {
+	.tagcloud > span {
+		text-align: left;
+		font-size: 0.95rem;
 	}
 }

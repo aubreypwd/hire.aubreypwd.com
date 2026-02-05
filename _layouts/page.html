@@ -4,7 +4,7 @@ layout: default
 
 <div class="flex-spacing gap-lg animated fadeIn">
 
-	<h1 class="mb-0 fw-normal sz-55 wow fadeInUp main-heading"
+	<h1 class="mb-0 fw-normal sz-55 wow fadeInUp main-heading mw-90"
 		data-wow-duration=".5s" data-wow-delay=".2s"
 		style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.2s; animation-name: fadeInUp;">
 			{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}
@@ -14,7 +14,7 @@ layout: default
 		{% include tags_box.html content=page.sub_title large=true %}
 	{% endif %}
 
-	<div class="flex-spacing gap-md">
+	<div class="flex-spacing gap-md content">
 		{% if page.markdownify_content %}
 			{{ content | markdownify }}
 		{% else %}

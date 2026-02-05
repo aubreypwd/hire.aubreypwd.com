@@ -17,7 +17,7 @@
 			{% if (include.content.cta1_title or page.intro_box.cta1_title) and (include.content.cta1_href or page.intro_box.cta1_href) %}
 				{% assign cta1_title = include.content.cta1_title | default: page.intro_box.cta1_title %}
 				{% assign cta1_href = include.content.cta1_href | default: page.intro_box.cta1_href %}
-				{% assign cta1_fa = include.content.cta1_fa | default: page.intro_box.cta1_fa %}
+				{% assign cta1_fa = include.content.cta1_fa | default: page.intro_box.cta1_fa | default: 'fas fa-envelope' %}
 
 				{% include contact_button.html
 					title=cta1_title
