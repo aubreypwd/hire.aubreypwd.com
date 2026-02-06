@@ -1,0 +1,13 @@
+<div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 w-100 m-0 p-0">
+	{% if include.right %}
+		<div class="order-1 order-md-2 flex-md-grow-1 text-start text-md-start m-0 p-0">
+			{{ include.right | markdownify }}
+		</div>
+	{% endif %}
+
+	{% if include.left %}
+		<div class="order-2 order-md-1 flex-shrink-0 text-start m-0 p-0">
+			{{ include.left | markdownify | remove: '<p>' | remove: '</p>' }}
+		</div>
+	{% endif %}
+</div>

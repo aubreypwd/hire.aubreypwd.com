@@ -14,9 +14,9 @@ sidebar:
 
 ---
 
-{% include pill.html content="Step #1" %}
-
-## **_Discovery_**
+{% capture right %}{% include pill.html content="Step #1" large=true %}{% endcapture %}
+{% capture left %}## **_Discovery_**{% endcapture %}
+{% include content_left_right.html left=left right=right %}
 
 ### Meet &amp; talk...
 
@@ -45,9 +45,9 @@ After the call, I **revise the proposal** based on your feedback and send you th
 
 {% include tags_box.html content="💰 At this point you make the **first** of three payments _(retainer)_ and I start the **next step**" centered=true %}
 
-{% include pill.html content="Step #2" %}
-
-## **_Research_**
+{% capture right %}{% include pill.html content="Step #2" %}{% endcapture %}
+{% capture left %}## **_Research_**{% endcapture %}
+{% include content_left_right.html left=left right=right %}
 
 {% include page_title.html content="I explore **competitors** and **peers** to uncover **_what is working in your market._**" %}
 
@@ -59,9 +59,9 @@ I capture **visual inspiration** with moodboards and **stylescapes** and sketch 
 
 {% include tags_box.html content="💰 At this point you make the **second** of three payments." %}
 
-{% include pill.html content="Step #3" %}
-
-## **_Development_**
+{% capture right %}{% include pill.html content="Step #3" %}{% endcapture %}
+{% capture left %}## **_Development_**{% endcapture %}
+{% include content_left_right.html left=left right=right %}
 
 ### Develop, design, feedback.
 
@@ -77,9 +77,9 @@ Before launch, **I verify that the website behaves** as expected, checking funct
 
 {% include tags_box.html content="💰 At this point you make the **third** and final payment before _delivery and launch._" %}
 
-{% include pill.html content="Step #4" %}
-
-## **_Delivery_**
+{% capture right %}{% include pill.html content="Step #4" %}{% endcapture %}
+{% capture left %}## **_Delivery_**{% endcapture %}
+{% include content_left_right.html left=left right=right %}
 
 ### Launch
 
