@@ -11,6 +11,7 @@
 	</div>
 
 	<div class="btn-box position-relative flex-shrink-0">
-		{% include contact_button.html title="Let's get started!" href="/contact.html" fa=include.fa %}
+		{% capture title %}{{ include.button_title | default: "Let's get started!" }}{% endcapture %}
+		{% include contact_button.html title=title href="/contact.html" fa=include.fa %}
 	</div>
 </div>

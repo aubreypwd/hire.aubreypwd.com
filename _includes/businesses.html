@@ -23,7 +23,7 @@
 						</span>
 					</div>
 
-					{{ plan.desc | markdownify }}
+					{{ plan.desc | markdownify | replace: '<p>', '<p class="plan-content">' }}
 
 					<div class="plan-body d-flex flex-column position-relative w-100 flex-grow-1">
 
@@ -34,7 +34,6 @@
 								</li>
 							{% endfor %}
 						</ul>
-
 
 					</div>
 				</div>
