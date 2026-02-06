@@ -526,7 +526,7 @@ header {
 	.inspired-kid {
 		img {
 			border-radius: 50px;
-			filter: hue-rotate(45deg);
+			filter: sepia(0.3);
 		}
 	}
 }
