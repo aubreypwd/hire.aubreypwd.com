@@ -2,9 +2,9 @@
 - [x] Audit for Core Web Vitals/etc
 - [x] Review each page for SEO semantics: There are some mixed headings already
 - [x] Get all `/contact.html` links to maybe trigger call booking service
-- [ ] Bullets in `/pricing.html` is broken in Safari
+- [-] Bullets in `/pricing.html` is broken in Safari
 - [ ] Get a logo train setup on `/experience.html`
 - [ ] Get favicons in place.
 - [ ] Page transitions
 - [ ] Speculation Rules
-- [ ] `sitemap.xml`
+- [x] `sitemap.xml`

@@ -1,27 +1,25 @@
 {% assign logos = include.logos | default: page.logo_train.logos %}
 
-{% if logos %}
-	{% assign count = logos.size %}
+{% assign count = logos.size %}
 
-	{% if count == 1 %}{% assign col = 12 %}
+{% if count == 1 %}{% assign col = 12 %}
 	{% elsif count == 2 %}{% assign col = 6 %}
 	{% elsif count == 3 %}{% assign col = 4 %}
 	{% elsif count == 4 %}{% assign col = 3 %}
 	{% else %}{% assign col = 2 %}
-	{% endif %}
-
-	<div class="mt-30 logo-train">
-		<div class="row g-3 flex-wrap flex-lg-nowrap justify-content-between">
-			{% for logo in logos %}
-				<div class="col-6 col-lg-{{ col }} wow zoomInUp" data-wow-duration="0.6s" data-wow-delay="0.1s">
-					{% if logo.href %}<a href="{{ logo.href }}" {% if include.target %}target="{{ logo.target | default: '_blank' }}"{% endif %} %}>{% endif %}
-						<img src="{{ logo.src }}"
-							alt="{{ logo.alt | default: '' }}"
-							class="img-fluid{% if logo.href == nil %} help{% endif %}"
-							title="{{ logo.alt }}"}>
-					{% if logo.href %}</a>{% endif %}
-				</div>
-			{% endfor %}
-		</div>
-	</div>
 {% endif %}
+
+<div class="mt-30 logo-train">
+	<div class="row g-3 flex-wrap flex-lg-nowrap justify-content-between">
+		{% for logo in logos %}
+			<div class="col-6 col-lg-{{ col }} wow zoomInUp text-center" data-wow-duration="0.3s">
+				{% if logo.href %}<a href="{{ logo.href }}"{% if logo.new_tab %} target="_blank"{% endif %}>{% endif %}
+					<img src="{{ logo.src }}"
+						alt="{{ logo.alt | default: '' }}"
+						class="img-fluid"
+						title="{{ logo.alt }}">
+				{% if logo.href %}</a>{% endif %}
+			</div>
+		{% endfor %}
+	</div>
+</div>

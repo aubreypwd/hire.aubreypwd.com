@@ -11,6 +11,38 @@ sidebar:
     - "I build _fast_ websites from the **beginning** to **end.**"
     - "Yes, they're **unhackable** (_seriously_)...nothing to worry about! _EVER_"
     - "And don't waste your time updating a complicated **Wix** website&mdash;**let me handle everything!**"
+
+am_logos:
+  - src: "assets/images/logos/affiliatewp.webp"
+    alt: "AffiliateWP"
+    href: https://affiliatewp.com
+    new_tab: true
+  - src: "assets/images/logos/wp-simple-pay.webp"
+    alt: "WP Simple Pay"
+    href: https://wpsimplepay.com/
+    new_tab: true
+  - src: "assets/images/logos/edd.webp"
+    alt: "Easy Digital Downloads"
+    href: https://easydigitaldownloads.com/
+    new_tab: true
+  - src: "assets/images/logos/thrive-themes.webp"
+    alt: "Thrive Themes"
+    href: https://thrivethemes.com/
+    new_tab: true
+
+webdev_logos:
+  - src: "assets/images/logos/microsoft.webp"
+    alt: "Microsoft"
+  - src: "assets/images/logos/starbucks.webp"
+    alt: "Starbucks"
+  - src: "assets/images/logos/newscorp.webp"
+    alt: "Newscorp"
+  # - src: "assets/images/logos/skype.webp"
+    # alt: "Skype"
+  - src: "assets/images/logos/monster.webp"
+    alt: "Monster.com"
+  - src: "assets/images/logos/heb.webp"
+    alt: "Central Market / HEB"
 ---
 
 {% capture markup %}
@@ -20,12 +52,10 @@ sidebar:
 	at="Building fast, unhackable, _worry-free_ websites!"
 	to="Since 2025"
 	level=2
-	content="A year ago I thought people **deserved better** and left my _9 - 5_ to **start a new career.**"
+	content="A year ago I thought people **deserved better** and left my _9 - 5_ to _start a new career_ as a **freelancer.**"
 %}
 {% endcapture %}
 {% include id.html id="am" content=markup class="flex-spacing" %}
-
----
 
 {% capture markup %}
 {% include
@@ -36,32 +66,15 @@ sidebar:
 	from=2022
 	to=2025
 	level=2
-	who="AffiliateWP, WP Simple Pay, Thrive Themes, Easy Digital Downloads"
 %}
 {% endcapture %}
 {% include id.html id="am" content=markup class="flex-spacing" %}
 
-As a **Senior Developer** at **[Awesome Motive](https://awesomemotive.com)** over a three-year period, I helped modernize the **[AffiliateWP](https://affiliatewp.com)** team by introducing **smarter development practices**, **demanding code quality standards**, and delivering **new, high-impact features**—one of which was the company's *first practical use of AI inside WordPress*.
+{% include logo_train.html logos=page.am_logos %}
 
-Each project required balancing long-term maintainability of a **legacy codebase** while adding **new and *modern* features**, ensuring the codebase remained stable while evolving to meet the needs of our customers.
-
-### Notable features I developed:
-
-- **AI-Driven Affiliate Review**
-- Affiliate Email Summaries
-- Affiliate Groups
-- Affiliate Program Directory
-
-### Other Contributions as Senior Development Lead:
-
-- Implemented Coding Standards
-- **Improved Development Processes**
-- **Scoped & Developed New Features**
-- Trained & Mentored Developers
+As a **Senior Developer** at **[Awesome Motive](https://awesomemotive.com)** over a three-year period, I helped primarily modernize the **[AffiliateWP](https://affiliatewp.com)** team by introducing **smarter development practices**, **demanding code quality standards**, and delivering **new, high-impact features** which engrained me into other teams at the company.
 
 The result was a stronger, more modern AffiliateWP—with **better processes**, **higher code quality**, and a faster, **more consistent rollout of new features** each quarter.
-
-The AffiliateWP team reached a **new level of efficiency**—shipping features at a **steady, reliable cadence** and delivering updates to customers **faster than ever before**. The plugin also expanded its reach through **new integrations with third-party platforms**, reinforcing its position as a dependable, forward-looking affiliate marketing solution.
 
 {% capture markup %}
 {% include
@@ -73,28 +86,19 @@ The AffiliateWP team reached a **new level of efficiency**—shipping features a
 	from=2015
 	to=2022
 	level=2
-	who="Microsoft, Monster.com, Starbucks, Skype, Discovery, Newscorp"
 %}
 {% endcapture %}
 {% include id.html id="webdev" content=markup class="flex-spacing" %}
+
+{% include logo_train.html logos=page.webdev_logos %}
 
 During my seven years at **[WebDevStudios](https://webdevstudios.com)**, I worked as a **Senior WordPress Engineer** on large-scale, enterprise-level WordPress projects for clients such as [Microsoft](#microsoft) and [Monster.com](#monster).
 
 My role focused on solving **scalability challenges** for high-traffic WordPress sites—architecting **stable systems**, integrating **complex APIs**, and **ensuring strict brand and performance standards**.
 
-I worked across both **frontend and backend** teams, led **optimization efforts**, and **guided key architectural decisions**.
+I worked across both **frontend** and **backend** teams, led **optimization efforts**, and **guided key architectural decisions**.
 
-- Team Leadership & Architecture
-- Enterprise WordPress Development
-- Performance & Scalability
-- Custom Plugin Development
-- Large Site Migrations
-- WordPress VIP
-- Headless Websites
-- Post-launch Support
-
-### Noteable projects:
-
+{% comment %}
 {% include id.html id="microsoft" content="![Microsoft](assets/images/experience/microsoft.webp)" %}
 
 While at WebDev, I helped maintain and develop **enterprise WordPress solutions** for **Microsoft Office 365** and **Microsoft DEV Blogs**.
@@ -102,11 +106,6 @@ While at WebDev, I helped maintain and develop **enterprise WordPress solutions*
 One of my key responsibilities was managing **"The Mule,"** a background **content-sync system** that syndicated posts across several Microsoft properties. The system parsed and reformatted content into a clean, editable structure while giving editors full control over what was imported or published.
 
 My work focused on improving the **reliability, flexibility, and performance** of this complex system—keeping it compliant with Microsofts strict publishing workflows, scalability requirements, and technical standards.
-
-- Automated Content Syndication
-- System Reliability & Maintenance
-- Editorial Workflow Integration
-- Architectural Enhancements
 
 I also developed **new features**, **resolved difficult issues**, and consulted with Microsoft **leadership** to maintain and improve these platforms.
 
@@ -118,24 +117,7 @@ I identified and resolved **performance bottlenecks** across both frontend and b
 
 These optimizations delivered **measurable gains** in load times, responsiveness, and **SEO performance**, enhancing long-term search visibility—at a time when *Core Web Vitals was still new*.
 
-- Core Web Vitals Optimization
-- Caching Strategy
-- Search Console Tracking
-- Backend Optimizations
-
-#### Other projects I contributed to at WebDevStudios:
-
-- **HEB Central Market**
-- **Newscorp**
-- **Starbucks**
-- **Uber**
-- **Skype Media**
-- Discovery Communications
-- Care.com
-- Love Is Respect
-- Roadkill
-
----
+{% endcomment %}
 
 {% capture content %}
 * Built websites with <code>&lt;table&gt;</code>'s
@@ -147,8 +129,9 @@ These optimizations delivered **measurable gains** in load times, responsiveness
 {% endcapture %}
 {% include
 	experience.html
-	at="Inspired Kid"
-	title="20+ years"
+	title="Inspired Kid"
+	at="20+ years"
+	class="inspired-kid"
 	from=1983
 	img_src="assets/images/experience/aubreypwd-inspired-kid.webp"
 	to=2015
