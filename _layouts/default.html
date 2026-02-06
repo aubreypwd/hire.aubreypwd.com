@@ -105,6 +105,46 @@
 
 	<link rel="manifest" href="{{ 'manifest.json' | absolute_url }}" fetchpriority="low" crossorigin>
 	<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ 'sitemap.xml' | absolute_url }}" fetchpriority="low">
+
+	<style>
+
+		@view-transition {
+			navigation: auto;
+		}
+
+		@keyframes view-transition-fade-in {
+			from {
+				opacity: 0;
+			}
+
+			to {
+				opacity: 1;
+			}
+		}
+
+		::view-transition-new(root) { animation: view-transition-fade-in 100ms ease-out both; }
+		::view-transition-old(root) { animation: none; }
+
+		@media ( prefers-reduced-motion: reduce ) {
+			::view-transition-new(root) { animation: none !important; }
+		}
+	</style>
+
+	{% assign pages_for_speculation = site.pages | where_exp: "page", "page.sitemap != false" %}
+	<script type="speculationrules">
+	{
+		"prerender": [
+			{
+				"source": "list",
+				"urls": [
+					{% for page in pages_for_speculation %}
+					"{{ page.url | absolute_url }}"{% unless forloop.last %},{% endunless %}{% endfor %}
+				]
+			}
+		]
+	}
+	</script>
+
 </head>
 
 <body class="layout-{{ page.layout | slugify }} page-{{ page.slug | default: page.url | slugify }} bg-color4 bg-blend-luminosity gray-layer opc9 scheme2 light" style="background-image: url(assets/images/pattern-bg.png);">
