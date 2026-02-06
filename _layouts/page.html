@@ -5,11 +5,15 @@ layout: default
 <div class="flex-spacing gap-lg animated fadeIn">
 
 	<h1 class="mb-0 fw-normal sz-55 main-heading mw-90">
-			{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}
+		{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}
 	</h1>
 
 	{% if page.sub_title %}
-		{% include tags_box.html content=page.sub_title large=true %}
+		{% if page.sub_title_alt %}
+			{% include page_title.html content=page.sub_title %}
+		{% else %}
+			{% include tags_box.html content=page.sub_title large=true %}
+		{% endif %}
 	{% endif %}
 
 	<div class="flex-spacing gap-md content wow fadeIn">

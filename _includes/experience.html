@@ -3,12 +3,12 @@
 			<div class="d-flex flex-column flex-md-row gap-4 justify-content-between w-100">
 				{% if include.level %}
 					<h{{ include.level | default: 4 }} class="mb-0 fw-normal sz-24 position-relative heading">
-						<span class="at fw-bold d-block">{{ include.at }}</span>
+						{% if include.at %}<span class="at fw-bold d-block">{{ include.at | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% endif %}
 						<span class="title d-block mt-20 fw-normal important">{{ include.title | markdownify | remove: '<p>' | remove: '</p>' }}</span>
 					</h{{ include.level | default: 4 }}>
 				{% else %}
 					<div class="mb-0 fw-normal sz-24 position-relative heading">
-						<span class="at fw-bold d-block">{{ include.at }}</span>
+						{% if include.at %}<span class="at fw-bold d-block">{{ include.at | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% endif %}
 						<span class="title d-block mt-20 fw-normal important">{{ include.title | markdownify | remove: '<p>' | remove: '</p>' }}</span>
 					</div>
 				{% endif %}
@@ -25,7 +25,7 @@
 			{% endif %}
 
 			{% if include.from or include.to %}
-				<span>{{ include.from | default: '' }}{% if include.from %} - {% endif %}{{ include.to | default: ''}}</span>
+				<span>{{ include.from | default: '' }}{% if include.from %} - {% endif %}{{ include.to | default: '' }}</span>
 			{% endif %}
 		</div><!-- Experience Box -->
 </div>

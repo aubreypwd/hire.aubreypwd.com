@@ -343,18 +343,21 @@ h3, h4, h5, h6 {
 		}
 	}
 
-	> * {
+	> p,
+	p {
 		white-space: wrap;
-	}
-
-	img[alt="About 16 years"] {
-		border-radius: 50px;
-		filter: hue-rotate(45deg);
 	}
 }
 
 hr {
 	border-top-color: var(--accent);
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+
+	&.spacer {
+		visibility: hidden;
+	}
 }
 
 .column-list-box {
@@ -449,7 +452,7 @@ header {
 
 .businesses-boxes {
 	padding: 2rem 1rem 3rem;
-	border: 1px solid var(--accent);
+	border: 1px solid var(--accent-lighter);
 	box-shadow: inset 1px 1px 39px var(--accent);
 	border-radius: 2rem;
 }
@@ -504,10 +507,19 @@ header {
 .page-claims-html header a.claims, .page-claims-html header a.claims:hover,
 .page-experience-html header a.experience, .page-experience-html header a.experience:hover,
 .page-process-html header a.process, .page-process-html header a.process:hover,
-.page-pricing-html header a.pricing, .page-pricing-html header a.pricing:hover {
+.page-pricing header a.pricing, .page-pricing header a.pricing:hover {
 	color: var(--scheme2);
 }
 
 .underlined {
 	text-decoration: underline;
+}
+
+.page-experience-html {
+	.edu-box:last-child {
+		img {
+			border-radius: 50px;
+			filter: hue-rotate(45deg);
+		}
+	}
 }
