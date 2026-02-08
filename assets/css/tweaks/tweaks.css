@@ -566,3 +566,9 @@ h2 {
 	flex-wrap: nowrap;
 	white-space: nowrap;
 }
+
+@media (max-width: 770px) {
+	p, ul li, ol li, .plan-body ul li {
+		font-size: 1.2rem;
+	}
+}
