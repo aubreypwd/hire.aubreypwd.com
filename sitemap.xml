@@ -7,7 +7,7 @@ sitemap: false
 		{% if page.sitemap != false %}
 			<url>
 				<loc>{{ page.url | absolute_url }}</loc>
-				<lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+				<lastmod>{{ page.last_modified_at }}</lastmod>
 			</url>
 		{% endif %}
 	{% endfor %}
