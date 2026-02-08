@@ -16,10 +16,10 @@ Note: I can only have up to (4) items before things get tricky.
 
 				<div class="col-md-6 col-sm-6 col-lg-{{ col }}">
 					<div class="fw-bold fun-fact-box d-flex flex-column align-items-start position-relative w-100">
-						<span>
+						<span class="label">
 							{{ box.label }}
 						</span>
-						<div class="mb-0 fw-bold sz-30 wow flipInY fadeIn" data-wow-duration="0.6s" data-wow-delay="0.2s">
+						<div class="text mb-0 fw-bold wow flipInY fadeIn" data-wow-duration="0.6s" data-wow-delay="0.2s">
 							{% if box.href %}
 								<a href="{{ box.href }}">{{ box.value }}</a>
 							{% else %}

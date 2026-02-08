@@ -102,6 +102,19 @@ body {
 	margin-top: 0;
 }
 
+/* This fixes odd spacing in these boxes */
+.fun-fact-box {
+	.text {
+		font-size: clamp(1.2rem, 1.7vw, 4rem);
+		line-height: clamp(1.4rem, 1.9vw, 4.2rem);
+		white-space: nowrap;
+	}
+
+	.label {
+		margin-bottom: 0.4rem;
+	}
+}
+
 .mobile {
 	display: none;
 
@@ -185,6 +198,13 @@ h4,
 h5,
 h6 {
 	color: var(--accent);
+}
+
+.main-heading {
+	font-size: 4rem;
+	line-height: 4rem;
+	font-size: clamp(3rem, 4vw, 4rem);
+  line-height: clamp(3.2rem, 4.2vw, 4.2rem);
 }
 
 .layout-page .main-heading {
@@ -318,13 +338,9 @@ h3, h4, h5, h6 {
 	.plan-head {
 
 		> *:first-child {
-			min-height: 4rem;
-			max-height: 4rem;
+			min-height: 4.5rem;
+			max-height: 4.5rem;
 		}
-	}
-
-	.plan-content {
-		min-height: 7rem;
 	}
 
 	ul li::marker {
@@ -541,4 +557,12 @@ header {
 
 h2 {
 	color: var(--heading-2);
+}
+
+.breadcrumb li.breadcrumb-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	white-space: nowrap;
 }

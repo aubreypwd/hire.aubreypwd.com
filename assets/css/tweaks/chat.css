@@ -42,9 +42,11 @@
 	animation-duration: 0.2s !important;
 
 	&.media {
+
 		padding: 0;
 		background: none !important;
 		border: 1px solid var(--accent-lighter);
+		max-width: 250px !important;
 
 		&::before,
 		&::after {
