@@ -577,5 +577,19 @@ form {
 	label {
 		font-weight: bold;
 		margin-bottom: 1rem;
+		font-size: 1.3rem;
+	}
+
+	input[type="text"],
+	input[type="url"] {
+		max-width: 500px;
+	}
+
+	textarea {
+		max-width: 700px;
+	}
+
+	.required {
+		color: #d26e6e;
 	}
 }

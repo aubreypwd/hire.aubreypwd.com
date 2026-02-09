@@ -40,7 +40,7 @@ layout: page
 	<input type="hidden" name="redirect" value="{{ page.url | absolute_url }}?sent">
 	<input type="hidden" name="subject" value="{{ page.subject | default: 'Form submission from ' | append: page.url }}">
 
-	<div class="fields flex-spacing gap-4">
+	<div class="fields flex-spacing gap-5">
 		{{ content }}
 	</div>
 

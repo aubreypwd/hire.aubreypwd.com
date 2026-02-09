@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<link rel="preload" as="image" href="/assets/images/pattern-bg.png" fetchpriority="high">
+	<link rel="preload" as="image" href="{{ '/assets/images/pattern-bg.png' | absolute_url }}" fetchpriority="high">
 
 	<title>{% if page.title %}{{ page.title | markdownify | strip_html }} - {% endif %}{{ site.title | markdownify | strip_html }}</title>
 
@@ -147,7 +147,7 @@
 
 </head>
 
-<body class="layout-{{ page.layout | slugify }} page-{{ page.slug | default: page.url | slugify }} bg-color4 bg-blend-luminosity gray-layer opc9 scheme2 light" style="background-image: url(assets/images/pattern-bg.png);">
+<body class="layout-{{ page.layout | slugify }} page-{{ page.slug | default: page.url | slugify }} bg-color4 bg-blend-luminosity gray-layer opc9 scheme2 light" style="background-image: url({{ 'assets/images/pattern-bg.png' | absolute_url }});">
 	<main class="pt-30 pb-lg-60">
 		{% include page_loader.html %}
 		{% include header.html %}
