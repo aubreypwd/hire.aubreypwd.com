@@ -42,9 +42,9 @@ layout: page
 
 	<div class="fields flex-spacing gap-4">
 		{{ content }}
-	</div>
 
-	<p><button type="submit">{{ page.submit | default: 'Submit' }}</button></p>
+		<p><button type="submit" class="btn btn-primary">{{ page.submit | default: 'Submit' }}</button></p>
+	</div>
 </form>
 
 <script src="{{ 'assets/js/tweaks/savior.umd.js' | absolute_url }}" defer></script>
