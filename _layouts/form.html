@@ -3,7 +3,8 @@ layout: page
 ---
 
 <div class="sent-message hidden">
-	<p class="italic"><span class="bold highlight" style="background-color: #84e184 !important;">Sent</span> &mdash; {{ page.sent_message | default: 'I will get back to you as soon as possible.' }}</p>
+	{% capture markup %}{{ page.submit_message | default: "**Sent!** &mdash; I will get back to you as soon as possible." }}{% endcapture %}
+	{% include page_title.html content=markup %}
 
 	<script>
 
