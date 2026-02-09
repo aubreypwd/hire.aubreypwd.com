@@ -1,3 +1,4 @@
-<label {% if include.checkbox != true %}for="{{ include.label }}"{% endif %} aria-hidden="false">
+{% assign label_for = include.for | default: include.label | slugify %}
+<label class="form-control-label" {% unless include.checkbox == true %}for="{{ label_for }}"{% endunless %} aria-hidden="false">
 	{{ include.label }}{% if include.required %}<span class="required"> (Required)</span>{% endif %}
 </label>

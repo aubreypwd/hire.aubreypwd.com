@@ -1,7 +1,7 @@
-<div class="field {{ include.class }}">
+<div class="field form-group {{ include.class }}">
 	{% include form/label.html %}
 
-	<select {% include form/attrs.html %}>
+	<select class="form-control" {% include form/attrs.html %}>
 		{% assign choice_list = include.choices | split: ',' %}
 
 		{% for choice in choice_list %}

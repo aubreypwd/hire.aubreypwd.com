@@ -572,3 +572,10 @@ h2 {
 		font-size: 1.2rem;
 	}
 }
+
+form {
+	label {
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+}

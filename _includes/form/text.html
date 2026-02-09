@@ -1,7 +1,7 @@
-<div class="field {{ include.class }}">
+<div class="field form-group {{ include.class }}">
 	{% include form/label.html %}
 
-	<input type="{{ include.type | default: 'text' }}" {% include form/attrs.html %}>
+	<input class="form-control" type="{{ include.type | default: 'text' }}" {% include form/attrs.html %}>
 
 	{% include form/description.html description=include.description %}
 </div>

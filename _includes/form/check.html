@@ -1,17 +1,15 @@
-<div class="field {{ include.class }}">
+<div class="field form-group {{ include.class }}">
 	{% include form/label.html label=include.label checkbox=true %}
 
 	{% assign choice_list = include.choices | split: ',' %}
+	{% assign checkbox_name = include.label | slugify %}
 
 	{% for choice in choice_list %}
-
-		<input
-			type="checkbox"
-			id="{{ include.label | append: choice | slugify }}"
-			name="{{ include.label }}"
-			value="{{ choice }}">
-
-		<label for="{{ include.label | append: choice | slugify }}" style="display: block;">{{ choice }}</label>
+		{% capture choice_id %}{{ checkbox_name | append: '-' | append: choice | slugify }}{% endcapture %}
+		<div class="form-check">
+			<input class="form-check-input" type="checkbox" id="{{ choice_id }}" name="{{ checkbox_name }}[]" value="{{ choice }}">
+			<label class="form-check-label" for="{{ choice_id }}">{{ choice }}</label>
+		</div>
 	{% endfor %}
 
 	{% include form/description.html description=include.description %}

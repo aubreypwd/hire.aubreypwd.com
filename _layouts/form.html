@@ -40,18 +40,10 @@ layout: page
 	<input type="hidden" name="redirect" value="{{ page.url | absolute_url }}?sent">
 	<input type="hidden" name="subject" value="{{ page.subject | default: 'Form submission from ' | append: page.url }}">
 
-	<div class="fields">
+	<div class="fields flex-spacing gap-4">
 		{{ content }}
 	</div>
 
-	<hr>
-
-	{% if page.submit_instruction %}
-		{{ page.submit_instruction | markdownify }}
-	{% endif %}
-
-	<ul class="actions">
-		<li><button type="submit" class="button primary">{{ page.submit | default: 'Submit' }}</button></li>
-	</ul>
+	<button type="submit">{{ page.submit | default: 'Submit' }}</button>
 </form>
 

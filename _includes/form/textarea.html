@@ -1,7 +1,7 @@
-<div class="field {{ include.class }}">
+<div class="field form-group {{ include.class }}">
 	{% include form/label.html %}
 
-	<textarea rows="{{ include.rows | default: 7 }}" {% include form/attrs.html %}></textarea>
+	<textarea class="form-control" rows="{{ include.rows | default: 7 }}" {% include form/attrs.html %}></textarea>
 
 	{% include form/description.html description=include.description %}
 </div>
