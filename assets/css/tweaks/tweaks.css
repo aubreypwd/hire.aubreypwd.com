@@ -111,7 +111,9 @@ body {
 	}
 
 	.label {
-		margin-bottom: 0.4rem;
+		@media (min-width: 576px) {
+			margin-bottom: 0.4rem;
+		}
 	}
 }
 
