@@ -26,12 +26,18 @@
 								| default: site.sidebar.animate_messages %}
 
 							<div class="message last media {% if animate %}animated fadeIn zoomInRight{% endif %}">
-								<img src="{{ 'assets/images/aubrey/aubrey-portwood.webp' | absolute_url }}" alt="Aubrey Portwood" width="250">
+								{% if page.permalink != '/404.html' %}
+									<img src="{{ 'assets/images/aubrey/aubrey-portwood.webp' | absolute_url }}" alt="Aubrey Portwood" width="250">
+								{% else %}
+								<img src="https://media.tenor.com/iuJD5n3cFe4AAAAM/huh-what.gif" alt="Estelle" width="250">
+								{% endif %}
 							</div>
 
-							<div class="message last {% if animate %}animated fadeIn zoomInRight{% endif %}">
-								⬆️&nbsp;&nbsp;That's me... I'm <strong>Aubrey</strong>
-							</div>
+							{% if page.permalink != '/404.html' %}
+								<div class="message last {% if animate %}animated fadeIn zoomInRight{% endif %}">
+									⬆️&nbsp;&nbsp;That's me... I'm <strong>Aubrey</strong>
+								</div>
+							{% endif %}
 
 							{% for msg in messages %}
 
