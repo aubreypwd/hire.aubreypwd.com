@@ -40,10 +40,12 @@ layout: page
 	<input type="hidden" name="redirect" value="{{ page.url | absolute_url }}?sent">
 	<input type="hidden" name="subject" value="{{ page.subject | default: 'Form submission from ' | append: page.url }}">
 
-	<div class="fields flex-spacing gap-5">
+	<div class="fields flex-spacing gap-4">
 		{{ content }}
 	</div>
 
-	<button type="submit">{{ page.submit | default: 'Submit' }}</button>
+	<p><button type="submit">{{ page.submit | default: 'Submit' }}</button></p>
 </form>
 
+<script src="{{ 'assets/js/tweaks/savior.umd.js' | absolute_url }}" defer></script>
+<script src="{{ 'assets/css/tweaks/forms.js' | absolute_url }}" defer></script>

@@ -592,4 +592,22 @@ form {
 	.required {
 		color: #d26e6e;
 	}
+
+	input,
+	textarea {
+		padding: 0.7rem !important;
+	}
+
+	input::placeholder,
+	textarea::placeholder {
+		color: var(--accent-lighter) !important;
+	}
+
+	.form-heading {
+		margin-top: 2rem !important;
+	}
+
+	.form-check-input {
+		margin-right: 1rem;
+	}
 }
