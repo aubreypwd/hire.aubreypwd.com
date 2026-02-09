@@ -1,5 +1,5 @@
 {% assign slugified_label = include.id | default: include.label | slugify %}
-name="{{ slugified_label }}{% if include.checkbox %}[]{% endif %}"
+name="{{ include.name | default: include.label }}{% if include.checkbox %}[]{% endif %}"
 id="{{ slugified_label }}{% if include.checkbox %}[]{% endif %}"
 autocomplete="{{ include.autocomplete | default: 'off' }}"
 {% if include.placeholder %}placeholder="{{ include.placeholder }}"{% endif %}
