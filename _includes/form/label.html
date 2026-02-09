@@ -1,0 +1,3 @@
+<label {% if include.checkbox != true %}for="{{ include.label }}"{% endif %} aria-hidden="false">
+	{{ include.label }}{% if include.required %}<span class="required"> (Required)</span>{% endif %}
+</label>

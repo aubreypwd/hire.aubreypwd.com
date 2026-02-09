@@ -1,0 +1,43 @@
+---
+layout: form
+sitemap: false
+access_key: 18ec33e5-254b-4f41-baba-528eb5b56724
+---
+
+{% include form/common/all.html %}
+
+{% include form/heading.html content="Your website" %}
+
+<!--
+
+This form is a questionnaire that is geared more towards
+building websites.
+
+-->
+
+<!-- Inspiration and direction -->
+{% include form/textarea.html label="List at least three websites you like and why you like them." placeholder="Or, brands you really love the look and feel of." required=true %}
+{% include form/textarea.html label="What elements or content do you NEVER want on your site and why?" placeholder="E.g. ads, political content, etc." required=true %}
+
+<!-- SEO and search intent -->
+{% include form/textarea.html label="What words or phrases would you use to search for your site or business?" required=true %}
+{% include form/textarea.html label="Rank what you think your top three most important search terms are." required=true %}
+
+<!-- Site structure -->
+{% include form/textarea.html label="What pages or sections must your site have?" placeholder="How many pages do you think? A guess is okay." required=true %}
+
+<!-- Content and maintenance -->
+{% include form/choice.html label="How often do you see content changing on your website?" choices="Not sure,Daily,Weekly,Monthly,Very Rarely" required=true %}
+{% include form/textarea.html label="Who will be in charge of changing the content on your site?" required=true %}
+{% include form/textarea.html label="Do you already have content?" placeholder="Where is it? If not, how do you intend to develop the content for the website?" required=true %}
+{% include form/choice.html label="Are you intending to input all your content on your website, or do you need help with that?" choices="Yes—I'm intending to do it myself or with my team,No—I need help getting initial content on the page" required=true %}
+{% include form/choice.html label="Do you need blogging or a way to publish news?" choices="Yes,No,Not sure" required=true %}
+
+<!-- Marketing and traffic plan -->
+{% include form/textarea.html label="How do you plan to attract visitors outside of search engines?" placeholder="E.g. social, word-of-mouth, ads, etc." required=true %}
+
+<!-- Selling and features -->
+{% include form/textarea.html label="Are you planning to sell products or use eCommerce?" placeholder="Describe the process you have in mind. How do you envision people buying and receiving products?" required=true %}
+{% include form/check.html label="Your website will need:" placeholder="If you even think you might need it, check it. We'll work out the details later." choices="Online Payments,Physical products that are shipped,Downloadable products,Contact Forms,Newsletters,Forums,Membership Capabilities,Quizzes and other similar lead magnets,Analytics (site traffic tracking),Booking/reservation tools,Forms (other than contact),Galleries,Popups,Sales campaigns (e.g. Black Friday),Email campaigns,Private or internal content" required=true %}
+
+{% include form/common/finish.html %}

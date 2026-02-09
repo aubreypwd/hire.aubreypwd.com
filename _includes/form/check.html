@@ -1,0 +1,18 @@
+<div class="field {{ include.class }}">
+	{% include form/label.html label=include.label checkbox=true %}
+
+	{% assign choice_list = include.choices | split: ',' %}
+
+	{% for choice in choice_list %}
+
+		<input
+			type="checkbox"
+			id="{{ include.label | append: choice | slugify }}"
+			name="{{ include.label }}"
+			value="{{ choice }}">
+
+		<label for="{{ include.label | append: choice | slugify }}" style="display: block;">{{ choice }}</label>
+	{% endfor %}
+
+	{% include form/description.html description=include.description %}
+</div>

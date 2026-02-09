@@ -1,0 +1,57 @@
+---
+layout: page
+---
+
+<div class="sent-message hidden">
+	<p class="italic"><span class="bold highlight" style="background-color: #84e184 !important;">Sent</span> &mdash; {{ page.sent_message | default: 'I will get back to you as soon as possible.' }}</p>
+
+	<script>
+
+		// Once the form has been submitted...
+		if  ( new URLSearchParams( window.location.search ).has( 'sent' ) ) {
+			document.addEventListener( 'DOMContentLoaded', () => {
+
+				// Show sent message.
+				document
+					.querySelectorAll( '.sent-message' ).forEach( el => {
+						el.classList.remove( 'hidden' );
+					} );
+
+				// Disable form.
+				document
+					.getElementById( '{{ page.url | slugify }}')
+					.querySelectorAll( 'input, textarea, select, button' )
+						.forEach( el => el.disabled = true  );
+			} );
+		}
+	</script>
+</div>
+
+<form action="https://api.web3forms.com/submit"
+	method="POST"
+	id="{{ page.url | slugify }}">
+
+	{% if page.access_key == nil %}
+		<p style="color: red">No access key!</p>
+		<hr>
+	{% endif %}
+
+	<input type="hidden" name="access_key" value="{{ page.access_key }}">
+	<input type="hidden" name="redirect" value="{{ page.url | absolute_url }}?sent">
+	<input type="hidden" name="subject" value="{{ page.subject | default: 'Form submission from ' | append: page.url }}">
+
+	<div class="fields">
+		{{ content }}
+	</div>
+
+	<hr>
+
+	{% if page.submit_instruction %}
+		{{ page.submit_instruction | markdownify }}
+	{% endif %}
+
+	<ul class="actions">
+		<li><button type="submit" class="button primary">{{ page.submit | default: 'Submit' }}</button></li>
+	</ul>
+</form>
+
