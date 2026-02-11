@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<!-- {% include page_title.html title="Case Study" class="mb-50" %} -->
+{% include page_title.html title="Case Study" class="mb-50" %}
 
 <article class="flex-spacing gap-lg animated fadeIn portfolio-article study-{{ page.url | remove: '.html' | slugify }}">
 	<div class="position-relative w-100">
@@ -48,10 +48,11 @@ layout: default
 								data-wow-duration=".5s"
 								data-wow-delay=".2s"
 								style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.2s; animation-name: fadeIn;">
+
 								<div class="single-gal-box screenshot before round15 overflow-hidden position-relative w-100">
-									<a href="/assets/images/resources/port-detail-img2.jpg" data-fancybox="gallery" title="">
+									{% if page.study_after_url %}<a href="{{ page.study_after_url }}">{% endif %}
 										<img class="img-fluid w-100" src="{{ page.study_before | absolute_url }}" alt="Before" loading="lazy">
-									</a>
+									{% if page.study_after_url %}</a>{% endif %}
 								</div><!-- Single Gallery Box -->
 							</div>
 
@@ -93,8 +94,6 @@ layout: default
 			</div><!-- Portfolio Detail Content -->
 		</div><!-- Portfolio Detail -->
 	</div>
-
-	<hr>
 
 	<div class="flex-spacing gap-md content wow fadeIn">
 		{% if page.markdownify_content %}

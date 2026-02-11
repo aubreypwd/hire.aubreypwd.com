@@ -634,6 +634,7 @@ form {
 			color: var(--scheme2);
 			border-top-left-radius: 1rem;
 			font-weight: bold;
+			font-size: clamp(0.5rem,3.5vw,1rem);
 			padding: 0.5rem 1rem;
 			text-transform: uppercase;
 			font-family: var(--Bricolage-Grotesque);
@@ -690,9 +691,29 @@ ul > li::marker {
 .content {
 
 	img {
-
+		box-shadow: 0 0 1rem var(--accent-lighter);
 		border: 1px solid var(--accent-lighter);
 		border-radius: 1rem;
 		position: relative;
 	}
+}
+
+.layout-study {
+
+	.content {
+		padding: 2rem;
+		background: hsl(0deg 0% 0% / 2%);
+		border: 1px solid var(--accent-lighter);
+		border-radius: 2rem;
+	}
+}
+
+.port-detail-cont {
+	@media(max-width: 992px) {
+		gap: 1.5rem;
+	}
+}
+
+.list-style {
+	padding-left: 2rem;
 }
