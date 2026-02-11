@@ -103,8 +103,8 @@ img.logo {
 /* This fixes odd spacing in these boxes */
 .fun-fact-box {
 	.text {
-		font-size: clamp(1.2rem, 1.7vw, 4rem);
-		line-height: clamp(1.4rem, 1.9vw, 4.2rem);
+		font-size: clamp(1.2rem, 1.5vw, 4rem);
+		line-height: clamp(1.4rem, 1.7vw, 4.2rem);
 		white-space: nowrap;
 	}
 
@@ -624,7 +624,8 @@ form {
 		position: relative;
 
 		&.before::before,
-		&.after:before {
+		&.after::before {
+
 			display: block;
 			position: absolute;
 			bottom: 0;
@@ -638,16 +639,17 @@ form {
 			font-family: var(--Bricolage-Grotesque);
 		}
 
-		&.before:before {
+		&.before::before {
 			content: "Before";
 		}
 
-		&.after:before {
+		&.after::before {
 			content: "After";
 		}
 	}
 
 	.port-cat > span {
+
 		display: inline-block;
 		font-family: var(--Bricolage-Grotesque);
 		-webkit-border-radius: var(--round50);
@@ -667,8 +669,6 @@ form {
 			display: inline-block;
 		}
 	}
-
-
 }
 
 .rounded-pill {
@@ -685,4 +685,14 @@ form {
 
 ul > li::marker {
 	color: var(--accent);
+}
+
+.content {
+
+	img {
+
+		border: 1px solid var(--accent-lighter);
+		border-radius: 1rem;
+		position: relative;
+	}
 }

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="flex-spacing gap-lg animated fadeIn">
+<div class="flex-spacing gap-lg animated fadeIn page">
 
 	<h1 class="mb-0 fw-normal sz-55 main-heading mw-90">
 		{{ page.title | markdownify | remove: '<p>' | remove: '</p>' }}
@@ -16,7 +16,7 @@ layout: default
 		{% endif %}
 	{% endif %}
 
-	<div class="flex-spacing gap-md content wow fadeIn">
+	<div class="flex-spacing gap-md content wow fadeIn page-content">
 		{% if page.markdownify_content %}
 			{{ content | markdownify }}
 		{% else %}

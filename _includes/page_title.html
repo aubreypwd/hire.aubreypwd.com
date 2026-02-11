@@ -1,7 +1,7 @@
-<div class="page-title next-page gap-3 d-flex align-items-center justify-content-between round15 w-100 mw-100">
+<div class="page-title next-page gap-3 d-flex align-items-center justify-content-between round15 w-100 mw-100 {{ include.class }}">
 
-{% if include.title %}
-		<div class="mb-0 fw-normal sz-36 title">{{ include.title | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+	{% if include.title %}
+		<div class="mb-0 fw-bold sz-36 title">{{ include.title | markdownify | remove: '<p>' | remove: '</p>' }}</div>
 	{% endif %}
 
 	{% if include.content %}
