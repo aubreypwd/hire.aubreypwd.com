@@ -3,7 +3,7 @@ sitemap: false
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% for page in site.pages | concat: site.posts %}
+  {% for page in site.pages %}
     {% if page.sitemap != false %}
       {% assign lastmod = page.date | default: site.time %}
       <url>
