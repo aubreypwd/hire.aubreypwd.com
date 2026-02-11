@@ -1,20 +1,20 @@
 User-agent: *
-Disallow: /
+Disallow: /v1/
 
 User-agent: OAI-SearchBot
-Allow: /
+Disallow: /v1/
 
 User-agent: PerplexityBot
-Allow: /
+Disallow: /v1/
 
 User-agent: ClaudeBot
-Allow: /
+Disallow: /v1/
 
 User-agent: Googlebot
-Allow: /
+Disallow: /v1/
 
 User-agent: bingbot
-Allow: /
+Disallow: /v1/
 
 User-agent: Applebot
-Allow: /
+Disallow: /v1/
