@@ -618,3 +618,24 @@ form {
 		margin-right: 1rem;
 	}
 }
+
+.portfolio-article {
+
+	.screenshot {
+		border: 1px solid var(--accent-lighter);
+	}
+
+	.port-cat > span {
+		display: inline-block;
+		font-family: var(--Bricolage-Grotesque);
+		-webkit-border-radius: var(--round50);
+		border-radius: var(--round50);
+		background-color: var(--accent);
+		box-shadow: 0 0 10px var(--accent);
+		color: var(--color1);
+		font-weight: 300;
+		font-size: 1rem;
+		padding: 5px 1.375rem;
+		color: white;
+	}
+}
