@@ -78,24 +78,22 @@ body {
 	display: none !important;
 }
 
-.logo-train {
+img.logo {
+	filter:
+		grayscale(100%)
+		sepia(40%)
+		saturate(0)
+		brightness(200%)
+		contrast(0.92)
+	;
 
-	img {
-		filter:
-			grayscale(100%)
-			sepia(40%)
-			saturate(0)
-			brightness(200%)
-			contrast(0.92)
-		;
+	opacity: 0.3;
 
-		opacity: 0.3;
-
-		&:hover {
-			opacity: 0.6;
-		}
+	&:hover {
+		opacity: 0.6;
 	}
 }
+
 
 .intro-box {
 	gap: 1.5rem;
@@ -623,6 +621,30 @@ form {
 
 	.screenshot {
 		border: 1px solid var(--accent-lighter);
+		position: relative;
+
+		&.before::before,
+		&.after:before {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background: white;
+			color: var(--scheme2);
+			border-top-left-radius: 1rem;
+			font-weight: bold;
+			padding: 0.5rem 1rem;
+			text-transform: uppercase;
+			font-family: var(--Bricolage-Grotesque);
+		}
+
+		&.before:before {
+			content: "Before";
+		}
+
+		&.after:before {
+			content: "After";
+		}
 	}
 
 	.port-cat > span {
@@ -638,4 +660,29 @@ form {
 		padding: 5px 1.375rem;
 		color: white;
 	}
+
+	.port-detail-cap {
+
+		.logo {
+			display: inline-block;
+		}
+	}
+
+
+}
+
+.rounded-pill {
+
+	a:hover {
+		border-bottom: 1px solid var(--accent);
+	}
+
+	i.fas,
+	i.far {
+		margin-right: 0.5rem;
+	}
+}
+
+ul > li::marker {
+	color: var(--accent);
 }

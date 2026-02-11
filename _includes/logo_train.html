@@ -16,7 +16,7 @@
 				{% if logo.href %}<a href="{{ logo.href }}"{% if logo.new_tab %} target="_blank"{% endif %}>{% endif %}
 					<img src="{{ logo.src }}"
 						alt="{{ logo.alt | default: '' }}"
-						class="img-fluid"
+						class="img-fluid logo"
 						title="{{ logo.alt }}">
 				{% if logo.href %}</a>{% endif %}
 			</div>
