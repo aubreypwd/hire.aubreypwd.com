@@ -192,12 +192,14 @@ h1,
 h2,
 h3 {
 	color: var(--color7);
+	font-weight: 600;
 }
 
 h4,
 h5,
 h6 {
 	color: var(--accent);
+	font-weight: 600;
 }
 
 .main-heading {
@@ -691,20 +693,9 @@ ul > li::marker {
 .content {
 
 	img {
-		box-shadow: 0 0 1rem var(--accent-lighter);
 		border: 1px solid var(--accent-lighter);
 		border-radius: 1rem;
 		position: relative;
-	}
-}
-
-.layout-study {
-
-	.content {
-		padding: 2rem;
-		background: hsl(0deg 0% 0% / 2%);
-		border: 1px solid var(--accent-lighter);
-		border-radius: 2rem;
 	}
 }
 
