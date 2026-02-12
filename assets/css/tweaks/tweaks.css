@@ -214,8 +214,8 @@ h6 {
 .main-heading {
 	font-size: 4rem;
 	line-height: 4rem;
-	font-size: clamp(3rem, 4vw, 4rem);
-  line-height: clamp(3.2rem, 4.2vw, 4.2rem);
+	font-size: clamp(3rem, 3.7vw, 4rem);
+	line-height: clamp(3.2rem, 4vw, 4.2rem);
 }
 
 .layout-page .main-heading {
@@ -500,7 +500,7 @@ header {
 	scroll-padding-left: 1rem; /* matches px-3-ish, tweak if needed */
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: none;     /* IE + old Edge */
-  scrollbar-width: none;
+	scrollbar-width: none;
 
 	&::-webkit-scrollbar {
 		display: none;
