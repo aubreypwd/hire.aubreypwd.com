@@ -701,7 +701,7 @@ ul > li::marker {
 
 .content {
 
-	img {
+	img:not(.borderless) {
 		border: 1px solid var(--accent-lighter);
 		border-radius: 1rem;
 		position: relative;
