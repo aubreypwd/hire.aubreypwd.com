@@ -5,7 +5,7 @@
 	</h1>
 
 	{% if include.content.description or page.intro_box.description %}
-		<div class="mb-0 wow fadeInUp" data-wow-duration=".5s">
+		<div class="mb-0 wow fadeInUp description" data-wow-duration=".5s">
 			{{ include.content.description | default: page.intro_box.description | markdownify }}
 		</div>
 	{% endif %}

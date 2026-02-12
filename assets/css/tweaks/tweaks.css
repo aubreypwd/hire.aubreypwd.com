@@ -98,6 +98,15 @@ img.logo {
 .intro-box {
 	gap: 1.5rem;
 	margin-top: 0;
+
+	.description {
+
+		i[class*="fa"] {
+			color: var(--scheme2);
+			padding-left: 4px;
+			padding-right: 2px;
+		}
+	}
 }
 
 /* This fixes odd spacing in these boxes */
