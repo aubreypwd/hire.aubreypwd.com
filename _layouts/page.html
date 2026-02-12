@@ -16,7 +16,7 @@ layout: default
 		{% endif %}
 	{% endif %}
 
-	<div class="flex-spacing gap-md content wow fadeIn page-content">
+	<div class="flex-spacing gap-md content wow fadeIn page-content{% if page.document_style %} document{% endif %}">
 		{% if page.markdownify_content %}
 			{{ content | markdownify }}
 		{% else %}

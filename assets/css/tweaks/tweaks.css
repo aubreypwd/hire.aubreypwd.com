@@ -717,3 +717,10 @@ ul > li::marker {
 .list-style {
 	padding-left: 2rem;
 }
+
+.document {
+	background-color: hsl(0deg 0% 0% / 3%);
+	padding: 2rem;
+	border: 1px solid var(--accent-lighter);
+	border-radius: 2rem;
+}
