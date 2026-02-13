@@ -1,0 +1,12 @@
+<!-- Google tag (gtag.js) -->
+{% if jekyll.environment == "production" and site.ga != false %}
+	<script async src="https://www.googletagmanager.com/gtag/js?id={{ include.id }}"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', '{{ include.id }}');
+	</script>
+{% else  %}
+	<!-- Local development, GA not loaded -->
+{% endif %}
