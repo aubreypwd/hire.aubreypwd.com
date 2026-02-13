@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{% if include.href %}
+			<meta http-equiv="refresh" content="0; url={{ include.href }}">
+			<script>window.location.href = "{{ include.href }}";</script>
+		{% endif %}
+	</head>
+	<body>
+		<p style="font-family: sans-serif">
+			{% if include.href %}
+				Redirecting to <code>{{ include.href }}</code>...
+			{% else %}
+				<strong>Error:</strong> <code>include.href</code> not set.
+			{% endif %}
+		</p>
+	</body>
+</html>
