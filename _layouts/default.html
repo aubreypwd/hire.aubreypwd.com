@@ -147,6 +147,8 @@
 	</script>
 
 	<meta name="google-site-verification" content="zHtIvnXU9Lh60E19bsYk4IAdRRpvHzyl_zSOBrjj0yc">
+
+	{% include jekyll_tools/ga.html id="G-0GBN9NTQCR" %}
 </head>
 
 <body class="layout-{{ page.layout | slugify }} page-{{ page.slug | default: page.url | slugify }} bg-color4 bg-blend-luminosity gray-layer opc9 scheme2 light" style="background-image: url({{ 'assets/images/pattern-bg.png' | absolute_url }});">
@@ -188,8 +190,6 @@
 	<script>window.Koalendar=window.Koalendar||function(){(Koalendar.props=Koalendar.props||[]).push(arguments)};</script>
 	<script async src="https://koalendar.com/assets/widget.js"></script>
 	<script defer>Koalendar('init');</script>
-
-	{% include jekyll_tools/ga.html id="G-0GBN9NTQCR" %}
 </body>
 
 </html>
