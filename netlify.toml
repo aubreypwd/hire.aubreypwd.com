@@ -5,8 +5,7 @@
     Access-Control-Allow-Methods = "GET"
 
 [[redirects]]
-  from = "/*"
+  from = "https://hire.aubreypwd.com/*"
   to = "https://hireaubrey.com/:splat"
   status = 301
   force = true
-  conditions = { Host = "hire.aubreypwd.com" }
