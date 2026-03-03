@@ -139,7 +139,7 @@
 				"source": "list",
 				"urls": [
 					{% for page in pages_for_speculation %}
-					"{{ page.url | absolute_url }}"{% unless forloop.last %},{% endunless %}{% endfor %}
+					"{{ page.url }}"{% unless forloop.last %},{% endunless %}{% endfor %}
 				]
 			}
 		]
