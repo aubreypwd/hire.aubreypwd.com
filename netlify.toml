@@ -3,3 +3,9 @@
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET"
+
+# [[redirects]]
+#   from = "https://hire.aubreypwd.com/*"
+#   to = "https://hireaubrey.com/:splat"
+#   status = 301
+#   force = true
